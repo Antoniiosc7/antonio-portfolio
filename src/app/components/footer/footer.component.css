@@ -1,0 +1,14 @@
+footer{
+  margin-top: 30px;
+}
+.theme-toggle-btn {
+  background-color: transparent; /* Fondo transparente */
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  border: none; /* Sin bordes */
+  padding: 0; /* Sin espaciado interno */
+  cursor: pointer; /* Cursor en forma de mano */
+}
+
+.theme-toggle-btn i {
+  font-size: 24px; /* Tamaño del icono */
+}

@@ -8,6 +8,8 @@ import {CookiePolicyComponent} from "./components/cookie-policy/cookie-policy.co
 import {HeaderComponent} from "./components/header/header.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {NgIf} from "@angular/common";
+import {Title} from "@angular/platform-browser";
+import {ThemeService} from "./services/theme.service";
 
 @Component({
   selector: 'app-root',
@@ -17,8 +19,16 @@ import {NgIf} from "@angular/common";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio-antonio';
+  title = 'Antonio Saborido';
+  constructor(private titleService: Title,
+              private themeService: ThemeService) {}
 
   cookiesAccepted = localStorage.getItem('cookiesAccepted') === 'true';
+  ngOnInit() {
+    this.titleService.setTitle(this.title);
+  }
 
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
 }

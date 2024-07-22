@@ -1,3 +1,4 @@
+/*
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -78,4 +79,36 @@ footer {
   background-color: #343a40;
   color: #fff;
   border-radius: 5px;
+}
+*/
+/* Para aplicar la fuente de manera global */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* O solo para el componente de cabecera en header.component.css */
+header, .social-icon-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Colores para el modo claro */
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+/* Colores para el modo oscuro */
+[data-theme="dark"] {
+  --background-color: #343a40;
+  --text-color: #fff;
+}
+
+[data-theme="dark"] .timeline-content {
+  background-color: #333!important; /* Fondo más oscuro para el contenido de la línea de tiempo */
+  color: #fff; /* Texto en blanco para mejorar la legibilidad */
+  box-shadow: 0 3px 6px rgba(255,255,255,0.1); /* Sombra más clara para el modo oscuro */
+}
+html, body {
+  margin: 0;
+  padding: 0;
 }

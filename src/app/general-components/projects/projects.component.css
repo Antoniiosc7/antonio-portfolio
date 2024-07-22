@@ -1,0 +1,66 @@
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+mat-card-title {
+  font-weight: bold; /* Hace los títulos más en negrita */
+}
+
+button:not(:last-child) {
+  margin-right: 10px; /* Aumenta el espacio entre los botones, excepto el último botón */
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px; /* Ajusta el ancho según tus necesidades */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 20px;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Efecto de elevación al pasar el cursor */
+}
+
+mat-card-content p {
+  text-align: justify;
+}
+
+.mat-card-content {
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.mat-card-actions {
+  margin-top: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.white-text {
+  color: white !important; /* Usa !important para asegurar que sobrescriba otros estilos */
+}

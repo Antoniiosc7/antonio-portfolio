@@ -1,7 +1,15 @@
 <h2>Proyectos</h2>
-<ul>
-  <li><strong>Jump Marius:</strong> Juego de plataformas en 2D realizado con la librería de Python, Pygame.</li>
-  <li><strong>Jersey Detection:</strong> Detección de texto en imágenes, principalmente basado en camisetas de fútbol que detectan el jugador.</li>
-  <li><strong>Twitch Clips:</strong> Integración de la API de Twitch en una página Svelte que permite ver los clips más populares de los streamers de League of Legends.</li>
-  <li><strong>API Tennis:</strong> Este repositorio crea una API usando JavaScript y Expressjs sobre estadísticas de tenis.</li>
-</ul>
+<div class="project-container">
+  <mat-card class="project-card" *ngFor="let project of projects">
+    <mat-card-header>
+      <mat-card-title>{{project.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{project.description}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button><a class="white-text" href="{{project.repoUrl}}" target="_blank">Ver Repositorio</a></button>
+      <button mat-button *ngIf="project.isTFG" [routerLink]="project.tfgLink"><a class="white-text">Ver TFG</a></button>
+    </mat-card-actions>
+  </mat-card>
+</div>

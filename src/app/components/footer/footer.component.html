@@ -1,3 +1,7 @@
 <footer>
-  © 2024 Antonio Saborido.
+  © 2024 - Antonio Saborido.
+  <button (click)="toggleTheme()" class="theme-toggle-btn">
+    <i *ngIf="!isDarkTheme" class="fas fa-sun"></i>
+    <i *ngIf="isDarkTheme" class="fas fa-moon"></i>
+  </button>
 </footer>

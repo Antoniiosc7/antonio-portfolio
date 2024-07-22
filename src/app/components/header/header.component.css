@@ -1,0 +1,57 @@
+header {
+  text-align: center;
+}
+.home-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color original del texto */
+}
+.profile-pic {
+  width: 100px; /* Ajusta según sea necesario */
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+h2 {
+  font-size: 14px; /* Tamaño de la fuente para el nombre */
+  margin-top: -15px;
+  font-weight: normal
+}
+.social-icon {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: #007bff;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  flex: 1 1 auto; /* Ajusta esto según sea necesario para el espaciado */
+}
+
+.social-icon-text {
+  margin-left: 8px; /* Espacio entre el icono y el texto */
+  font-size: 14px; /* Tamaño de la tipografía */
+  font-family: 'Arial', sans-serif; /* Tipo de fuente */
+}
+
+/* Puedes agregar aquí más estilos para personalizar la tipografía */
+.social-icon:hover {
+  background-color: #007bff; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color de los iconos y texto al pasar el ratón */
+}
+
+.social-icon svg {
+  fill: currentColor;
+}
+
+header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
