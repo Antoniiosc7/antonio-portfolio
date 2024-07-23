@@ -3,11 +3,12 @@ import {ThemeService} from "../../services/theme.service";
 import {RouterLink} from "@angular/router";
 import {TranslationService} from "../../services/translations.service";
 import {NgIf} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf],
+  imports: [RouterLink, NgIf, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

@@ -7,7 +7,8 @@ import {TfgComponent} from "./pages/proyectos/tfg/tfg.component";
 export const routes: Routes = [
   { path: 'cookie-policy', component: CookiePolicyPageComponent },
   { path: '', component: HomeComponent},
-  { path: 'proyectos/tfg', component: TfgComponent}
+  { path: 'proyectos/tfg', component: TfgComponent},
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
