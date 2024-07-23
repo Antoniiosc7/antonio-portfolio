@@ -1,13 +1,14 @@
-import {Component, OnDestroy} from '@angular/core';
-import {AppModule} from "../../../app.module";
-import {Subscription, window} from "rxjs";
-import {TranslateModule} from "@ngx-translate/core";
+import {Component} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {window} from "rxjs";
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tfg',
   standalone: true,
   templateUrl: './tfg.component.html',
-  styleUrl: './tfg.component.css'
+  styleUrl: './tfg.component.css',
+  imports: [CommonModule, TranslateModule, TranslateModule]
 })
 export class TfgComponent {
 
@@ -21,7 +22,6 @@ export class TfgComponent {
   pdfUrl: string = 'tfg/TFG_AntonioSaborido.pdf';  // Asegúrate de colocar el archivo PDF en esta ubicación
 
   constructor() {
-
   }
   downloadPDF() {
     const win = window as any;

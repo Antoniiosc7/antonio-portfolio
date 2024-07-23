@@ -1,5 +1,20 @@
 <header>
-
+  <div class="language-buttons">
+    <div class="idiomas">
+      <button (click)="switchLanguage('en')">
+        <img src="assets/flags/uk.png" alt="English">
+      </button>
+      <button (click)="switchLanguage('es')">
+        <img src="assets/flags/spain.png" alt="Español">
+      </button>
+    </div>
+    <div class="oscuro">
+    <button (click)="toggleTheme()" class="theme-toggle-btn">
+      <i *ngIf="!isDarkTheme" class="fas fa-sun"></i>
+      <i *ngIf="isDarkTheme" class="fas fa-moon"></i>
+    </button>
+    </div>
+  </div>
   <div class="home-card">
     <a routerLink="/" class="home-link">
       <img src="foto.png" alt="Foto de Antonio" class="profile-pic">

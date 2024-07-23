@@ -65,3 +65,54 @@ svg {
 .body-dark-mode svg {
   fill: #ffffff; /* Cambia el color del icono en modo oscuro */
 }
+.idiomas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+.idiomas img {
+  width: 25px;
+  height: auto;
+}
+.idiomas button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+}
+
+/* Asumiendo que las imágenes de las banderas ya tienen una clase o se les puede añadir una clase 'flag-icon' */
+.flag-icon, .fas {
+  width: 24px; /* Ajusta el ancho según sea necesario */
+  height: 16px; /* Ajusta la altura según sea necesario */
+  object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin perder sus proporciones */
+}
+
+/* Si los iconos de la luna/sol son más grandes o más pequeños de lo deseado, ajusta las dimensiones específicamente para ellos */
+.fas.fa-sun, .fas.fa-moon {
+  font-size: 16px; /* Ajusta el tamaño de la fuente para cambiar el tamaño de los iconos de FontAwesome */
+}
+
+.theme-toggle-btn{
+  margin-top: -20px!important;
+}
+.oscuro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 14px;
+  margin-right: 20px;
+}
+.oscuro img {
+  width: 25px;
+  height: auto;
+}
+.oscuro button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 10px;
+}
+

@@ -18,6 +18,7 @@ import {InfoComponent} from "../../general-components/info/info.component";
     ProjectsComponent,
     HeaderComponent,
     RouterLink,
+
     InfoComponent
   ],
   templateUrl: './home.component.html',
