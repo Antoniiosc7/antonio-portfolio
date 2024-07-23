@@ -1,0 +1,29 @@
+{
+  "HEADER": {
+    "SUBTITLE": "Software Engineer and Full Stack Developer"
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "1": "Back",
+    "2": "Search",
+    "3": "Search..."
+  },
+  "EDUCATION": {
+    "TITLE": "Educación",
+    "1": "Back",
+    "2": "Search",
+    "3": "Search..."
+  },
+  "EXPERIENCE": {
+    "TITLE": "Experiencia",
+    "1": "Back",
+    "2": "Search",
+    "3": "Search..."
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "1": "Back",
+    "2": "Search",
+    "3": "Search..."
+  }
+}

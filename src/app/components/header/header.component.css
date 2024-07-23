@@ -55,3 +55,13 @@ header {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+/* Estilo base para el SVG */
+svg {
+  background-color: transparent; /* Asegura que el fondo sea transparente */
+  border: none; /* Elimina el borde */
+}
+
+/* Estilo específico para el modo oscuro, ajusta según tu implementación */
+.body-dark-mode svg {
+  fill: #ffffff; /* Cambia el color del icono en modo oscuro */
+}

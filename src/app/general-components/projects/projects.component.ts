@@ -53,7 +53,7 @@ export class ProjectsComponent {
     {
       title: 'TFG - Modelado y Prueba de TPAs en el marco de DORA',
       description: 'he desarrollado un microservicio que se integra en el ecosistema de Bluejay para facilitar la creación de métricas.',
-      tfgLink: '/tfg-page',
+      tfgLink: '/proyectos/tfg',
       repoUrl: 'https://github.com/Antoniiosc7/tp-tester',
       isTFG: true,
     }
