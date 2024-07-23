@@ -46,13 +46,15 @@
 
 
 .timeline-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Alinea verticalmente el contenido y el botón */
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 4px;
   margin-left: 0%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
-
 .timeline-content h3 {
   margin-top: 0;
 }
@@ -69,3 +71,11 @@
   background: #007bff;
   border: 3px solid #fff;
 }
+/* En tu archivo CSS */
+.open-pdf-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Ajusta el tamaño del icono según necesites */
+}
+

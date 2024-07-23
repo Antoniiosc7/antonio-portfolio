@@ -1,4 +1,7 @@
 {
+  "COMMON": {
+    "CLOSE": "Close"
+  },
   "HEADER": {
     "SUBTITLE": "Software Engineer and Full Stack Developer"
   },
@@ -15,8 +18,18 @@
       {
         "DATE": "2024",
         "TITLE": "ITIL Foundation Certificate",
-        "DESCRIPTION": "ITIL Foundation Certificate in IT Service Management by PeopleCert and Axelos"
+        "DESCRIPTION": "ITIL Foundation Certificate in IT Service Management by PeopleCert and Axelos",
+        "pdfUrl": "assets/pdfs/itil.pdf",
+        "pdfName": "ITIL Foundation Certificate"
       },
+      {
+        "DATE": "2024",
+        "TITLE": "Oracle, SQL, and PL/SQL Course",
+        "DESCRIPTION": "Course on SQL and PL/SQL programming language concepts. Writing SQL commands, developing stored PL/SQL procedures, functions, packages, and database triggers.",
+        "pdfUrl": "assets/pdfs/oracle.pdf",
+        "pdfName": "Oracle, SQL, and PL/SQL Course"
+      },
+
       {
         "DATE": "2019 - 2024",
         "TITLE": "Computer Engineering",
@@ -25,7 +38,9 @@
       {
         "DATE": "2023",
         "TITLE": "C1 Test Certificate English Level",
-        "DESCRIPTION": "C1 level English certificate by the British Council."
+        "DESCRIPTION": "C1 level English certificate by the British Council.",
+        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
+        "pdfName": "English C1 Certificate"
       },
       {
         "DATE": "2017 - 2019",
@@ -56,5 +71,32 @@
     "1": "Back",
     "2": "Search",
     "3": "Search..."
+  },
+  "COOKIESPAGE": {
+    "TITLE": "Cookie Policy",
+    "POLICY_DESC": "This is the cookie policy of our application, where we explain in detail how we use cookies to improve your user experience. Cookies are small text files that are stored on your device to remember your preferences and track your browsing behavior, allowing us to offer you a more personalized and efficient experience. We use both our own and third-party cookies to collect analytical data, personalize content, and improve the functionality of our site. By continuing to browse our site, you accept the use of these cookies in accordance with our policy.",
+    "PRIVACY_TITLE": "Privacy Policy",
+    "INTRODUCTION_TITLE": "Introduction",
+    "INTRODUCTION_DESC": "At antoniosaborido.es, we value your privacy and are committed to protecting the personal information you share with us. This Privacy Policy describes how we collect, use, and protect your personal information when you visit our website.",
+    "COLLECTION_TITLE": "Information We Collect",
+    "PERSONAL_INFO_DESC": "Personal Information: We may collect personal information that you voluntarily provide to us, such as your name, email address, and any other data you send us through contact forms or newsletter subscriptions.",
+    "NON_PERSONAL_INFO_DESC": "Non-Personal Information: We may collect non-personal information about your visit to our website, such as your IP address, browser type, pages visited, and time spent on our website. This information is collected anonymously and is used to improve the user experience.",
+    "USAGE_TITLE": "Use of Information",
+    "USAGE_DESC": "We use the information collected for the following purposes:",
+    "COMMUNICATION": "Communication: To respond to your inquiries, comments, or requests.",
+    "WEBSITE_IMPROVEMENT": "Website Improvement: To analyze the use of our website and improve its functionality and content.",
+    "MARKETING": "Marketing: To send you information about updates, promotions, and news related to our website, provided you have given your consent to receive these communications.",
+    "COOKIES_TITLE": "Cookies",
+    "COOKIES_DESC": "We use cookies to improve your experience on our website. Cookies are small text files that are stored on your device when you visit certain web pages. You can disable cookies by changing your browser settings, but this may affect the functionality of the site.",
+    "SHARING_TITLE": "Sharing Information",
+    "SHARING_DESC": "We do not sell, trade, or transfer your personal information to third parties. However, we may share your information with trusted service providers who help us operate our website, provided these parties agree to keep this information confidential.",
+    "SECURITY_TITLE": "Information Security",
+    "SECURITY_DESC": "We implement various security measures to protect your personal information. However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure.",
+    "LINKS_TITLE": "Links to Other Websites",
+    "LINKS_DESC": "Our website may contain links to other websites of interest. However, once you have used these links to leave our site, we do not have control over those other sites. Therefore, we cannot be responsible for the protection and privacy of any information you provide while visiting such sites.",
+    "RIGHTS_TITLE": "Your Rights",
+    "RIGHTS_DESC": "You have the right to access, rectify, or delete your personal information that we have collected. If you wish to exercise these rights, please contact us through the information provided on our website.",
+    "PRIVACY_CHANGES_TITLE": "Changes to the Privacy Policy",
+    "PRIVACY_CHANGES_DESC": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. We recommend you review this policy periodically to be aware of any modifications."
   }
 }

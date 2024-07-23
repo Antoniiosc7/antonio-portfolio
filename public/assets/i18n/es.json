@@ -1,4 +1,7 @@
 {
+  "COMMON": {
+    "CLOSE": "Cerrar"
+  },
   "HEADER": {
     "SUBTITLE": "Ingeniero de Software y Desarrollador Full Stack"
   },
@@ -16,7 +19,15 @@
         "DATE": "2024",
         "TITLE": "Certificado de Fundamentos ITIL",
         "DESCRIPTION": "Certificado de Fundamentos ITIL en Gestión de Servicios de TI por PeopleCert y Axelos",
-        "pdfUrl": "assets/itil.pdf"
+        "pdfUrl": "assets/pdfs/itil.pdf",
+        "pdfName": "Certificado ITIL"
+      },
+      {
+        "DATE": "2024",
+        "TITLE": "Curso Oracle, SQL y PL/SQL",
+        "DESCRIPTION": "Curso de conceptos de lenguaje de programación SQL y PL/SQL. Escritura comandos SQL, desarrollo procedimientos PL/SQL almacenados, funciones, paquetes y disparadores de base de datos.",
+        "pdfUrl": "assets/pdfs/oracle.pdf",
+        "pdfName": "Certificado Oracle"
       },
       {
         "DATE": "2019 - 2024",
@@ -26,7 +37,9 @@
       {
         "DATE": "2023",
         "TITLE": "Certificado de Nivel de Inglés C1",
-        "DESCRIPTION": "Certificado de nivel C1 de inglés por el British Council."
+        "DESCRIPTION": "Certificado de nivel C1 de inglés por el British Council.",
+        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
+        "pdfName": "Certificado Inglés C1"
       },
       {
         "DATE": "2017 - 2019",
@@ -51,6 +64,32 @@
     "DECLINE": "Rechazar",
     "ACCEPT": "Aceptar",
     "READ": "Leer la política de cookies"
+  },
+  "COOKIESPAGE": {
+    "TITLE": "Política de cookies",
+    "POLICY_DESC": "Esta es la política de cookies de nuestra aplicación, donde explicamos detalladamente cómo utilizamos las cookies para mejorar tu experiencia de usuario. Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo para recordar tus preferencias y realizar un seguimiento de tu comportamiento de navegación, lo que nos permite ofrecerte una experiencia más personalizada y eficiente. Utilizamos tanto cookies propias como de terceros para recopilar datos analíticos, personalizar el contenido, y mejorar la funcionalidad de nuestro sitio. Al continuar navegando en nuestro sitio, aceptas el uso de estas cookies conforme a nuestra política.",    "PRIVACY_TITLE": "Política de Privacidad",
+    "INTRODUCTION_TITLE": "Introducción",
+    "INTRODUCTION_DESC": "En antoniosaborido.es, valoramos tu privacidad y nos comprometemos a proteger la información personal que compartes con nosotros. Esta Política de Privacidad describe cómo recopilamos, usamos y protegemos tu información personal cuando visitas nuestra página web.",
+    "COLLECTION_TITLE": "Información que Recopilamos",
+    "PERSONAL_INFO_DESC": "Información Personal: Podemos recopilar información personal que nos proporcionas voluntariamente, como tu nombre, dirección de correo electrónico, y cualquier otro dato que nos envíes a través de formularios de contacto o suscripciones a boletines.",
+    "NON_PERSONAL_INFO_DESC": "Información No Personal: Podemos recopilar información no personal sobre tu visita a nuestra página web, como tu dirección IP, tipo de navegador, páginas visitadas, y tiempo de permanencia en nuestra web. Esta información se recopila de manera anónima y se utiliza para mejorar la experiencia del usuario.",
+    "USAGE_TITLE": "Uso de la Información",
+    "USAGE_DESC": "Utilizamos la información recopilada para los siguientes propósitos:",
+    "COMMUNICATION": "Comunicación: Para responder a tus consultas, comentarios o solicitudes.",
+    "WEBSITE_IMPROVEMENT": "Mejora del Sitio Web: Para analizar el uso de nuestra web y mejorar su funcionalidad y contenido.",
+    "MARKETING": "Marketing: Para enviarte información sobre actualizaciones, promociones y noticias relacionadas con nuestro sitio web, siempre y cuando hayas dado tu consentimiento para recibir estas comunicaciones.",
+    "COOKIES_TITLE": "Cookies",
+    "COOKIES_DESC": "Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas ciertas páginas web. Puedes desactivar las cookies cambiando la configuración de tu navegador, pero esto puede afectar la funcionalidad del sitio.",
+    "SHARING_TITLE": "Compartir Información",
+    "SHARING_DESC": "No vendemos, intercambiamos ni transferimos tu información personal a terceros. Sin embargo, podemos compartir tu información con proveedores de servicios de confianza que nos ayudan a operar nuestro sitio web, siempre que estas partes acuerden mantener esta información confidencial.",
+    "SECURITY_TITLE": "Seguridad de la Información",
+    "SECURITY_DESC": "Implementamos diversas medidas de seguridad para proteger tu información personal. Sin embargo, ten en cuenta que ningún método de transmisión por Internet o de almacenamiento electrónico es 100% seguro.",
+    "LINKS_TITLE": "Enlaces a Otros Sitios Web",
+    "LINKS_DESC": "Nuestra página web puede contener enlaces a otros sitios web de interés. Sin embargo, una vez que hayas utilizado estos enlaces para salir de nuestra web, no tenemos control sobre esos otros sitios. Por lo tanto, no podemos responsabilizarnos de la protección y privacidad de cualquier información que proporciones mientras visitas dichos sitios.",
+    "RIGHTS_TITLE": "Tus Derechos",
+    "RIGHTS_DESC": "Tienes derecho a acceder, rectificar o eliminar tu información personal que hemos recopilado. Si deseas ejercer estos derechos, por favor contáctanos a través de la información proporcionada en nuestro sitio web.",
+    "PRIVACY_CHANGES_TITLE": "Cambios en la Política de Privacidad",
+    "PRIVACY_CHANGES_DESC": "Podemos actualizar esta Política de Privacidad de vez en cuando. Te notificaremos sobre cualquier cambio publicando la nueva política en esta página. Te recomendamos revisar esta política periódicamente para estar al tanto de cualquier modificación."
   },
   "PROJECTS": {
     "TITLE": "Proyectos",

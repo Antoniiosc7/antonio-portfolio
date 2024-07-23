@@ -12,3 +12,11 @@ footer{
 .theme-toggle-btn i {
   font-size: 24px; /* Tamaño del icono */
 }
+
+.link-no-color:link,
+.link-no-color:visited,
+.link-no-color:hover,
+.link-no-color:active {
+  color: inherit; /* Esto hará que el enlace use el color de texto del elemento padre */
+  text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+}

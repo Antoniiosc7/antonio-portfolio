@@ -19,12 +19,18 @@ export class EducationComponent {
 
   constructor(private dialog: MatDialog) { }
 
-  openPdfViewer(pdfUrl: string): void {
-    this.dialog.open(PdfViewerPopupComponent, {
-      width: '80%',
-      height: '80%',
-      panelClass: 'custom-dialog-container',
-      data: { pdfSrc: pdfUrl }
-    });
+  openPdfViewer(pdfUrl: string, pdfName: string): void {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.open(pdfUrl, '_blank');
+    } else {
+      // Si no es un dispositivo móvil, abrir el PDF en un pop-up
+      this.dialog.open(PdfViewerPopupComponent, {
+        width: '80%',
+        height: '80%',
+        panelClass: 'custom-dialog-container',
+        data: { pdfSrc: pdfUrl, pdfName: pdfName }
+      });
+    }
   }
 }

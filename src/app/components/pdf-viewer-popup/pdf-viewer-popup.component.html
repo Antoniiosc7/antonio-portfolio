@@ -1,4 +1,9 @@
-<div class="pdf-viewer-popup">
-  <button class="close-button" (click)="closeDialog()">&#10005;</button>
-  <iframe [src]="pdfSrc | safeUrl" width="100%" height="100%"></iframe>
+<div class="overlay">
+  <div class="mat-dialog-container">
+    <div class="header-row">
+      <span class="pdf-title">{{ pdfName }}</span>
+      <button class="btn btn-danger close-button" (click)="closeDialog()">{{ 'COMMON.CLOSE' | translate  }}</button>
+    </div>
+    <iframe [src]="pdfSrc | safeUrl" class="pdf-iframe"></iframe>
+  </div>
 </div>

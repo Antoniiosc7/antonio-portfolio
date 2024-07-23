@@ -46,11 +46,12 @@ h2 {
   background-color: #007bff; /* Color de fondo al pasar el ratón */
   color: #fff; /* Color de los iconos y texto al pasar el ratón */
 }
-
 .social-icon svg {
   fill: currentColor;
 }
-
+.social-icon {
+  background-color: transparent; /* Ajusta esto al color deseado o déjalo transparente */
+}
 header {
   background-color: var(--background-color);
   color: var(--text-color);

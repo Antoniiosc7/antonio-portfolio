@@ -5,9 +5,13 @@
     <li *ngFor="let item of ('EDUCATION.TIMELINE' | translate)" class="timeline-item">
       <div class="timeline-date">{{ item.DATE }}</div>
       <div class="timeline-content">
-        <h3>{{ item.TITLE }}</h3>
-        <p>{{ item.DESCRIPTION }}</p>
-        <button *ngIf="item.pdfUrl" (click)="openPdfViewer(item.pdfUrl)">Ver Certificado</button>
+        <div class="content-text">
+          <h3>{{ item.TITLE }}</h3>
+          <p>{{ item.DESCRIPTION }}</p>
+        </div>
+        <button *ngIf="item.pdfUrl" class="open-pdf-button" (click)="openPdfViewer(item.pdfUrl, item.pdfName)">
+          <i class="fas fa-external-link-alt"></i>
+        </button>
       </div>
     </li>
   </ul>
