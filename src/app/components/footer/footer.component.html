@@ -1,7 +1,4 @@
 <footer>
   © 2024 - Antonio Saborido.
-  <button (click)="toggleTheme()" class="theme-toggle-btn">
-    <i *ngIf="!isDarkTheme" class="fas fa-sun"></i>
-    <i *ngIf="isDarkTheme" class="fas fa-moon"></i>
-  </button>
+  <a routerLink="/cookie-policy">{{ 'COOKIES.FOOTER' | translate }}</a>
 </footer>

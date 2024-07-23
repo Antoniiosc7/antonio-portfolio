@@ -1,7 +1,7 @@
 <div class="cookie-policy">
-  <p>Este sitio utiliza cookies para mejorar la experiencia de usuario. ¿Aceptas nuestra política de cookies?</p>
-  <button (click)="acceptCookies()" class="accept-button">Aceptar</button>
-  <button (click)="rejectCookies()" class="reject-button">Rechazar</button>
+  <p>{{ 'COOKIES.MESSAGE' | translate }}</p>
+  <button (click)="acceptCookies()" class="accept-button">{{ 'COOKIES.ACCEPT' | translate }}</button>
+  <button (click)="rejectCookies()" class="reject-button">{{ 'COOKIES.DECLINE' | translate }}</button>
   <br>
-  <a routerLink="/cookie-policy">Leer la política de cookies</a>
+  <a routerLink="/cookie-policy">{{ 'COOKIES.READ' | translate }}</a>
 </div>

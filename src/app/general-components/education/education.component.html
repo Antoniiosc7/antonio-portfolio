@@ -1,34 +1,12 @@
-<h2>Educación</h2>
+<h2>{{ 'EDUCATION.TITLE' | translate }}</h2>
 
 <div class="timeline">
   <ul>
-    <li class="timeline-item">
-      <div class="timeline-date">2024</div>
+    <li *ngFor="let item of ('EDUCATION.TIMELINE' | translate)" class="timeline-item">
+      <div class="timeline-date">{{ item.DATE }}</div>
       <div class="timeline-content">
-        <h3>ITIL Foundation Certificate </h3>
-        <p> ITIL Foundation Certificate en IT Service Management por PeopleCert y Axelos</p>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-date">2019 - 2024</div>
-      <div class="timeline-content">
-        <h3>Ingeniería Informática</h3>
-        <p>Universidad de Sevilla - Grado en Ingeniería Informática - Tecnologías Informáticas en la rama de sistemas de información.</p>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-date">2023</div>
-      <div class="timeline-content">
-        <h3>C1 Test Certificate English Level</h3>
-        <p>Certificado de C1 de inglés por el British Council.</p>
-      </div>
-    </li>
-
-    <li class="timeline-item">
-      <div class="timeline-date">2017 - 2019</div>
-      <div class="timeline-content">
-        <h3>Bachillerato Científico-Tecnológico</h3>
-        <p>IES Sofía de Jerez de la Frontera.</p>
+        <h3>{{ item.TITLE }}</h3>
+        <p>{{ item.DESCRIPTION }}</p>
       </div>
     </li>
   </ul>

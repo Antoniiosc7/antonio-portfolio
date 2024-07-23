@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-cookie-policy',
   standalone: true,
-  imports: [
-    RouterLink
-  ],
+    imports: [
+        RouterLink,
+        TranslateModule
+    ],
   templateUrl: './cookie-policy.component.html',
   styleUrl: './cookie-policy.component.css'
 })

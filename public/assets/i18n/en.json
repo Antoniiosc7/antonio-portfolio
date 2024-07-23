@@ -3,25 +3,56 @@
     "SUBTITLE": "Software Engineer and Full Stack Developer"
   },
   "ABOUT": {
-    "TITLE": "About me",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "TITLE": "About Me",
+    "INTRO": "👋 Hi! I'm Antonio Saborido Campos, I'm 23 years old and I consider myself passionate about Computing. I have recently started my professional career as a Full Stack Developer at Babel.",
+    "EDUCATION": "🎓 My academic background in Computer Engineering at the University of Seville has provided me with a solid foundation in problem-solving, programming, and project management. Also, during my training, I had the opportunity to learn technologies such as Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS, and Haskell among others.",
+    "CURRENT_ROLE": "💼 I currently have a contract as a Full Stack Developer at Babel, where I apply my knowledge in technologies such as Angular CLI in the development of web applications both on the front end and back end with Spring Tools.",
+    "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computing constantly drive me to seek new opportunities and challenges."
   },
   "EDUCATION": {
-    "TITLE": "Educación",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "TITLE": "Education",
+    "TIMELINE": [
+      {
+        "DATE": "2024",
+        "TITLE": "ITIL Foundation Certificate",
+        "DESCRIPTION": "ITIL Foundation Certificate in IT Service Management by PeopleCert and Axelos"
+      },
+      {
+        "DATE": "2019 - 2024",
+        "TITLE": "Computer Engineering",
+        "DESCRIPTION": "University of Seville - Degree in Computer Engineering - Information Technologies in the information systems branch."
+      },
+      {
+        "DATE": "2023",
+        "TITLE": "C1 Test Certificate English Level",
+        "DESCRIPTION": "C1 level English certificate by the British Council."
+      },
+      {
+        "DATE": "2017 - 2019",
+        "TITLE": "Scientific-Technological Baccalaureate",
+        "DESCRIPTION": "IES Sofía de Jerez de la Frontera."
+      }
+    ]
   },
   "EXPERIENCE": {
-    "TITLE": "Experiencia",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "TITLE": "Experience",
+    "TIMELINE": [
+      {
+        "DATE": "October 2023 - Present",
+        "TITLE": "Babel Group",
+        "DESCRIPTION": "FullStack Developer - Full-time remote"
+      }
+    ]
+  },
+  "COOKIES": {
+    "FOOTER": "Cookie Policy",
+    "MESSAGE": "This site uses cookies to improve user experience. Do you accept our cookie policy?",
+    "DECLINE": "Decline",
+    "ACCEPT": "Accept",
+    "READ": "Read the cookie policy"
   },
   "PROJECTS": {
-    "TITLE": "Proyectos",
+    "TITLE": "Projects",
     "1": "Back",
     "2": "Search",
     "3": "Search..."

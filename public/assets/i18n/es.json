@@ -1,24 +1,55 @@
 {
   "HEADER": {
-    "SUBTITLE": "Pene pene pene Ingeniero and Full Stack Developer"
+    "SUBTITLE": "Ingeniero de Software y Desarrollador Full Stack"
   },
   "ABOUT": {
     "TITLE": "Sobre mí",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "INTRO": "👋 ¡Hola! Soy Antonio Saborido Campos, tengo 23 años y me considero un apasionado de la Informática, recientemente he comenzado mi carrera profesional como Desarrollador Full Stack en Babel.",
+    "EDUCATION": "🎓 Mi formación académica en Ingeniería Informática en la Universidad de Sevilla me ha proporcionado una base sólida en la resolución de problemas, la programación y la gestión de proyectos. También durante mi formación he tenido la oportunidad de aprender tecnologías como Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS y Haskell entre otras.",
+    "CURRENT_ROLE": "💼 Actualmente, tengo un contrato como Desarrollador Full Stack en Babel, donde aplico mis conocimientos en tecnologías como Angular CLI en el desarrollo de aplicaciones web tanto en el front end como en back end con Spring Tools.",
+    "MOTIVATION": "💪 Mi determinación y entusiasmo por aprender y crecer en el campo de la informática me impulsan constantemente a buscar nuevas oportunidades y desafíos."
   },
   "EDUCATION": {
     "TITLE": "Educación",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "TIMELINE": [
+      {
+        "DATE": "2024",
+        "TITLE": "Certificado de Fundamentos ITIL",
+        "DESCRIPTION": "Certificado de Fundamentos ITIL en Gestión de Servicios de TI por PeopleCert y Axelos"
+      },
+      {
+        "DATE": "2019 - 2024",
+        "TITLE": "Ingeniería Informática",
+        "DESCRIPTION": "Universidad de Sevilla - Grado en Ingeniería Informática - Tecnologías Informáticas en la rama de sistemas de información."
+      },
+      {
+        "DATE": "2023",
+        "TITLE": "Certificado de Nivel de Inglés C1",
+        "DESCRIPTION": "Certificado de nivel C1 de inglés por el British Council."
+      },
+      {
+        "DATE": "2017 - 2019",
+        "TITLE": "Bachillerato Científico-Tecnológico",
+        "DESCRIPTION": "IES Sofía de Jerez de la Frontera."
+      }
+    ]
   },
   "EXPERIENCE": {
     "TITLE": "Experiencia",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "TIMELINE": [
+      {
+        "DATE": "Octubre 2023 - Actualidad",
+        "TITLE": "Grupo Babel",
+        "DESCRIPTION": "Desarrollador FullStack - Jornada completa en remoto"
+      }
+    ]
+  },
+  "COOKIES": {
+    "FOOTER": "Política de cookies",
+    "MESSAGE": "Este sitio utiliza cookies para mejorar la experiencia de usuario. ¿Aceptas nuestra política de cookies?",
+    "DECLINE": "Rechazar",
+    "ACCEPT": "Aceptar",
+    "READ": "Leer la política de cookies"
   },
   "PROJECTS": {
     "TITLE": "Proyectos",
