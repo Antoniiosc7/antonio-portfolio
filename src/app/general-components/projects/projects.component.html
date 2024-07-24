@@ -10,13 +10,16 @@
         <mat-card-content>
           <p>{{ project.DESCRIPTION }}</p>
         </mat-card-content>
-        <mat-card-actions *ngIf="project.LINKS">
+        <mat-card-actions>
 
-          <button mat-button class="blue-button" [routerLink]="['/proyectos', project.TITLE]">
+          <button mat-button *ngIf="project.LINKS && !project.IS_TFG" class="blue-button" [routerLink]="['/proyectos', project.TITLE]">
+            Ver más
+          </button>
+          <button mat-button *ngIf="project.LINKS && project.IS_TFG" class="blue-button" [routerLink]="['/proyectos', 'tfg']">
             Ver más
           </button>
           <button mat-button *ngIf="project.REPO_URL" (click)="openRepo(project.REPO_URL)">
-            <i class="fab fa-github"></i> Ver Repositorio
+            <i class="fab fa-github"></i> {{ 'TFG.REPOSITORY' | translate }}
           </button>
         </mat-card-actions>
       </mat-card>

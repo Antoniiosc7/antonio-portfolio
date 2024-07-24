@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
-import {NgIf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {MatDialog} from "@angular/material/dialog";
 import {PdfViewerPopupComponent} from "../../../components/pdf-viewer-popup/pdf-viewer-popup.component";
 import {TranslateModule} from "@ngx-translate/core";
@@ -10,7 +10,8 @@ import {TranslateModule} from "@ngx-translate/core";
   standalone: true,
   imports: [
     NgIf,
-    TranslateModule
+    TranslateModule,
+    NgForOf
   ],
   templateUrl: './projectdetail.component.html',
   styleUrl: './projectdetail.component.css'

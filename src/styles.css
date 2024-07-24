@@ -107,6 +107,9 @@ header, .social-icon-text {
   color: var(--text-color); /* Utiliza el color de texto definido para el modo oscuro */
 }
 
+[data-theme="dark"] .github-link {
+  color: #fff!important; /* Texto en blanco para mejorar la legibilidad */
+}
 [data-theme="dark"] .timeline-content {
   background-color: #333!important; /* Fondo más oscuro para el contenido de la línea de tiempo */
   color: #fff; /* Texto en blanco para mejorar la legibilidad */

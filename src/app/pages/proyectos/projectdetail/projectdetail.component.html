@@ -106,66 +106,58 @@
 
 
   <div *ngIf="projectName === 'Jump Marius'">
-    <h2>JUMP MARIUS</h2>
+    <h2>{{ 'JUMP_MARIUS.TITLE' | translate }}</h2>
     <div class="button-container">
       <a href="https://github.com/Antoniiosc7/JumpMarius" target="_blank" class="btn-tfg card social-icon">
-        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">Ver Repositorio</span>
+        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">{{ 'TFG.REPOSITORY' | translate }}</span>
       </a>
     </div>
     <div style="text-align: center;">
       <img src="/assets/imagenes/jump-marius/logo.png" width="43%">
     </div>
-    <p>Jump Marius es un emocionante juego de plataformas creado con Pygame. Únete a Marius en un emocionante viaje a través de diversos niveles llenos de desafíos, enemigos y paisajes impresionantes.</p>
+    <p>{{ 'JUMP_MARIUS.DESCRIPTION' | translate }}</p>
 
-    <h4><strong>Versión:</strong> 1.0.0</h4>
-    <h5>Notas de la Versión:</h5>
+    <h4>{{ 'JUMP_MARIUS.VERSION' | translate }}</h4>
+    <h5>{{ 'JUMP_MARIUS.RELEASE_NOTES' | translate }}</h5>
     <ul>
-      <li><strong>Nuevos Mundos:</strong> Ahora, el editor permite guardar directamente el mundo en la carpeta correcta y antes de iniciar cada partida se puede seleccionar en qué mundo comenzar la partida, además que el editor ya contiene nuevos bloques para que crear estos mundos.</li>
-      <li><strong>Menú de selección de personajes:</strong> Implementado un nuevo menú que permite elegir entre 3 de los personajes que se encuentran en el juego.
+      <li>{{ 'JUMP_MARIUS.NEW_WORLDS' | translate }}</li>
+      <li>{{ 'JUMP_MARIUS.CHARACTER_SELECTION' | translate }}
         <div style="text-align: center;">
           <img src="/assets/imagenes/jump-marius/characterSelector.png" width="50%">
         </div>
       </li>
-      <li><strong>Mejoras Gráficas:</strong> Implementación de los nuevos personajes aunque aún con bugs en la renderización de los mismos dentro de juego.</li>
-      <li><strong>Nuevos Tilesets:</strong> Implementado en el editor 2 nuevos tilesets para poder crear mapas con nuevos bloques.</li>
-      <li><strong>Launcher:</strong> Está creado el launcher que permitirá que tras loguearte se inicie el juego aunque aún no se pueden registrar usuarios y el único usuario es "user" y la contraseña "password."
+      <li>{{ 'JUMP_MARIUS.GRAPHIC_IMPROVEMENTS' | translate }}</li>
+      <li>{{ 'JUMP_MARIUS.NEW_TILESETS' | translate }}</li>
+      <li>{{ 'JUMP_MARIUS.LAUNCHER' | translate }}
         <div style="text-align: center;">
           <img src="/assets/imagenes/jump-marius/launcher.png" width="23%">
         </div>
       </li>
-      <li><strong>Menú de Configuración:</strong> Nuevo menú de configuración que por el momento solo permite cambiar las dimensiones del juego.</li>
-      <li><strong>Bloque Final:</strong> Hasta ahora, el juego no tenía final; en esta versión, el juego se acabará al tocar un bloque llamado "final," creado como ejemplo o al tocar el palo de la bandera.
+      <li>{{ 'JUMP_MARIUS.CONFIGURATION_MENU' | translate }}</li>
+      <li>{{ 'JUMP_MARIUS.FINAL_BLOCK' | translate }}
         <div style="text-align: center;">
           <img src="/assets/imagenes/jump-marius/bloqueFinal.png" width="50%">
         </div>
       </li>
-      <li><strong>Script de inicio:</strong> Añadido el ejecutable "JumpMarius.bat" que ejecuta el juego directamente.</li>
+      <li>{{ 'JUMP_MARIUS.STARTUP_SCRIPT' | translate }}</li>
     </ul>
 
-    <h5>To-Do List:</h5>
+    <h5>{{ 'JUMP_MARIUS.TODO_LIST' | translate }}</h5>
     <ul>
-      <li>Correcto funcionamiento del launcher y todas sus funcionalidades.</li>
-      <li>Implementar más niveles y desafíos.</li>
-      <li>Añadir opciones de configuración avanzada.</li>
-      <li>Mejorar la interfaz de usuario.</li>
-      <li>Añadir al menú de configuración la opción de idioma y que el idioma se cambie automáticamente en todos los menús al cambiarlo.</li>
+      <li *ngFor="let item of ('JUMP_MARIUS.TODO_ITEMS' | translate)">{{ item }}</li>
     </ul>
 
-    <h5>Bugs:</h5>
+    <h5>{{ 'JUMP_MARIUS.BUGS' | translate }}</h5>
     <ul>
-      <li>Mala hitbox del personaje principal.</li>
-      <li>Los menús secundarios no funcionan correctamente; se queda de fondo la opción que no está marcada.</li>
+      <li *ngFor="let item of ('JUMP_MARIUS.BUG_ITEMS' | translate)">{{ item }}</li>
     </ul>
 
-    <h5>Colaboradores:</h5>
-    <p>Cualquier persona puede colaborar y abrir su pull request para contribuir al desarrollo de Jump Marius. ¡Tu ayuda es bienvenida!</p>
+    <h5>{{ 'JUMP_MARIUS.COLLABORATORS' | translate }}</h5>
+    <p>{{ 'JUMP_MARIUS.COLLABORATION_DESC' | translate }}</p>
 
-    <h5>Créditos:</h5>
+    <h5>{{ 'JUMP_MARIUS.CREDITS' | translate }}</h5>
     <ul>
-      <li>Introducción a Pygame y primeras funcionalidades del juego: <a href="https://twitter.com/DaFluffyPotato">&#64;DaFluffyPotato</a></li>
-      <li>Nuevos tilesets: <a href="https://www.kenney.nl">Kenney</a></li>
+      <li *ngFor="let item of ('JUMP_MARIUS.CREDITS_ITEMS' | translate)"><a href="{{ item }}">{{ item }}</a></li>
     </ul>
-
-
   </div>
 </body>

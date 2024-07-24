@@ -7,10 +7,10 @@
   },
   "ABOUT": {
     "TITLE": "About Me",
-    "INTRO": "👋 Hi! I'm Antonio Saborido Campos, I'm 23 years old and I consider myself passionate about Computing. I have recently started my professional career as a Full Stack Developer at Babel.",
-    "EDUCATION": "🎓 My academic background in Computer Engineering at the University of Seville has provided me with a solid foundation in problem-solving, programming, and project management. Also, during my training, I had the opportunity to learn technologies such as Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS, and Haskell among others.",
-    "CURRENT_ROLE": "💼 I currently have a contract as a Full Stack Developer at Babel, where I apply my knowledge in technologies such as Angular CLI in the development of web applications both on the front end and back end with Spring Tools.",
-    "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computing constantly drive me to seek new opportunities and challenges."
+    "INTRO": "👋 Hello! I'm Antonio Saborido Campos, I'm 23 years old and I'm passionate about Computer Science. I recently started my professional career as a Full Stack Developer at Babel.",
+    "EDUCATION": "🎓 My academic background in Computer Engineering from the University of Seville has provided me with a solid foundation in problem-solving, programming, and project management. During my studies, I also had the opportunity to learn technologies such as Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS, and Haskell, among others.",
+    "CURRENT_ROLE": "💼 Currently, I have a contract as a Full Stack Developer at Babel, where I apply my knowledge in technologies such as Angular CLI in the development of web applications both in the front end and back end with Spring Tools.",
+    "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computer science constantly drive me to seek new opportunities and challenges."
   },
   "EDUCATION": {
     "TITLE": "Education",
@@ -20,27 +20,26 @@
         "TITLE": "ITIL Foundation Certificate",
         "DESCRIPTION": "ITIL Foundation Certificate in IT Service Management by PeopleCert and Axelos",
         "pdfUrl": "assets/pdfs/itil.pdf",
-        "pdfName": "ITIL Foundation Certificate"
+        "pdfName": "ITIL Certificate"
       },
       {
         "DATE": "2024",
-        "TITLE": "Oracle, SQL, and PL/SQL Course",
+        "TITLE": "Oracle, SQL and PL/SQL Course",
         "DESCRIPTION": "Course on SQL and PL/SQL programming language concepts. Writing SQL commands, developing stored PL/SQL procedures, functions, packages, and database triggers.",
         "pdfUrl": "assets/pdfs/oracle.pdf",
-        "pdfName": "Oracle, SQL, and PL/SQL Course"
+        "pdfName": "Oracle Certificate"
       },
-
       {
         "DATE": "2019 - 2024",
         "TITLE": "Computer Engineering",
-        "DESCRIPTION": "University of Seville - Degree in Computer Engineering - Information Technologies in the information systems branch."
+        "DESCRIPTION": "University of Seville - Degree in Computer Engineering - Computer Technologies in the field of information systems."
       },
       {
         "DATE": "2023",
-        "TITLE": "C1 Test Certificate English Level",
-        "DESCRIPTION": "C1 level English certificate by the British Council.",
+        "TITLE": "C1 English Level Certificate",
+        "DESCRIPTION": "C1 English level certificate by the British Council.",
         "pdfUrl": "assets/pdfs/ingles-c1.pdf",
-        "pdfName": "English C1 Certificate"
+        "pdfName": "C1 English Certificate"
       },
       {
         "DATE": "2017 - 2019",
@@ -54,7 +53,7 @@
     "TIMELINE": [
       {
         "DATE": "October 2023 - Present",
-        "TITLE": "Babel Group",
+        "TITLE": "Grupo Babel",
         "DESCRIPTION": "FullStack Developer - Full-time remote"
       }
     ]
@@ -66,37 +65,171 @@
     "ACCEPT": "Accept",
     "READ": "Read the cookie policy"
   },
-  "PROJECTS": {
-    "TITLE": "Projects",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
-  },
   "COOKIESPAGE": {
     "TITLE": "Cookie Policy",
-    "POLICY_DESC": "This is the cookie policy of our application, where we explain in detail how we use cookies to improve your user experience. Cookies are small text files that are stored on your device to remember your preferences and track your browsing behavior, allowing us to offer you a more personalized and efficient experience. We use both our own and third-party cookies to collect analytical data, personalize content, and improve the functionality of our site. By continuing to browse our site, you accept the use of these cookies in accordance with our policy.",
+    "POLICY_DESC": "This is the cookie policy of our application, where we explain in detail how we use cookies to enhance your user experience. Cookies are small text files that are stored on your device to remember your preferences and track your browsing behavior, allowing us to offer you a more personalized and efficient experience. We use both first-party and third-party cookies to collect analytical data, customize content, and improve the functionality of our site. By continuing to browse our site, you accept the use of these cookies in accordance with our policy.",
     "PRIVACY_TITLE": "Privacy Policy",
     "INTRODUCTION_TITLE": "Introduction",
     "INTRODUCTION_DESC": "At antoniosaborido.es, we value your privacy and are committed to protecting the personal information you share with us. This Privacy Policy describes how we collect, use, and protect your personal information when you visit our website.",
     "COLLECTION_TITLE": "Information We Collect",
-    "PERSONAL_INFO_DESC": "Personal Information: We may collect personal information that you voluntarily provide to us, such as your name, email address, and any other data you send us through contact forms or newsletter subscriptions.",
-    "NON_PERSONAL_INFO_DESC": "Non-Personal Information: We may collect non-personal information about your visit to our website, such as your IP address, browser type, pages visited, and time spent on our website. This information is collected anonymously and is used to improve the user experience.",
+    "PERSONAL_INFO_DESC": "Personal Information: We may collect personal information that you voluntarily provide to us, such as your name, email address, and any other data you submit through contact forms or newsletter subscriptions.",
+    "NON_PERSONAL_INFO_DESC": "Non-Personal Information: We may collect non-personal information about your visit to our website, such as your IP address, browser type, pages visited, and time spent on our site. This information is collected anonymously and is used to improve the user experience.",
     "USAGE_TITLE": "Use of Information",
-    "USAGE_DESC": "We use the information collected for the following purposes:",
+    "USAGE_DESC": "We use the collected information for the following purposes:",
     "COMMUNICATION": "Communication: To respond to your inquiries, comments, or requests.",
-    "WEBSITE_IMPROVEMENT": "Website Improvement: To analyze the use of our website and improve its functionality and content.",
-    "MARKETING": "Marketing: To send you information about updates, promotions, and news related to our website, provided you have given your consent to receive these communications.",
+    "WEBSITE_IMPROVEMENT": "Website Improvement: To analyze the use of our site and improve its functionality and content.",
+    "MARKETING": "Marketing: To send you information about updates, promotions, and news related to our website, provided that you have consented to receive these communications.",
     "COOKIES_TITLE": "Cookies",
-    "COOKIES_DESC": "We use cookies to improve your experience on our website. Cookies are small text files that are stored on your device when you visit certain web pages. You can disable cookies by changing your browser settings, but this may affect the functionality of the site.",
-    "SHARING_TITLE": "Sharing Information",
-    "SHARING_DESC": "We do not sell, trade, or transfer your personal information to third parties. However, we may share your information with trusted service providers who help us operate our website, provided these parties agree to keep this information confidential.",
+    "COOKIES_DESC": "We use cookies to enhance your experience on our website. Cookies are small text files stored on your device when you visit certain web pages. You can disable cookies by changing your browser settings, but this may affect the site's functionality.",
+    "SHARING_TITLE": "Information Sharing",
+    "SHARING_DESC": "We do not sell, trade, or transfer your personal information to third parties. However, we may share your information with trusted service providers who assist us in operating our website, provided these parties agree to keep this information confidential.",
     "SECURITY_TITLE": "Information Security",
-    "SECURITY_DESC": "We implement various security measures to protect your personal information. However, please be aware that no method of transmission over the Internet or electronic storage is 100% secure.",
+    "SECURITY_DESC": "We implement various security measures to protect your personal information. However, please note that no method of transmission over the Internet or electronic storage is 100% secure.",
     "LINKS_TITLE": "Links to Other Websites",
     "LINKS_DESC": "Our website may contain links to other websites of interest. However, once you have used these links to leave our site, we do not have control over those other sites. Therefore, we cannot be responsible for the protection and privacy of any information you provide while visiting such sites.",
     "RIGHTS_TITLE": "Your Rights",
     "RIGHTS_DESC": "You have the right to access, rectify, or delete your personal information that we have collected. If you wish to exercise these rights, please contact us through the information provided on our website.",
     "PRIVACY_CHANGES_TITLE": "Changes to the Privacy Policy",
-    "PRIVACY_CHANGES_DESC": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page. We recommend you review this policy periodically to be aware of any modifications."
+    "PRIVACY_CHANGES_DESC": "We may update this Privacy Policy from time to time. We will notify you about any changes by posting the new policy on this page. We recommend reviewing this policy periodically to stay informed of any modifications."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "LIST": [
+      {
+        "TITLE": "Jump Marius",
+        "DESCRIPTION": "2D platform game made with the Python library, Pygame.",
+        "REPO_URL": "https://github.com/Antoniiosc7/JumpMarius",
+        "LINKS": true,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Jersey Detection",
+        "DESCRIPTION": "Text detection in images, mainly based on football jerseys that detect the player. Made in Python.",
+        "REPO_URL": "https://github.com/Antoniiosc7/JerseyDetection",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Twitch Clips",
+        "DESCRIPTION": "Integration of the Twitch API in a Svelte page that allows viewing the most popular clips of League of Legends streamers. Made with Svelte.",
+        "REPO_URL": "https://github.com/Antoniiosc7/TwitchClips",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Api Tennis",
+        "DESCRIPTION": "This repository creates an API using JavaScript and Expressjs for tennis statistics. Made in JavaScript.",
+        "REPO_URL": "https://github.com/Antoniiosc7/TFG-Server",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Snake Game",
+        "DESCRIPTION": "It's a recreation of the classic snake game that has to eat apples while avoiding crashing into the edges and intermediate obstacles. Made using Haskell.",
+        "REPO_URL": "https://github.com/Antoniiosc7/TFG-Server",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "<strong>FINAL DEGREE PROJECT</strong> - Modeling and Testing TPAs within the DORA framework",
+        "DESCRIPTION": "I developed a microservice that integrates into the Bluejay ecosystem to facilitate the creation of metrics.",
+        "TFG_LINK": "/projects/tfg",
+        "REPO_URL": "https://github.com/Antoniiosc7/tp-tester",
+        "LINKS": true,
+        "IS_TFG": true
+      }
+    ]
+  },
+  "NOTFOUND" : {
+    "TITLE": "Page Not Found",
+    "DESCRIPTION": "Sorry, the page you are looking for does not exist or has been moved.",
+    "BACK": "Back to Homepage"
+  },
+  "TFG": {
+    "TITLE": "FINAL DEGREE PROJECT - Modeling and Testing TPAs within the DORA Framework",
+    "POPUP": "View Report",
+    "REPOSITORY": "View Repository",
+    "INTRO": "Introduction",
+    "INTRO1": "This Final Degree Project (TFG) focuses on the development of a computer system, applying good software development practices and agile methodologies. Throughout the project, various phases were addressed, from planning and analysis to implementation and evaluation, with the aim of creating an efficient and adaptable system.",
+    "INTRO2": "The project establishes the context and objectives, both technical and academic. The technical objectives include creating a system that improves the efficiency and quality of software development, while the academic objectives focus on the practical application of theoretical knowledge acquired during the degree.",
+    "INTRO3": "The agile methodology was adopted for the development of the project, allowing flexible and dynamic management through sprints. Tools like GitHub, TogglTrack, Google Calendar, and Google Chat were used for efficient organization and detailed progress tracking.",
+    "INTRO4": "An audit of the team's good practices was conducted, focusing on Bluejay and TPAs (Team Performance Assessments), including an exploration of visualizations in Grafana and a manual for creating custom widgets.",
+    "INTRO5": "The system analysis defines the objective and describes its architecture and functional design, addressing both frontend and backend and providing a comprehensive view of its design and functionality.",
+    "INTRO6": "The system implementation is described in detail, including the development environment and the technology stack used, as well as specific implementation details such as translations, local file management, and test case execution.",
+    "INTRO7": "Manuals for deploying and using the system are included, offering detailed instructions for deployment in development, production, and application mode, as well as a reference guide for the configuration file and a tutorial on the TPA creation cycle.",
+    "INTRO8": "The document concludes with an analysis of the issues encountered during development and proposes solutions and future work, highlighting the importance of agile methodologies in software development and the value of the practical application of theoretical knowledge.",
+    "INTRO9": "In summary, a detailed and structured overview of software project development is provided, from introduction and methodology to implementation and user manuals, concluding with an analysis of problems and proposals for future work.",
+    "RESEARCH": "Graph Research",
+    "RESEARCH1": "The visualizations of the Bluejay dashboard are done in Grafana. To do this, we could use the basic visualizations included in Grafana or use external visualizations. To delve into this, a research was carried out to know the graphs that were available by default in Grafana, those that needed an external plugin, or those that required creating this external plugin.",
+    "RESEARCH2": "This research yielded the following results:",
+    "RESEARCH3": "That is, 1 in 3 graphs has native support already integrated in Grafana, 28.33% require some plugin that has already been created, and 38% have no native support or created plugin, although it would be easy to create a plugin using chart libraries like Highchart for this.",
+    "PROJECTSTRUCTURE": "Project Structure",
+    "PROJECTSTRUCTURE1": "The application is divided into two main parts: the frontend developed in Angular and the backend in Express. Both are designed to be modular, scalable, and maintain a clear structure. Additionally, the frontend interacts with its own API (backend), the GitHub API, and the Bluejay API, allowing for a wide range of functionalities and efficient integration with external services.",
+    "PROJECTSTRUCTURE2": "Frontend",
+    "PROJECTSTRUCTURE3": "Models: Define the data structure for typing HTTP responses and requests.",
+    "PROJECTSTRUCTURE4": "Services: Responsible for communication with the backend and external APIs, including services for repositories, TPAs, Bluejay, and GitHub.",
+    "PROJECTSTRUCTURE5": "Components: Reusable UI blocks for specific functionalities such as TPA management, metrics dashboard, GitHub integration, and more.",
+    "PROJECTSTRUCTURE6": "Pages: Complete views that group components to offer main functionalities such as TPA management, metrics visualization, and tests with GitHub.",
+    "PROJECTSTRUCTURE7": "Backend",
+    "PROJECTSTRUCTURE8": "Repository Management: Includes cloning, file management, and script execution.",
+    "PROJECTSTRUCTURE9": "Metrics, Scripts, and TPAs Management: CRUD operations and TPA management.",
+    "PROJECTSTRUCTURE10": "API Documentation: Using Swagger to document the API, facilitating its use and testing.",
+    "PROJECTSTRUCTURE11": "This structure allows efficient interaction between frontend and backend, ensuring proper management of metrics, TPAs, and repositories, as well as facilitating integration with external APIs.",
+    "PAGESSTRUCTURE": "Page Structure",
+    "PAGESSTRUCTURE1": "Home Page",
+    "PAGESSTRUCTURE2": "When starting TP-Tester, the initial page is 'Home'. This page contains a sectioned organization of the content equivalent to the project's Readme file, describing the functionality of each page. On the left side, you can navigate to all available sections of the documentation, and on the upper right side, you can select the display language between Spanish and English.",
+    "PAGESSTRUCTURE3": "Test Metrics Page",
+    "PAGESSTRUCTURE4": "This page is designed to manage and test metrics, providing a user-friendly interface to view, create, and manage metrics. It can be accessed from any page by clicking on 'Metrics'.",
+    "PAGESSTRUCTURE5": "Page Structure",
+    "PAGESSTRUCTURE6": "The page displays all saved metrics in two large tables: one for metrics related to the TPA and another for individual metrics not related to any specific TPA. Each row in the table includes the metric name and buttons to view, execute/edit, and delete the metric. Additionally, there is a section to create new metrics by entering the content in a text area and saving them as JSON.",
+    "PAGESSTRUCTURE7": "Manual Testing",
+    "PAGESSTRUCTURE8": "This page allows cloning new repositories or working with already cloned repositories. Upon entering, you can see all accessible repositories using a token, and each repository has buttons to view details and edit.",
+    "PAGESSTRUCTURE9": "Clone New Repositories",
+    "PAGESSTRUCTURE10": "You can see the repositories accessible with the entered token, displaying repository details and allowing you to clone the repository to perform actions on it on the cloned repositories screen.",
+    "PAGESSTRUCTURE11": "Cloned Repositories",
+    "PAGESSTRUCTURE12": "Allows working with previously cloned repositories, providing a brief description and a button to start working with the cloned repository. It includes options to manage branches (view, create, delete, switch), pull requests (create, view, merge), and other general actions on the repository.",
+    "PAGESSTRUCTURE13": "Automated Testing Page",
+    "PAGESSTRUCTURE14": "This section provides an interface to manage saved YAML scripts and run automated tests. It offers an execution area where you can manage and run test scripts, as well as view results.",
+    "PAGESSTRUCTURE15": "TPA Testing Page",
+    "PAGESSTRUCTURE16": "This page is dedicated to testing specific TPAs, allowing the creation, editing, and execution of TPA tests. It includes tools to manage and analyze test results.",
+    "PAGESSTRUCTURE17": "Settings Page",
+    "PAGESSTRUCTURE18": "This page allows configuring various aspects of the system, including token management for accessing repositories and other configurations necessary for the TP-Tester system to function.",
+    "PAGESSTRUCTURE19": "This section provides a detailed user manual, allowing a complete understanding and efficient use of the TP-Tester system, covering from the home page to the configuration and execution of automated and manual tests."
+  },
+  "JUMP_MARIUS": {
+    "TITLE": "JUMP MARIUS",
+    "DESCRIPTION": "Jump Marius is an exciting platform game created with Pygame. Join Marius on an exciting journey through various levels full of challenges, enemies, and stunning landscapes.",
+    "VERSION": "Version: 1.0.0",
+    "RELEASE_NOTES": "Release Notes:",
+    "NEW_WORLDS": "New Worlds: Now, the editor allows you to save the world directly in the correct folder and before starting each game you can select which world to start the game in, plus the editor already contains new blocks to create these worlds.",
+    "CHARACTER_SELECTION": "Character Selection Menu: A new menu has been implemented that allows you to choose from 3 characters found in the game.",
+    "CHARACTER_SELECTOR_IMG": "assets/readmeContent/characterSelector.png",
+    "GRAPHIC_IMPROVEMENTS": "Graphic Improvements: Implementation of new characters, although still with rendering bugs within the game.",
+    "NEW_TILESETS": "New Tilesets: Two new tilesets have been implemented in the editor to create maps with new blocks.",
+    "LAUNCHER": "Launcher: The launcher is created which will allow you to start the game after logging in, although users cannot be registered yet and the only user is 'user' and the password is 'password.'",
+    "CONFIGURATION_MENU": "Configuration Menu: New configuration menu that for now only allows changing the game's dimensions.",
+    "FINAL_BLOCK": "Final Block: Until now, the game had no end; in this version, the game will end by touching a block called 'final,' created as an example or by touching the flagpole.",
+    "STARTUP_SCRIPT": "Startup Script: Added the executable 'JumpMarius.bat' which runs the game directly.",
+    "TODO_LIST": "To-Do List:",
+    "TODO_ITEMS": [
+      "Correct functioning of the launcher and all its features.",
+      "Implement more levels and challenges.",
+      "Add advanced configuration options.",
+      "Improve the user interface.",
+      "Add the language option to the configuration menu and make the language change automatically in all menus when changed."
+    ],
+    "BUGS": "Bugs:",
+    "BUG_ITEMS": [
+      "Bad hitbox of the main character.",
+      "Secondary menus do not work correctly; the unmarked option stays in the background."
+    ],
+    "COLLABORATORS": "Collaborators:",
+    "COLLABORATION_DESC": "Anyone can collaborate and open their pull request to contribute to the development of Jump Marius. Your help is welcome!",
+    "CREDITS": "Credits:",
+    "CREDITS_ITEMS": [
+      "Introduction to Pygame and initial game features: https://twitter.com/DaFluffyPotato",
+      "New tilesets: https://www.kenney.nl"
+    ]
   }
+
 }
