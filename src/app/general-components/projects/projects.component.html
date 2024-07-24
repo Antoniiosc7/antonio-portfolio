@@ -1,15 +1,25 @@
-<h2>Proyectos</h2>
+<h2>{{ 'PROJECTS.TITLE' | translate }}</h2>
+
 <div class="project-container">
-  <mat-card class="project-card" *ngFor="let project of projects">
-    <mat-card-header>
-      <mat-card-title>{{project.title}}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>{{project.description}}</p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button><a class="white-text" href="{{project.repoUrl}}" target="_blank">Ver Repositorio</a></button>
-      <button mat-button *ngIf="project.isTFG" [routerLink]="project.tfgLink"><a class="white-text">Ver TFG</a></button>
-    </mat-card-actions>
-  </mat-card>
+  <ul class="project-list">
+    <li *ngFor="let project of ('PROJECTS.LIST' | translate)" class="project-item">
+      <mat-card class="project-card">
+        <mat-card-header>
+          <mat-card-title [innerHTML]="project.TITLE">{{ project.TITLE }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ project.DESCRIPTION }}</p>
+        </mat-card-content>
+        <mat-card-actions *ngIf="project.LINKS">
+
+          <button mat-button class="blue-button" [routerLink]="['/proyectos', project.TITLE]">
+            Ver más
+          </button>
+          <button mat-button *ngIf="project.REPO_URL" (click)="openRepo(project.REPO_URL)">
+            <i class="fab fa-github"></i> Ver Repositorio
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </li>
+  </ul>
 </div>

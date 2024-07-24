@@ -8,8 +8,8 @@ export class TranslationService {
   private readonly LANGUAGE_KEY = 'app_language';
 
   constructor(private translate: TranslateService) {
-    const savedLanguage = localStorage.getItem(this.LANGUAGE_KEY) || 'en';
-    this.translate.setDefaultLang('en');
+    const savedLanguage = localStorage.getItem(this.LANGUAGE_KEY) || this.translate.getBrowserLang() || 'es';
+    this.translate.setDefaultLang('es');
     this.translate.use(savedLanguage);
   }
 

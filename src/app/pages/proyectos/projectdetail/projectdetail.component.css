@@ -1,0 +1,86 @@
+h2, h3, h4, h5 {
+  margin: 1rem 0;
+}
+
+p, ul {
+  margin: 0.5rem 0;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  text-align: justify;
+}
+.image-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-container img {
+  max-width: 48%; /* Ajusta este valor según necesites */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin perder la relación de aspecto */
+}
+
+#imagen1{
+  max-height: 220px;
+}
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajusta la altura según necesites */
+}
+
+.btn-tfg {
+  font-size: 1.2rem; /* Aumenta el tamaño del texto */
+  padding: 10px 20px; /* Aumenta el padding para hacer el botón más grande */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor a pointer */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar el color de fondo */
+}
+
+.btn-tfg:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+.button-container {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.btn-tfg.card.social-icon{
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .button-container {
+    text-align: center;
+  }
+
+  .button-container > * {
+    display: block;
+    width: 100%;
+    margin: 10px auto; /* Centra los botones y añade un margen vertical */
+  }
+
+  a {
+    width: 233px !important;
+  }
+}

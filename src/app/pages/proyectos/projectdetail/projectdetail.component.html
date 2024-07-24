@@ -1,0 +1,167 @@
+<body>
+  <div *ngIf="projectName === 'tfg' || projectName === '<strong>TRABAJO FIN DE GRADO</strong> - Modelado y Prueba de TPAs en el marco de DORA'">
+
+    <h2>TRABAJO FIN DE GRADO - Modelado y Prueba de TPAs en el marco de DORA
+    </h2>
+    <div class="button-container">
+      <button class="card social-icon btn-tfg" (click)="openPdfViewer('tfg/TFG_AntonioSaborido.pdf', 'Trabajo Fin de Grado')">
+        <i class="fas fa-file-alt" style="margin-right: 8px;"></i><span class="social-icon-text">Ver Memoria</span>
+      </button>
+      <a href="https://github.com/Antoniiosc7/tp-tester" target="_blank" class="btn-tfg card social-icon">
+        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">Ver Repositorio</span>
+      </a>
+    </div>
+    <h3> Introducción </h3>
+    <p>Este Trabajo de Fin de Grado (TFG) se enfoca en el desarrollo de un sistema informático, aplicando buenas prácticas de desarrollo de software y metodologías ágiles. A lo largo del proyecto, se abordaron diversas fases, desde la planificación y análisis hasta la implementación y evaluación, con el objetivo de crear un sistema eficiente y adaptable.</p>
+
+    <p>El proyecto establece el contexto y los objetivos, tanto en términos técnicos como académicos. Los objetivos técnicos incluyen la creación de un sistema que mejore la eficiencia y calidad del desarrollo de software, mientras que los objetivos académicos se centran en la aplicación práctica de conocimientos teóricos adquiridos durante la carrera.</p>
+
+    <p>La metodología ágil fue adoptada para el desarrollo del proyecto, permitiendo una gestión flexible y dinámica a través de sprints. Se utilizaron herramientas como GitHub, TogglTrack, Google Calendar y Google Chat para una organización eficiente y un seguimiento detallado del progreso.</p>
+
+    <p>Se realizó una auditoría de las buenas prácticas del equipo, enfocándose en Bluejay y las TPAs (Team Performance Assessments), incluyendo una exploración de visualizaciones en Grafana y un manual para la creación de widgets personalizados.</p>
+
+    <p>El análisis del sistema define el objetivo y describe su arquitectura y diseño funcional, abordando tanto el frontend como el backend y proporcionando una visión completa de su diseño y funcionalidad.</p>
+
+    <p>La implementación del sistema se describe detalladamente, incluyendo el entorno de desarrollo y el stack tecnológico utilizado, así como detalles específicos de la implementación como las traducciones, la gestión de archivos locales y la ejecución de casos de prueba.</p>
+
+    <p>Se incluyen manuales para el despliegue y uso del sistema, ofreciendo instrucciones detalladas para el despliegue en modo desarrollo, producción y aplicación, así como una guía de referencia para el archivo de configuración y un tutorial sobre el ciclo de creación de un TPA.</p>
+
+    <p>El documento concluye con un análisis de los problemas encontrados durante el desarrollo y propone soluciones y trabajos futuros, destacando la importancia de las metodologías ágiles en el desarrollo de software y el valor de la aplicación práctica de conocimientos teóricos.</p>
+
+    <p>En resumen, se proporciona una visión detallada y estructurada del desarrollo de un proyecto de software, desde la introducción y la metodología hasta la implementación y los manuales de uso, concluyendo con un análisis de problemas y propuestas para futuros trabajos.</p>
+    <h3> Investigación de gráficas </h3>
+    <p> Las visualizaciones del dashboard que utiliza Bluejay se hacen en grafana, para ello podríamos utilizar las visualizaciones básicas que incluye Grafana o utilizar visualizaciones externas. Para profundizar esto, se elaboró una investigación para conocer las gráficas que estaban disponible por defecto en grafana, las que necesitaban de un plugin externo o las que eran necesario crear este plugin externo.</p>
+
+    <p> Esta investigación arrojó los siguientes resultados:</p>
+    <div class="image-container">
+      <img src="/assets/imagenes/tfg/grafico-soporte.png" id="imagen1" alt="Gráfico Soporte Grafana">
+      <img src="/assets/imagenes/tfg/tabla soporte grafana.png" alt="Tabla Soporte Grafana">
+    </div>
+    <p> Es decir, 1 de cada 3 gráficas tiene soporte nativo ya integrado en Grafana, el 28,33% requieren de algún plugin que ya ha sido creado y el 38% no tienen soporte nativo ni plugin creado, aunque sería sencillo crear un plugin que lo crease utiliazando librerías de gráficas como Highchart para ello.</p>
+    <section>
+      <h3> Estructura del proyecto </h3>
+      <p>La aplicación se divide en dos partes principales: el frontend desarrollado en Angular y el backend en Express. Ambos están diseñados para ser modulares, escalables y mantener una estructura clara. Además, el frontend interactúa con la API propia (backend), con la API de GitHub y con la API de Bluejay, lo que permite una amplia gama de funcionalidades y una integración eficiente con servicios externos.</p>
+      <div class="image-center">
+        <img src="/assets/imagenes/tfg/estructura-servicio.png" alt="Estructura">
+      </div>
+      <h4>Frontend</h4>
+      <ul>
+        <li>Modelos: Definen la estructura de los datos para tipar respuestas y peticiones HTTP.</li>
+        <li>Servicios: Encargados de la comunicación con el backend y APIs externas, incluyendo servicios para repositorios, TPAs, Bluejay y GitHub.</li>
+        <li>Componentes: Bloques reutilizables de UI para funcionalidades específicas como gestión de TPAs, panel de métricas, integración con GitHub, y más.</li>
+        <li>Páginas: Vistas completas que agrupan componentes para ofrecer funcionalidades principales como gestión de TPAs, visualización de métricas, y tests con GitHub.</li>
+      </ul>
+      <h4>Backend</h4>
+      <ul>
+        <li>Gestión de Repositorios: Incluye clonado, gestión de archivos y ejecución de scripts.</li>
+        <li>Manejo de Métricas, Scripts y TPAs: Operaciones CRUD y gestión de TPAs.</li>
+        <li>Documentación API: Utilización de Swagger para documentar la API, facilitando su uso y pruebas.</li>
+      </ul>
+      <p>Esta estructura permite una interacción eficiente entre el frontend y el backend, asegurando una gestión adecuada de métricas, TPAs y repositorios, además de facilitar la integración con APIs externas.</p>
+    </section>
+    <h3> Estructura de las páginas</h3>
+    <img src="/assets/imagenes/tfg/Estructura.png" alt="Gráfico Soporte Grafana">
+    <section>
+      <h4>Página de Inicio</h4>
+      <p>Al iniciar TP-Tester, la página inicial es "Home". Esta página contiene una organización por secciones del contenido equivalente al archivo Readme del proyecto, describiendo el funcionamiento de cada página. En la parte izquierda, se puede navegar a todas las secciones disponibles de la documentación, y en la parte superior derecha, se puede seleccionar el idioma de visualización entre español e inglés.</p>
+    </section>
+
+    <section>
+      <h4>Página Testear Métricas</h4>
+      <p>Esta página está diseñada para gestionar y probar métricas, proporcionando una interfaz amigable para visualizar, crear y gestionar métricas. Se accede desde cualquier página haciendo clic en “Metrics”.</p>
+      <h5>Estructura de la Página</h5>
+      <p>La página muestra todas las métricas guardadas en dos grandes tablas: una para métricas relacionadas con el TPA y otra para métricas individuales no relacionadas con ningún TPA específico. Cada fila de la tabla incluye el nombre de la métrica y botones para ver, ejecutar/editar, y eliminar la métrica. Además, hay una sección para crear nuevas métricas introduciendo el contenido en un área de texto y guardándolas como JSON.</p>
+    </section>
+
+    <section>
+      <h4>Testeo Manual</h4>
+      <p>Esta página permite clonar nuevos repositorios o trabajar con repositorios ya clonados. Al entrar, se pueden ver todos los repositorios accesibles mediante un token, y cada repositorio tiene botones para ver detalles y editar.</p>
+      <h5>Clonar Nuevos Repositorios</h5>
+      <p>Se pueden ver los repositorios accesibles con el token introducido, mostrando detalles del repositorio y permitiendo clonar el repositorio para realizar acciones sobre él en la pantalla de repositorios clonados.</p>
+      <h5>Repositorios Clonados</h5>
+      <p>Permite trabajar con repositorios clonados previamente, proporcionando una descripción breve y un botón para comenzar a trabajar con el repositorio clonado. Incluye opciones para gestionar ramas (ver, crear, eliminar, cambiar), pull requests (crear, ver, fusionar) y otras acciones generales en el repositorio.</p>
+    </section>
+
+    <section>
+      <h4>Página de Testing Automático</h4>
+      <p>Esta sección proporciona una interfaz para gestionar scripts YAML guardados y ejecutar pruebas automáticas. Ofrece una zona de ejecución donde se pueden gestionar y ejecutar scripts de prueba, así como visualizar resultados.</p>
+    </section>
+
+    <section>
+      <h4>Página Testeo de TPAs</h4>
+      <p>Esta página está dedicada a probar TPAs específicos, permitiendo la creación, edición y ejecución de pruebas de TPA. Incluye herramientas para gestionar y analizar los resultados de las pruebas.</p>
+    </section>
+
+    <section>
+      <h4>Página de Configuración</h4>
+      <p>Esta página permite configurar diversos aspectos del sistema, incluyendo la gestión de tokens para acceder a repositorios y otras configuraciones necesarias para el funcionamiento del sistema TP-Tester.</p>
+    </section>
+    <p>Este apartado proporciona un manual detallado para usuarios, permitiendo una comprensión completa y un uso eficiente del sistema TP-Tester, cubriendo desde la página de inicio hasta la configuración y ejecución de pruebas automáticas y manuales.</p>
+  </div>
+
+
+
+  <div *ngIf="projectName === 'Jump Marius'">
+    <h2>JUMP MARIUS</h2>
+    <div class="button-container">
+      <a href="https://github.com/Antoniiosc7/JumpMarius" target="_blank" class="btn-tfg card social-icon">
+        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">Ver Repositorio</span>
+      </a>
+    </div>
+    <div style="text-align: center;">
+      <img src="/assets/imagenes/jump-marius/logo.png" width="43%">
+    </div>
+    <p>Jump Marius es un emocionante juego de plataformas creado con Pygame. Únete a Marius en un emocionante viaje a través de diversos niveles llenos de desafíos, enemigos y paisajes impresionantes.</p>
+
+    <h4><strong>Versión:</strong> 1.0.0</h4>
+    <h5>Notas de la Versión:</h5>
+    <ul>
+      <li><strong>Nuevos Mundos:</strong> Ahora, el editor permite guardar directamente el mundo en la carpeta correcta y antes de iniciar cada partida se puede seleccionar en qué mundo comenzar la partida, además que el editor ya contiene nuevos bloques para que crear estos mundos.</li>
+      <li><strong>Menú de selección de personajes:</strong> Implementado un nuevo menú que permite elegir entre 3 de los personajes que se encuentran en el juego.
+        <div style="text-align: center;">
+          <img src="/assets/imagenes/jump-marius/characterSelector.png" width="50%">
+        </div>
+      </li>
+      <li><strong>Mejoras Gráficas:</strong> Implementación de los nuevos personajes aunque aún con bugs en la renderización de los mismos dentro de juego.</li>
+      <li><strong>Nuevos Tilesets:</strong> Implementado en el editor 2 nuevos tilesets para poder crear mapas con nuevos bloques.</li>
+      <li><strong>Launcher:</strong> Está creado el launcher que permitirá que tras loguearte se inicie el juego aunque aún no se pueden registrar usuarios y el único usuario es "user" y la contraseña "password."
+        <div style="text-align: center;">
+          <img src="/assets/imagenes/jump-marius/launcher.png" width="23%">
+        </div>
+      </li>
+      <li><strong>Menú de Configuración:</strong> Nuevo menú de configuración que por el momento solo permite cambiar las dimensiones del juego.</li>
+      <li><strong>Bloque Final:</strong> Hasta ahora, el juego no tenía final; en esta versión, el juego se acabará al tocar un bloque llamado "final," creado como ejemplo o al tocar el palo de la bandera.
+        <div style="text-align: center;">
+          <img src="/assets/imagenes/jump-marius/bloqueFinal.png" width="50%">
+        </div>
+      </li>
+      <li><strong>Script de inicio:</strong> Añadido el ejecutable "JumpMarius.bat" que ejecuta el juego directamente.</li>
+    </ul>
+
+    <h5>To-Do List:</h5>
+    <ul>
+      <li>Correcto funcionamiento del launcher y todas sus funcionalidades.</li>
+      <li>Implementar más niveles y desafíos.</li>
+      <li>Añadir opciones de configuración avanzada.</li>
+      <li>Mejorar la interfaz de usuario.</li>
+      <li>Añadir al menú de configuración la opción de idioma y que el idioma se cambie automáticamente en todos los menús al cambiarlo.</li>
+    </ul>
+
+    <h5>Bugs:</h5>
+    <ul>
+      <li>Mala hitbox del personaje principal.</li>
+      <li>Los menús secundarios no funcionan correctamente; se queda de fondo la opción que no está marcada.</li>
+    </ul>
+
+    <h5>Colaboradores:</h5>
+    <p>Cualquier persona puede colaborar y abrir su pull request para contribuir al desarrollo de Jump Marius. ¡Tu ayuda es bienvenida!</p>
+
+    <h5>Créditos:</h5>
+    <ul>
+      <li>Introducción a Pygame y primeras funcionalidades del juego: <a href="https://twitter.com/DaFluffyPotato">&#64;DaFluffyPotato</a></li>
+      <li>Nuevos tilesets: <a href="https://www.kenney.nl">Kenney</a></li>
+    </ul>
+
+
+  </div>
+</body>

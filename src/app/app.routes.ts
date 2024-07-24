@@ -3,11 +3,13 @@ import {CookiePolicyPageComponent} from "./pages/cookie-policy-page/cookie-polic
 import {NgModule} from "@angular/core";
 import {HomeComponent} from "./pages/home/home.component";
 import {TfgComponent} from "./pages/proyectos/tfg/tfg.component";
+import {ProjectDetailComponent} from "./pages/proyectos/projectdetail/projectdetail.component";
 
 export const routes: Routes = [
   { path: 'cookie-policy', component: CookiePolicyPageComponent },
   { path: '', component: HomeComponent},
-  { path: 'proyectos/tfg', component: TfgComponent},
+  //{ path: 'proyectos/tfg', component: TfgComponent},
+  { path: 'proyectos/:nombreProyecto', component: ProjectDetailComponent },
   { path: '**', redirectTo: '/' }
 ];
 

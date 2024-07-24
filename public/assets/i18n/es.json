@@ -93,8 +93,141 @@
   },
   "PROJECTS": {
     "TITLE": "Proyectos",
-    "1": "Back",
-    "2": "Search",
-    "3": "Search..."
+    "LIST": [
+      {
+        "TITLE": "Jump Marius",
+        "DESCRIPTION": "Juego de plataformas en 2D realizado con la librería de Python, Pygame.",
+        "REPO_URL": "https://github.com/Antoniiosc7/JumpMarius",
+        "LINKS": true,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Jersey Detection",
+        "DESCRIPTION": "Detección de texto en imágenes, principalmente basado en camisetas de futbol que detectan el jugador. Hecho en Python.",
+        "REPO_URL": "https://github.com/Antoniiosc7/JerseyDetection",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Twitch Clips",
+        "DESCRIPTION": "Integración de la api de twitch en una página svelte que permite ver los clips más populares de los streamers de League of Legends. Realizado con Svelte.",
+        "REPO_URL": "https://github.com/Antoniiosc7/TwitchClips",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Api Tennis",
+        "DESCRIPTION": "Este repositorio crea una API usando Javascript y Expressjs sobre estadísticas de tenis. Hecho en JavaScript",
+        "REPO_URL": "https://github.com/Antoniiosc7/TFG-Server",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "Juego de la Serpiente",
+        "DESCRIPTION": "Es una recreación del clásico juego de la serpiente que tiene que comer manzanas evitando chocarse tanto con los bordes como con los obstáculos intermedio. Hecho usando Haskell.",
+        "REPO_URL": "https://github.com/Antoniiosc7/TFG-Server",
+        "LINKS": false,
+        "IS_TFG": false
+      },
+      {
+        "TITLE": "<strong>TRABAJO FIN DE GRADO</strong> - Modelado y Prueba de TPAs en el marco de DORA",
+        "DESCRIPTION": "He desarrollado un microservicio que se integra en el ecosistema de Bluejay para facilitar la creación de métricas.",
+        "TFG_LINK": "/proyectos/tfg",
+        "REPO_URL": "https://github.com/Antoniiosc7/tp-tester",
+        "LINKS": true,
+        "IS_TFG": true
+      }
+    ]
+  },
+  "JUMP_MARIUS": {
+    "TITLE": "JUMP MARIUS",
+    "LOGO_SRC": "assets/recursos/logo.png",
+    "LANGUAGE_OPTIONS": {
+      "SPANISH": {
+        "FLAG_SRC": "assets/readmeContent/spain.png",
+        "TEXT": "Español"
+      },
+      "ENGLISH": {
+        "FLAG_SRC": ["assets/readmeContent/us.png", "assets/readmeContent/uk.png"],
+        "TEXT": "English"
+      }
+    },
+    "ESPANOL": {
+      "TITLE": "Español",
+      "FLAG_SRC": "assets/readmeContent/spain.png",
+      "DESCRIPTION": "Jump Marius es un emocionante juego de plataformas creado con Pygame. Únete a Marius en un emocionante viaje a través de diversos niveles llenos de desafíos, enemigos y paisajes impresionantes.",
+      "VERSION": "Versión: 1.0.0",
+      "RELEASE_NOTES": "Notas de la Versión:",
+      "NEW_WORLDS": "Nuevos Mundos: Ahora, el editor permite guardar directamente el mundo en la carpeta correcta y antes de iniciar cada partida se puede seleccionar en qué mundo comenzar la partida, además que el editor ya contiene nuevos bloques para que crear estos mundos.",
+      "CHARACTER_SELECTION": "Menú de selección de personajes: Implementado un nuevo menú que permite elegir entre 3 de los personajes que se encuentran en el juego.",
+      "CHARACTER_SELECTOR_IMG": "assets/readmeContent/characterSelector.png",
+      "GRAPHIC_IMPROVEMENTS": "Mejoras Gráficas: Implementación de los nuevos personajes aunque aún con bugs en la renderización de los mismos dentro de juego.",
+      "NEW_TILESETS": "Nuevos Tilesets: Implementado en el editor 2 nuevos tilesets para poder crear mapas con nuevos bloques.",
+      "LAUNCHER": "Launcher: Está creado el launcher que permitirá que tras loguearte se inicie el juego aunque aún no se pueden registrar usuarios y el único usuario es 'user' y la contraseña 'password.'",
+      "LAUNCHER_IMG": "assets/readmeContent/launcher.png",
+      "CONFIGURATION_MENU": "Menú de Configuración: Nuevo menú de configuración que por el momento solo permite cambiar las dimensiones del juego.",
+      "FINAL_BLOCK": "Bloque Final: Hasta ahora, el juego no tenía final; en esta versión, el juego se acabará al tocar un bloque llamado 'final,' creado como ejemplo o al tocar el palo de la bandera.",
+      "FINAL_BLOCK_IMG": "assets/readmeContent/bloqueFinal.png",
+      "STARTUP_SCRIPT": "Script de inicio: Añadido el ejecutable 'JumpMarius.bat' que ejecuta el juego directamente.",
+      "TODO_LIST": "To-Do List:",
+      "TODO_ITEMS": [
+        "Correcto funcionamiento del launcher y todas sus funcionalidades.",
+        "Implementar más niveles y desafíos.",
+        "Añadir opciones de configuración avanzada.",
+        "Mejorar la interfaz de usuario.",
+        "Añadir al menú de configuración la opción de idioma y que el idioma se cambie automáticamente en todos los menús al cambiarlo."
+      ],
+      "BUGS": "Bugs:",
+      "BUG_ITEMS": [
+        "Mala hitbox del personaje principal.",
+        "Los menús secundarios no funcionan correctamente; se queda de fondo la opción que no está marcada."
+      ],
+      "COLLABORATORS": "Colaboradores:",
+      "COLLABORATION_DESC": "Cualquier persona puede colaborar y abrir su pull request para contribuir al desarrollo de Jump Marius. ¡Tu ayuda es bienvenida!",
+      "CREDITS": "Créditos:",
+      "CREDITS_ITEMS": [
+        "Introducción a Pygame y primeras funcionalidades del juego: https://twitter.com/DaFluffyPotato",
+        "Nuevos tilesets: https://www.kenney.nl"
+      ]
+    },
+    "ENGLISH": {
+      "TITLE": "English",
+      "FLAG_SRC": ["assets/readmeContent/us.png", "assets/readmeContent/uk.png"],
+      "DESCRIPTION": "Jump Marius is an exciting platformer game created with Pygame. Join Marius on a thrilling journey through various levels filled with challenges, enemies, and stunning landscapes.",
+      "VERSION": "Version: 1.0.0",
+      "RELEASE_NOTES": "Release Notes:",
+      "NEW_WORLDS": "New Worlds: The editor now allows you to save the world directly to the correct folder, and before starting each game, you can choose which world to start in. The editor also includes new blocks to create these worlds.",
+      "CHARACTER_SELECTION": "Character Selection Menu: Implemented a new menu that allows you to choose from 3 characters in the game.",
+      "CHARACTER_SELECTOR_IMG": "assets/readmeContent/characterSelector.png",
+      "GRAPHIC_IMPROVEMENTS": "Graphic Improvements: Implementation of new characters, although there are still rendering bugs in the game.",
+      "NEW_TILESETS": "New Tilesets: Two new tilesets are implemented in the editor to create maps with new blocks.",
+      "LAUNCHER": "Launcher: The launcher is created to start the game after logging in, although user registration is not yet possible, and the only user is 'user' with the password 'password.'",
+      "LAUNCHER_IMG": "assets/readmeContent/launcher.png",
+      "CONFIGURATION_MENU": "Configuration Menu: New configuration menu that currently only allows changing the game's dimensions.",
+      "FINAL_BLOCK": "Final Block: Until now, the game had no ending. In this version, the game will end by touching a block called 'final,' created as an example, or by touching the flagpole.",
+      "FINAL_BLOCK_IMG": "assets/readmeContent/bloqueFinal.png",
+      "STARTUP_SCRIPT": "Startup Script: Added the executable 'JumpMarius.bat' that runs the game directly.",
+      "TODO_LIST": "To-Do List:",
+      "TODO_ITEMS": [
+        "Proper functioning of the launcher and all its features.",
+        "Implement more levels and challenges.",
+        "Add advanced configuration options.",
+        "Improve the user interface.",
+        "Add a language option to the configuration menu and automatically change the language in all menus when changed."
+      ],
+      "BUGS": "Bugs:",
+      "BUG_ITEMS": [
+        "Poor hitbox for the main character.",
+        "Secondary menus do not work correctly; the unselected option remains in the background."
+      ],
+      "COLLABORATORS": "Collaborators:",
+      "COLLABORATION_DESC": "Anyone can collaborate and open a pull request to contribute to the development of Jump Marius. Your help is welcome!",
+      "CREDITS": "Credits:",
+      "CREDITS_ITEMS": [
+        "Introduction to Pygame and initial game features: https://twitter.com/DaFluffyPotato",
+        "New tilesets: https://www.kenney.nl"
+      ]
+    }
   }
 }
+
