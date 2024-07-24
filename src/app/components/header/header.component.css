@@ -52,6 +52,9 @@ h2 {
 .social-icon {
   background-color: transparent; /* Ajusta esto al color deseado o déjalo transparente */
 }
+.fas.fa-moon{
+  color: white;
+}
 header {
   background-color: var(--background-color);
   color: var(--text-color);

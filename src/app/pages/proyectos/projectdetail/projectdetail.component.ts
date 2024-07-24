@@ -3,12 +3,14 @@ import {ActivatedRoute} from "@angular/router";
 import {NgIf} from "@angular/common";
 import {MatDialog} from "@angular/material/dialog";
 import {PdfViewerPopupComponent} from "../../../components/pdf-viewer-popup/pdf-viewer-popup.component";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-projectdetail',
   standalone: true,
   imports: [
-    NgIf
+    NgIf,
+    TranslateModule
   ],
   templateUrl: './projectdetail.component.html',
   styleUrl: './projectdetail.component.css'

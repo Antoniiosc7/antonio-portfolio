@@ -6,7 +6,6 @@ import {ProjectsComponent} from "../../general-components/projects/projects.comp
 import {HeaderComponent} from "../../components/header/header.component";
 import {Title} from "@angular/platform-browser";
 import {RouterLink} from "@angular/router";
-import {InfoComponent} from "../../general-components/info/info.component";
 
 @Component({
   selector: 'app-home',
@@ -18,8 +17,6 @@ import {InfoComponent} from "../../general-components/info/info.component";
     ProjectsComponent,
     HeaderComponent,
     RouterLink,
-
-    InfoComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

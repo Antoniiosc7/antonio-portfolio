@@ -1,106 +1,106 @@
 <body>
   <div *ngIf="projectName === 'tfg' || projectName === '<strong>TRABAJO FIN DE GRADO</strong> - Modelado y Prueba de TPAs en el marco de DORA'">
 
-    <h2>TRABAJO FIN DE GRADO - Modelado y Prueba de TPAs en el marco de DORA
+    <h2>{{ 'TFG.TITLE' | translate }}
     </h2>
     <div class="button-container">
       <button class="card social-icon btn-tfg" (click)="openPdfViewer('tfg/TFG_AntonioSaborido.pdf', 'Trabajo Fin de Grado')">
-        <i class="fas fa-file-alt" style="margin-right: 8px;"></i><span class="social-icon-text">Ver Memoria</span>
+        <i class="fas fa-file-alt" style="margin-right: 8px;"></i><span class="social-icon-text">{{ 'TFG.POPUP' | translate }}</span>
       </button>
       <a href="https://github.com/Antoniiosc7/tp-tester" target="_blank" class="btn-tfg card social-icon">
-        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">Ver Repositorio</span>
+        <i class="fas fa-code-branch" style="margin-right: 8px;"></i> <span class="social-icon-text">{{ 'TFG.REPOSITORY' | translate }}</span>
       </a>
     </div>
-    <h3> Introducción </h3>
-    <p>Este Trabajo de Fin de Grado (TFG) se enfoca en el desarrollo de un sistema informático, aplicando buenas prácticas de desarrollo de software y metodologías ágiles. A lo largo del proyecto, se abordaron diversas fases, desde la planificación y análisis hasta la implementación y evaluación, con el objetivo de crear un sistema eficiente y adaptable.</p>
+    <h3> {{ 'TFG.INTRO' | translate }} </h3>
+    <p>{{ 'TFG.INTRO1' | translate }}</p>
 
-    <p>El proyecto establece el contexto y los objetivos, tanto en términos técnicos como académicos. Los objetivos técnicos incluyen la creación de un sistema que mejore la eficiencia y calidad del desarrollo de software, mientras que los objetivos académicos se centran en la aplicación práctica de conocimientos teóricos adquiridos durante la carrera.</p>
+    <p>{{ 'TFG.INTRO2' | translate }}</p>
 
-    <p>La metodología ágil fue adoptada para el desarrollo del proyecto, permitiendo una gestión flexible y dinámica a través de sprints. Se utilizaron herramientas como GitHub, TogglTrack, Google Calendar y Google Chat para una organización eficiente y un seguimiento detallado del progreso.</p>
+    <p>{{ 'TFG.INTRO3' | translate }}</p>
 
-    <p>Se realizó una auditoría de las buenas prácticas del equipo, enfocándose en Bluejay y las TPAs (Team Performance Assessments), incluyendo una exploración de visualizaciones en Grafana y un manual para la creación de widgets personalizados.</p>
+    <p>{{ 'TFG.INTRO4' | translate }}</p>
 
-    <p>El análisis del sistema define el objetivo y describe su arquitectura y diseño funcional, abordando tanto el frontend como el backend y proporcionando una visión completa de su diseño y funcionalidad.</p>
+    <p>{{ 'TFG.INTRO5' | translate }}</p>
 
-    <p>La implementación del sistema se describe detalladamente, incluyendo el entorno de desarrollo y el stack tecnológico utilizado, así como detalles específicos de la implementación como las traducciones, la gestión de archivos locales y la ejecución de casos de prueba.</p>
+    <p>{{ 'TFG.INTRO6' | translate }}</p>
 
-    <p>Se incluyen manuales para el despliegue y uso del sistema, ofreciendo instrucciones detalladas para el despliegue en modo desarrollo, producción y aplicación, así como una guía de referencia para el archivo de configuración y un tutorial sobre el ciclo de creación de un TPA.</p>
+    <p>{{ 'TFG.INTRO7' | translate }}</p>
 
-    <p>El documento concluye con un análisis de los problemas encontrados durante el desarrollo y propone soluciones y trabajos futuros, destacando la importancia de las metodologías ágiles en el desarrollo de software y el valor de la aplicación práctica de conocimientos teóricos.</p>
+    <p>{{ 'TFG.INTRO8' | translate }}</p>
 
-    <p>En resumen, se proporciona una visión detallada y estructurada del desarrollo de un proyecto de software, desde la introducción y la metodología hasta la implementación y los manuales de uso, concluyendo con un análisis de problemas y propuestas para futuros trabajos.</p>
-    <h3> Investigación de gráficas </h3>
-    <p> Las visualizaciones del dashboard que utiliza Bluejay se hacen en grafana, para ello podríamos utilizar las visualizaciones básicas que incluye Grafana o utilizar visualizaciones externas. Para profundizar esto, se elaboró una investigación para conocer las gráficas que estaban disponible por defecto en grafana, las que necesitaban de un plugin externo o las que eran necesario crear este plugin externo.</p>
+    <p>{{ 'TFG.INTRO9' | translate }}</p>
+    <h3> {{ 'TFG.RESEARCH' | translate }} </h3>
+    <p>{{ 'TFG.RESEARCH1' | translate }}</p>
 
-    <p> Esta investigación arrojó los siguientes resultados:</p>
+    <p>{{ 'TFG.RESEARCH2' | translate }}</p>
     <div class="image-container">
       <img src="/assets/imagenes/tfg/grafico-soporte.png" id="imagen1" alt="Gráfico Soporte Grafana">
       <img src="/assets/imagenes/tfg/tabla soporte grafana.png" alt="Tabla Soporte Grafana">
     </div>
-    <p> Es decir, 1 de cada 3 gráficas tiene soporte nativo ya integrado en Grafana, el 28,33% requieren de algún plugin que ya ha sido creado y el 38% no tienen soporte nativo ni plugin creado, aunque sería sencillo crear un plugin que lo crease utiliazando librerías de gráficas como Highchart para ello.</p>
+    <p>{{ 'TFG.RESEARCH3' | translate }}</p>
     <section>
-      <h3> Estructura del proyecto </h3>
-      <p>La aplicación se divide en dos partes principales: el frontend desarrollado en Angular y el backend en Express. Ambos están diseñados para ser modulares, escalables y mantener una estructura clara. Además, el frontend interactúa con la API propia (backend), con la API de GitHub y con la API de Bluejay, lo que permite una amplia gama de funcionalidades y una integración eficiente con servicios externos.</p>
+      <h3>{{ 'TFG.PROJECTSTRUCTURE' | translate }} </h3>
+      <p>{{ 'TFG.PROJECTSTRUCTURE1' | translate }}</p>
       <div class="image-center">
         <img src="/assets/imagenes/tfg/estructura-servicio.png" alt="Estructura">
       </div>
-      <h4>Frontend</h4>
+      <h4>{{ 'TFG.PROJECTSTRUCTURE2' | translate }}</h4>
       <ul>
-        <li>Modelos: Definen la estructura de los datos para tipar respuestas y peticiones HTTP.</li>
-        <li>Servicios: Encargados de la comunicación con el backend y APIs externas, incluyendo servicios para repositorios, TPAs, Bluejay y GitHub.</li>
-        <li>Componentes: Bloques reutilizables de UI para funcionalidades específicas como gestión de TPAs, panel de métricas, integración con GitHub, y más.</li>
-        <li>Páginas: Vistas completas que agrupan componentes para ofrecer funcionalidades principales como gestión de TPAs, visualización de métricas, y tests con GitHub.</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE3' | translate }}</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE4' | translate }}</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE5' | translate }}</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE6' | translate }}</li>
       </ul>
-      <h4>Backend</h4>
+      <h4>{{ 'TFG.PROJECTSTRUCTURE7' | translate }}</h4>
       <ul>
-        <li>Gestión de Repositorios: Incluye clonado, gestión de archivos y ejecución de scripts.</li>
-        <li>Manejo de Métricas, Scripts y TPAs: Operaciones CRUD y gestión de TPAs.</li>
-        <li>Documentación API: Utilización de Swagger para documentar la API, facilitando su uso y pruebas.</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE8' | translate }}</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE9' | translate }}</li>
+        <li>{{ 'TFG.PROJECTSTRUCTURE10' | translate }}</li>
       </ul>
-      <p>Esta estructura permite una interacción eficiente entre el frontend y el backend, asegurando una gestión adecuada de métricas, TPAs y repositorios, además de facilitar la integración con APIs externas.</p>
+      <p>{{ 'TFG.PROJECTSTRUCTURE11' | translate }}</p>
     </section>
-    <h3> Estructura de las páginas</h3>
+    <h3>{{ 'TFG.PAGESSTRUCTURE' | translate }}</h3>
     <img src="/assets/imagenes/tfg/Estructura.png" alt="Gráfico Soporte Grafana">
     <section>
-      <h4>Página de Inicio</h4>
-      <p>Al iniciar TP-Tester, la página inicial es "Home". Esta página contiene una organización por secciones del contenido equivalente al archivo Readme del proyecto, describiendo el funcionamiento de cada página. En la parte izquierda, se puede navegar a todas las secciones disponibles de la documentación, y en la parte superior derecha, se puede seleccionar el idioma de visualización entre español e inglés.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE12' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE2' | translate }}</p>
 
     </section>
 
     <section>
-      <h4>Página Testear Métricas</h4>
-      <p>Esta página está diseñada para gestionar y probar métricas, proporcionando una interfaz amigable para visualizar, crear y gestionar métricas. Se accede desde cualquier página haciendo clic en “Metrics”.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE3' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE4' | translate }}</p>
       <img src="/assets/imagenes/tfg/Imagen2.png" alt="Testing metricas" class="full-width-image">
 
-      <h5>Estructura de la Página</h5>
-      <p>La página muestra todas las métricas guardadas en dos grandes tablas: una para métricas relacionadas con el TPA y otra para métricas individuales no relacionadas con ningún TPA específico. Cada fila de la tabla incluye el nombre de la métrica y botones para ver, ejecutar/editar, y eliminar la métrica. Además, hay una sección para crear nuevas métricas introduciendo el contenido en un área de texto y guardándolas como JSON.</p>
+      <h5>{{ 'TFG.PAGESSTRUCTURE5' | translate }}</h5>
+      <p>{{ 'TFG.PAGESSTRUCTURE6' | translate }}</p>
     </section>
 
     <section>
-      <h4>Testeo Manual</h4>
-      <p>Esta página permite clonar nuevos repositorios o trabajar con repositorios ya clonados. Al entrar, se pueden ver todos los repositorios accesibles mediante un token, y cada repositorio tiene botones para ver detalles y editar.</p>
-      <h5>Clonar Nuevos Repositorios</h5>
-      <p>Se pueden ver los repositorios accesibles con el token introducido, mostrando detalles del repositorio y permitiendo clonar el repositorio para realizar acciones sobre él en la pantalla de repositorios clonados.</p>
-      <h5>Repositorios Clonados</h5>
-      <p>Permite trabajar con repositorios clonados previamente, proporcionando una descripción breve y un botón para comenzar a trabajar con el repositorio clonado. Incluye opciones para gestionar ramas (ver, crear, eliminar, cambiar), pull requests (crear, ver, fusionar) y otras acciones generales en el repositorio.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE7' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE8' | translate }}</p>
+      <h5>{{ 'TFG.PAGESSTRUCTURE9' | translate }}</h5>
+      <p>{{ 'TFG.PAGESSTRUCTURE10' | translate }}</p>
+      <h5>{{ 'TFG.PAGESSTRUCTURE11' | translate }}</h5>
+      <p>{{ 'TFG.PAGESSTRUCTURE12' | translate }}</p>
     </section>
 
     <section>
-      <h4>Página de Testing Automático</h4>
-      <p>Esta sección proporciona una interfaz para gestionar scripts YAML guardados y ejecutar pruebas automáticas. Ofrece una zona de ejecución donde se pueden gestionar y ejecutar scripts de prueba, así como visualizar resultados.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE13' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE14' | translate }}</p>
       <img src="/assets/imagenes/tfg/Imagen3.png" alt="Testing automatico" class="full-width-image">
     </section>
 
     <section>
-      <h4>Página Testeo de TPAs</h4>
-      <p>Esta página está dedicada a probar TPAs específicos, permitiendo la creación, edición y ejecución de pruebas de TPA. Incluye herramientas para gestionar y analizar los resultados de las pruebas.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE15' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE16' | translate }}</p>
     </section>
 
     <section>
-      <h4>Página de Configuración</h4>
-      <p>Esta página permite configurar diversos aspectos del sistema, incluyendo la gestión de tokens para acceder a repositorios y otras configuraciones necesarias para el funcionamiento del sistema TP-Tester.</p>
+      <h4>{{ 'TFG.PAGESSTRUCTURE17' | translate }}</h4>
+      <p>{{ 'TFG.PAGESSTRUCTURE18' | translate }}</p>
     </section>
-    <p>Este apartado proporciona un manual detallado para usuarios, permitiendo una comprensión completa y un uso eficiente del sistema TP-Tester, cubriendo desde la página de inicio hasta la configuración y ejecución de pruebas automáticas y manuales.</p>
+    <p>{{ 'TFG.PAGESSTRUCTURE19' | translate }}</p>
   </div>
 
 

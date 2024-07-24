@@ -27,6 +27,7 @@ export class HeaderComponent {
 
   toggleTheme(): void {
     this.themeService.toggleTheme();
+    this.isDarkTheme = !this.isDarkTheme;
   }
 
   openPdfViewer(pdfUrl: string, pdfName: string): void {

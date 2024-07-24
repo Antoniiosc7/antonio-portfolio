@@ -103,6 +103,10 @@ header, .social-icon-text {
   --text-color: #fff;
 }
 
+[data-theme="dark"] .fas.fa-external-link-alt {
+  color: var(--text-color); /* Utiliza el color de texto definido para el modo oscuro */
+}
+
 [data-theme="dark"] .timeline-content {
   background-color: #333!important; /* Fondo más oscuro para el contenido de la línea de tiempo */
   color: #fff; /* Texto en blanco para mejorar la legibilidad */
@@ -111,6 +115,7 @@ header, .social-icon-text {
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 

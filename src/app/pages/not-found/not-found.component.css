@@ -1,0 +1,41 @@
+.not-found-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.not-found-image {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.home-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #0056b3;
+}
+.error-number {
+  margin-top: -30px;
+  font-size: 120px; /* Tamaño grande para el número */
+  font-weight: bold; /* Hacer el número más grueso */
+  color: #007bff; /* Color del tema, ajusta según tu diseño */
+  margin-bottom: 20px; /* Espacio antes del título */
+  /* Opcional: Añade más estilos como sombras o efectos para hacerlo más atractivo */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra ligera para dar profundidad */
+}
