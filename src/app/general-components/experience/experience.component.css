@@ -11,7 +11,11 @@
   box-sizing: border-box;
   left: 7%; /* Ajustar para alinear correctamente con la línea y las fechas */
 }
-
+@media (max-width: 768px) {
+  .timeline-item {
+    width: 100%!important; /* Establece el ancho al 100% para pantallas pequeñas */
+  }
+}
 .timeline-date {
   position: absolute;
   margin-left: 80px;

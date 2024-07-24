@@ -84,3 +84,9 @@ body{
     width: 233px !important;
   }
 }
+.full-width-image {
+  width: 40%;
+  display: block;
+  margin: auto;
+  height: auto;
+}
