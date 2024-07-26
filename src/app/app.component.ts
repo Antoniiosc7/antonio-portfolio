@@ -1,3 +1,4 @@
+import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent } from "@ng-doc/app";
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {ProjectsComponent} from "./general-components/projects/projects.component";
@@ -13,7 +14,7 @@ import {TranslateModule} from "@ngx-translate/core";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProjectsComponent, ExperienceComponent, EducationComponent, AboutComponent, CookiePolicyComponent, HeaderComponent, FooterComponent, NgIf, TranslateModule],
+  imports: [RouterOutlet, ProjectsComponent, ExperienceComponent, EducationComponent, AboutComponent, CookiePolicyComponent, HeaderComponent, FooterComponent, NgIf, TranslateModule, NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

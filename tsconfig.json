@@ -3,6 +3,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@ng-doc/generated": [
+        "./ng-doc/portfolio-antonio/index.ts"
+      ],
+      "@ng-doc/generated/*": [
+        "./ng-doc/portfolio-antonio/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
