@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {RouterOutlet, Routes} from '@angular/router';
 import {NgDocNavbarComponent, NgDocRootComponent, NgDocSidebarComponent} from "@ng-doc/app";
+import {InicioComponent} from "./inicio/inicio.component";
 
 @Component({
   selector: 'ng-doc-docs',
@@ -8,7 +9,7 @@ import {NgDocNavbarComponent, NgDocRootComponent, NgDocSidebarComponent} from "@
     <ng-doc-root>
       <ng-doc-navbar [leftContent]="leftContent">
         <ng-template #leftContent>
-          <h3 style="margin: 0">MyAwesomeDoc</h3>
+          <h3 style="margin: 0">Blog</h3>
         </ng-template>
       </ng-doc-navbar>
       <ng-doc-sidebar></ng-doc-sidebar>
@@ -30,7 +31,7 @@ export class DocsComponent {}
 const routes: Routes = [
   {
     path: '',
-    component: DocsComponent,
+    component: InicioComponent,
   },
 ];
 
