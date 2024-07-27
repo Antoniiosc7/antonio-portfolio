@@ -1,0 +1,69 @@
+<div *ngIf="user" class="user-container">
+  <div class="user-info">
+    <h2>Perfil de Usuario</h2>
+    <p>Nombre: {{ user.nombre }}</p>
+    <p>Apellido: {{ user.apellido }}</p>
+    <p>Email: {{ user.mail }}</p>
+  </div>
+  <div class="user-image">
+    <img src="{{ user.profileImg }}" alt="Imagen de perfil">
+  </div>
+</div>
+<form (ngSubmit)="applyFilters($event)">
+  <div class="filter-container">
+    <mat-form-field appearance="fill">
+      <mat-label>Capítulo del Examen</mat-label>
+      <input matInput #chapterInput (input)="applyFilter(chapterInput.value)" placeholder="Filtrar por Capítulo">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha de Inicio</mat-label>
+      <input matInput [matDatepicker]="picker1" placeholder="Selecciona una fecha" (dateChange)="applyDateFilter($event.value, 'start')" (focus)="openDatePicker1()">
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Fecha Fin</mat-label>
+      <input matInput [matDatepicker]="picker2" placeholder="Selecciona una fecha" (dateChange)="applyDateFilter($event.value, 'end')" (focus)="openDatePicker2()">
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <button type="submit">Aplicar Filtros</button>
+</form>
+<div *ngIf="resultadosConDetalles.data.length > 0">
+  <h3>Últimos Resultados de Exámenes</h3>
+  <table mat-table [dataSource]="resultadosConDetalles" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="capituloExamen">
+      <th mat-header-cell *matHeaderCellDef> Capítulo del Examen </th>
+      <td mat-cell *matCellDef="let elemento"> {{elemento.capituloExamen}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="nombreExamen">
+      <th mat-header-cell *matHeaderCellDef> Nombre del Examen </th>
+      <td mat-cell *matCellDef="let elemento"> {{elemento.nombreExamen}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="resultado">
+      <th mat-header-cell *matHeaderCellDef> Resultado </th>
+      <td mat-cell *matCellDef="let elemento"> {{elemento.resultado}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fechaDeInicio">
+      <th mat-header-cell *matHeaderCellDef> Fecha de Inicio </th>
+      <td mat-cell *matCellDef="let elemento"> {{elemento.fechaDeInicio | date:'medium'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fechaFin">
+      <th mat-header-cell *matHeaderCellDef> Fecha Fin </th>
+      <td mat-cell *matCellDef="let elemento"> {{elemento.fechaFin | date:'medium'}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

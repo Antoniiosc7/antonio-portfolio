@@ -1,0 +1,24 @@
+<!-- Mostrar tiempo restante -->
+<div class="timer">
+  Tiempo restante: {{ formatTime(timeLeft) }}
+</div>
+<div *ngFor="let pregunta of preguntas; let preguntaIndex = index">
+  <hr>
+  <p>{{ preguntaIndex + 1 }}. {{ pregunta.pregunta }}</p>
+  <pre *ngIf="pregunta.codigo">{{ pregunta.codigo }}</pre>
+  <div *ngFor="let opcion of pregunta.opciones; let opcionIndex = index" class="opcion-container">
+    <input type="checkbox" [id]="'opcion' + preguntaIndex + '-' + opcionIndex" [name]="'pregunta' + pregunta.id"
+           [ngClass]="{'correcta': mostrarResultados && pregunta.respuestasCorrectas.includes(getOpcionLetra(opcionIndex)), 'incorrecta': mostrarResultados && !pregunta.respuestasCorrectas.includes(getOpcionLetra(opcionIndex))}"
+           (change)="seleccionarRespuesta(pregunta.id, getOpcionLetra(opcionIndex), $event)"
+           [disabled]="mostrarResultados">
+    <label [for]="'opcion' + preguntaIndex + '-' + opcionIndex">{{ getOpcionLetra(opcionIndex) }}. {{ opcion }}</label>
+  </div>
+  <div *ngIf="mostrarResultados" [ngClass]="{'correcto': esRespuestaCorrecta(pregunta), 'incorrecto': !esRespuestaCorrecta(pregunta)}">
+    <p>Respuesta correcta: {{ pregunta.respuestasCorrectas.join(', ') }}</p>
+    <p>Explicación: {{ pregunta.explicacion }}</p>
+  </div>
+</div>
+<button (click)="finalizarCuestionario()" [disabled]="mostrarResultados">Finalizar</button>
+<div *ngIf="mostrarResultados">
+  <p>Tu puntuación es: {{ puntuacion }}</p>
+</div>

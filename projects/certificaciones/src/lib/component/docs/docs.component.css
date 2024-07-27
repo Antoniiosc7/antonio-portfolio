@@ -1,0 +1,20 @@
+body{
+  margin-right:-10%;
+  margin-left:-12.5%;
+  margin-top: 100px!important;
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0!important;
+}
+
+.introduction {
+  max-width: 60%;
+  padding: 20px;
+}
+.ng-doc-sidebar {
+  margin-top: var(--ng-doc-sidebar-top-margin);
+}

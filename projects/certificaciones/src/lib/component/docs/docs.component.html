@@ -1,0 +1,29 @@
+
+<!--
+<ng-doc-root>
+  <ng-doc-navbar [leftContent]="leftContent">
+    <ng-template #leftContent>
+      <h3 style="margin: 0">MyAwesomeDoc</h3>
+    </ng-template>
+  </ng-doc-navbar>
+  <ng-doc-sidebar></ng-doc-sidebar>
+  <router-outlet></router-outlet>
+</ng-doc-root>
+
+-->
+<body>
+<ng-doc-root>
+
+  <app-header ngDocCustomNavbar></app-header>
+
+  <div class="content-container">
+    <div class="introduction">
+      <h2>Certificación Java 17</h2>
+      <p>La certificación Java 17 es una validación de tus habilidades y conocimientos en la última versión de Java. Cubre características avanzadas de Java, incluyendo módulos, APIs nuevas, y mejoras en el lenguaje que te ayudarán a desarrollar aplicaciones más eficientes y robustas.</p>
+    </div>
+  </div>
+  <ng-doc-sidebar></ng-doc-sidebar>
+  <router-outlet></router-outlet>
+
+</ng-doc-root>
+</body>

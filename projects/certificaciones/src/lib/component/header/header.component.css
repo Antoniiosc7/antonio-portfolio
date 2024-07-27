@@ -1,0 +1,55 @@
+header {
+  background-color: #333; /* Color de fondo más oscuro para un look moderno */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+nav ul li {
+  margin: 10px 20px; /* Espaciado uniforme */
+}
+
+nav ul li a {
+  color: #fff; /* Color de texto claro */
+  text-decoration: none;
+  font-weight: 500; /* Peso de fuente menos bold */
+  font-size: 18px; /* Tamaño de fuente ajustado */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+nav ul li a:hover, .active {
+  color: #4CAF50; /* Color de acento al pasar el mouse y para el activo */
+  text-decoration: none; /* Remueve el subrayado al pasar el mouse */
+}
+
+nav ul li a img {
+  transition: transform 0.3s ease; /* Transición suave para la transformación */
+}
+
+nav ul li a:hover img {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+button {
+  background-color: #4CAF50; /* Color de fondo para el botón */
+  color: white; /* Color de texto para el botón */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a pointer */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+button:hover {
+  background-color: #45a049; /* Oscurece el botón al pasar el mouse */
+}

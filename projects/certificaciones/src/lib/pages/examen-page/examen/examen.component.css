@@ -1,0 +1,107 @@
+.correcta {
+  color: green;
+  background-color: lightgreen;
+
+}
+
+.incorrecta {
+  color: red;
+  background-color: lightcoral;
+
+}
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+/* Estilos generales para el contenedor de preguntas */
+div.pregunta-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Estilo para las preguntas */
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Estilo para el código */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  margin-top: 5px;
+}
+
+/* Estilo para las opciones de respuesta */
+div.opcion-container {
+  margin: 10px 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilo para el botón de finalizar */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para mostrar resultados */
+div.resultados-container {
+  margin-top: 20px;
+}
+
+.correcta {
+  color: lightgreen;
+}
+
+.incorrecta {
+  color: lightcoral;
+}
+
+p.explicacion {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+p.puntuacion {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+}
+input[type="radio"].correcta {
+  background-color: lightgreen;
+}
+
+input[type="radio"].incorrecta {
+  background-color: lightcoral;
+}

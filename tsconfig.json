@@ -9,6 +9,12 @@
       ],
       "@ng-doc/generated/*": [
         "./ng-doc/portfolio-antonio/*"
+      ],
+      "blog": [
+        "./dist/blog"
+      ],
+      "certificaciones": [
+        "./dist/certificaciones"
       ]
     },
     "outDir": "./dist/out-tsc",

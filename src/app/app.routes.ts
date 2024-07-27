@@ -1,6 +1,7 @@
+// src/app/app.routes.ts
 import { RouterModule, Routes } from '@angular/router';
-import { CookiePolicyPageComponent } from './pages/cookie-policy-page/cookie-policy-page.component';
 import { NgModule } from '@angular/core';
+import { CookiePolicyPageComponent } from './pages/cookie-policy-page/cookie-policy-page.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectDetailComponent } from './pages/proyectos/projectdetail/projectdetail.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -15,8 +16,12 @@ export const routes: Routes = [
   { path: 'docs', component: DocsComponent, children: [
       { path: '', component: InicioComponent },
       ...NG_DOC_ROUTING
-
     ]},
+  { path: 'blog', loadChildren: () => import('blog').then(m => m.BlogModule) },
+  { path: 'blog/:subpagina', loadChildren: () => import('blog').then(m => m.BlogModule) },
+  { path: 'certificaciones', loadChildren: () => import('certificaciones').then(m => m.CertificacionesModule) },
+  { path: 'certificaciones/:subpagina', loadChildren: () => import('certificaciones').then(m => m.CertificacionesModule) },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
