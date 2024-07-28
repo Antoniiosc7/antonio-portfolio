@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {ProjectsComponent} from "./general-components/projects/projects.component";
 import {ExperienceComponent} from "./general-components/experience/experience.component";
@@ -9,6 +9,7 @@ import {HeaderComponent} from "./components/header/header.component";
 import {FooterComponent} from "./components/footer/footer.component";
 import {NgIf} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-root',
@@ -17,9 +18,20 @@ import {TranslateModule} from "@ngx-translate/core";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  constructor() {}
+export class AppComponent implements OnInit{
+  constructor(private meta: Meta, private title: Title) {}
 
   cookiesAccepted = localStorage.getItem('cookiesAccepted') === 'true';
-
+  ngOnInit() {
+    this.title.setTitle('Antonio Saborido');
+    this.meta.addTags([
+      { name: 'description', content: 'Curriculum de Antonio Saborido' },
+      { property: 'og:title', content: 'Antonio Saborido' },
+      { property: 'og:description', content: 'Curriculum' },
+      { property: 'og:image', content: 'https://antoniosaborido.es/foto.png' },
+      { property: 'og:url', content: 'https://antoniosaborido.es/' },
+      { property: 'og:locale', content: 'es_ES' },
+      { property: 'og:locale:alternate', content: 'en_US' }
+    ]);
+  }
 }
