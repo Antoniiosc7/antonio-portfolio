@@ -1,0 +1,816 @@
+[
+  {
+    "breadcrumbs": [
+      "Installation"
+    ],
+    "pageType": "guide",
+    "title": "Installation",
+    "section": "Installation",
+    "route": "/docs/installation",
+    "fragment": "installation",
+    "content": "It's time to write some awesome docs!"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "TFG Bluejay - TP Tester",
+    "route": "/docs/tfg",
+    "fragment": "tfg",
+    "content": "Este proyecto es una extensión de Bluejay. La documentación oficial de Bluejay se puede encontrar en: docs.bluejay.governify.io. Siendo una extensión de Bluejay, es esencial para el funcionamiento completo de Bluejay-Tester."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Índice",
+    "route": "/docs/tfg",
+    "fragment": "índice",
+    "content": "Bluejay - TP TesterIntroducción¿Qué es Bluejay?¿Cuál es el propósito de Bluejay-TP Tester?Cómo empezarModo de desarrolloCon DockerGestión de TPAPágina de TPAEdición de TPAMétricasCargador de MétricasVisor de MétricasEjecutor de MétricasPágina de Pruebas ManualesClonar Nuevo RepositorioRepositorio ClonadoPruebas AutomatizadasEstructura de la PáginaCarga de Archivos YAMLEjecución de PruebasVisualización de ResultadosResultados de las PruebasVariables a UtilizaractualTimevalueminExpectedValuemaxExpectedValueexpectedValuePágina de ConfiguraciónObtener Token de GithubDocumentación de la API SwaggerTraducciones"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "¿Qué es Bluejay?",
+    "route": "/docs/tfg",
+    "fragment": "qué-es-bluejay",
+    "content": "Bluejay Infrastructure es una infraestructura basada en Governify que permite auditar fácilmente a los equipos ágiles. Está compuesta por un subconjunto de microservicios de Governify que se pueden desplegar en una sola máquina o en un clúster. Bluejay accede a múltiples fuentes para recopilar información sobre los equipos de desarrollo, como GitLab, Jira, Slack, etc., y utiliza esta información para verificar si estos equipos cumplen con un Acuerdo de Prácticas de Equipo (TPA) que incluye métricas y garantías relacionadas con la metodología ágil."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "¿Cuál es el propósito de Bluejay-TP Tester?",
+    "route": "/docs/tfg",
+    "fragment": "cuál-es-el-propósito-de-bluejay-tp-tester",
+    "content": "El propósito de este TP-Tester es, como su nombre indica, primero probar las métricas que componen los TP (Prácticas de Equipo). Una vez que se ha verificado que estas métricas funcionan correctamente, TP-Tester permite comprobar que todo el TPA (Acuerdo de Prácticas de Equipo) funciona correctamente. Para ello, puedes añadir, eliminar o modificar TPAs que están directamente en Bluejay desde este TP Tester."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "Para levantar Bluejay-TP Tester en modo de desarrollo, sigue estos pasos:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "Clona el repositorio de Bluejay-TP Tester. Instala las dependencias con "
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "npm install"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": ". Levanta el proyecto con "
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "npm start"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Modo de desarrollo",
+    "route": "/docs/tfg",
+    "fragment": "modo-de-desarrollo",
+    "content": "Esto sería suficiente ya que el proyecto usa concurrently y levanta tanto el servidor express como angular al mismo tiempo. El servidor Express (API de GlassMatrix) se levanta en el puerto 6012 y la aplicación Angular en el puerto 4200."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "Para levantar Bluejay-TP Tester con docker, sigue estos pasos:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "Clona el repositorio de Bluejay-TP Tester. Instala las dependencias con "
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "npm install"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": ". Ejecuta "
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "npm run docker"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Con Docker",
+    "route": "/docs/tfg",
+    "fragment": "con-docker",
+    "content": "Con esto, tendríamos el proyecto levantado en el puerto 6011 la web angular, y el servidor express en el puerto 6012."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Gestión de TPA PÁGINA DE TPA",
+    "route": "/docs/tfg",
+    "fragment": "gestión-de-tpa",
+    "content": "La página de gestión de TPA permite visualizar e interactuar con aquellos TPAs que están dentro de Bluejay."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "TPAs existentes",
+    "route": "/docs/tfg",
+    "fragment": "tpas-existentes",
+    "content": "Esta sección muestra una tabla de todos los TPAs existentes. Cada fila de la tabla representa un solo TPA, mostrando su ID, proyecto y clase. También hay varios botones de acción para cada TPA: El botón Copiar permite copiar el contenido de un TPA en el área de texto inferior.El botón Ver navega a una vista detallada del TPA.El botón Editar navega a una página donde puedes editar el TPA.El botón Eliminar elimina el TPA de la base de datos de Bluejay."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Crear TPA",
+    "route": "/docs/tfg",
+    "fragment": "crear-tpa",
+    "content": "Esta sección permite crear un nuevo TPA. Proporciona un área de texto donde puedes introducir el contenido del nuevo TPA. Hay dos botones: El botón Crear TPA crea un nuevo TPA con el contenido que has introducido en el área de texto.El botón Copiar TPA por defecto llena el área de texto con el contenido de un TPA por defecto, que luego puedes modificar y crear como un nuevo TPA."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Edición de TPA",
+    "route": "/docs/tfg",
+    "fragment": "edición-de-tpa",
+    "content": "Cuando haces clic en el botón de edición de un TPA, entrarás en una subpágina que te dará acceso a otras dos subpáginas. Una donde puedes editar todo el TPA.Y otra donde puedes editar el TPA por secciones."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "EDITAR TPA COMPLETO",
+    "route": "/docs/tfg",
+    "fragment": "editar-tpa-completo",
+    "content": "Aquí podrás editar el contenido del TPA en un área de texto con el contenido actual del TPA y un botón de guardar que actualizará ese contenido"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "EDITAR TPA POR SECCIONES",
+    "route": "/docs/tfg",
+    "fragment": "editar-tpa-por-secciones",
+    "content": "En esta página puedes editar el TPA por secciones, editando o eliminando cada métrica y garantía del TPA. Y también puedes añadir nuevas métricas y garantías. Si seleccionas el botón \"más\", generará una métrica individual para que la revises y pruebes, y te redirigirá a la nueva página con esa métrica creada."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Métricas",
+    "route": "/docs/tfg",
+    "fragment": "métricas",
+    "content": "La página de Carga de Métricas está diseñada para gestionar y probar las métricas. Proporciona una interfaz de usuario amigable para visualizar, crear y gestionar métricas."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Métricas existentes",
+    "route": "/docs/tfg",
+    "fragment": "métricas-existentes",
+    "content": "Aquí puedes ver todas las métricas guardadas, clasificadas en dos grandes tablas. Una tabla consta de aquellas guardadas desde la sección de TPA, que estarán relacionadas con el TPA al que pertenecían. La otra tabla contiene métricas individuales guardadas, que no están relacionadas con ningún TPA específico. Cada fila de la tabla representa una única métrica, mostrando su nombre y proporcionando botones de acción: El botón Ver navega a una vista detallada de la métrica.El botón Ejecutar/Editar navega a una página donde puedes ejecutar o editar la métrica.El botón Eliminar elimina la métrica."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Crear nueva métrica",
+    "route": "/docs/tfg",
+    "fragment": "crear-nueva-métrica",
+    "content": "Esta sección permite crear una nueva métrica. Proporciona un área de texto donde puedes introducir el contenido de la nueva métrica. Hay dos botones: El botón Publicar publica el contenido que has introducido en el área de texto en la API de Bluejay para su cálculo.El botón Obtener Cálculo recupera los resultados del cálculo de la API de Bluejay. En esta sección, también puedes ver un tutorial que te guiará a través del proceso de creación de una nueva métrica. Además, puedes guardar tu métrica como un archivo JSON."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Visor de Métricas",
+    "route": "/docs/tfg",
+    "fragment": "visor-de-métricas",
+    "content": "La página del Visor de Métricas te permite ver los detalles de una métrica específica. Muestra la representación JSON actual de la métrica."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecutor de Métricas",
+    "route": "/docs/tfg",
+    "fragment": "ejecutor-de-métricas",
+    "content": "La página del Ejecutor de Métricas te permite ejecutar una métrica específica. Proporciona una interfaz de usuario amigable para ver y modificar los detalles de la métrica, y para ejecutar la métrica."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Detalles de la Métrica",
+    "route": "/docs/tfg",
+    "fragment": "detalles-de-la-métrica",
+    "content": "Esta sección muestra los detalles de la métrica. Proporciona varios campos de entrada donde puedes modificar los detalles de la métrica: El campo Proyectos te permite especificar el proyecto asociado a la métrica.El campo Clase te permite especificar la clase asociada a la métrica.El campo Periodo te permite especificar el periodo para la métrica."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Búsqueda de Cálculos",
+    "route": "/docs/tfg",
+    "fragment": "búsqueda-de-cálculos",
+    "content": "Esta sección te permite especificar los parámetros para el cálculo de la métrica. Proporciona varios campos de entrada: El campo Tipo te permite especificar el tipo de cálculo.El campo Periodo te permite especificar el periodo para el cálculo.El campo Inicial te permite especificar la fecha inicial para el cálculo.El campo Desde te permite especificar la fecha de inicio para el cálculo.El campo Hasta te permite especificar la fecha de finalización para el cálculo.El campo Zona horaria te permite especificar la zona horaria para el cálculo. También hay varios botones: El botón Establecer a la hora actual establece los parámetros de cálculo a la hora actual.El botón Guardar como JSON guarda la métrica y sus detalles como un archivo JSON.El botón Tutorial abre un diálogo de tutorial."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Sección de Ejecución",
+    "route": "/docs/tfg",
+    "fragment": "sección-de-ejecución",
+    "content": "Esta sección te permite ejecutar la métrica. Proporciona un área de texto donde puedes ver la representación JSON de la métrica.También hay varios botones: El botón Publicar envía la métrica a la API de Bluejay para su cálculo.El botón Obtener Cálculo recupera los resultados del cálculo de la API de Bluejay."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de Pruebas Manuales",
+    "route": "/docs/tfg",
+    "fragment": "página-de-pruebas-manuales",
+    "content": "La página de Pruebas Manuales proporciona una interfaz amigable para probar la funcionalidad de la aplicación. Ofrece dos opciones principales: crear un nuevo repositorio o trabajar con un repositorio clonado."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Clonar Nuevo Repositorio",
+    "route": "/docs/tfg",
+    "fragment": "clonar-nuevo-repositorio",
+    "content": "Aquí puedes ver todos los repositorios a los que tiene acceso el token introducido. Cada repositorio también tendrá dos botones: el botón \"Ver\", que te redirigirá a la página de GitHub del repositorio, y el botón \"Editar\", que te llevará a la página de clonación."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de Clonación",
+    "route": "/docs/tfg",
+    "fragment": "página-de-clonación",
+    "content": "La página de Clonación te permite clonar un repositorio específico. Muestra los detalles del repositorio, incluyendo su nombre, descripción, propietario, tiempo de creación, tiempo de actualización, lenguaje, visibilidad, y una lista de todas las ramas. También proporciona un botón para clonar el repositorio."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Repositorio Clonado",
+    "route": "/docs/tfg",
+    "fragment": "repositorio-clonado",
+    "content": "Esta sección te permite trabajar con un repositorio clonado. Proporciona una breve descripción del proceso y un botón para comenzar a trabajar con el repositorio clonado."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de Ramas",
+    "route": "/docs/tfg",
+    "fragment": "página-de-ramas",
+    "content": "La página te permite gestionar las ramas de un repositorio. Ofrece opciones para ver las ramas, crear una nueva rama, eliminar una rama, y cambiar la rama actual."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de Pull Requests",
+    "route": "/docs/tfg",
+    "fragment": "página-de-pull-requests",
+    "content": "La página de Pull Requests proporciona una interfaz amigable para gestionar las pull requests de un repositorio. Ofrece opciones para crear una nueva pull request, ver las pull requests abiertas, y fusionar una pull request."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de Acciones",
+    "route": "/docs/tfg",
+    "fragment": "página-de-acciones",
+    "content": "La página de Acciones es una interfaz para gestionar un repositorio. Ofrece opciones para ver las ramas disponibles, cambiar la rama actual, crear un nuevo archivo, crear un nuevo commit, empujar cambios, ver archivos en el repositorio, y gestionar problemas."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Pruebas Automatizadas",
+    "route": "/docs/tfg",
+    "fragment": "pruebas-automatizadas",
+    "content": "Carga de Archivos YAMLEjecución de PruebasMétodos GETMétodos POSTMétodos PUTMétodos DELETEMétodos TESTVisualización de ResultadosResultados de las PruebasVariables a UtilizaractualTimevalueminExpectedValuemaxExpectedValueexpectedValue"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Estructura de la Página",
+    "route": "/docs/tfg",
+    "fragment": "estructura-de-la-página",
+    "content": "Esta página es una interfaz de usuario para ejecutar y probar scripts. Estos scripts tendrán un formato .yaml, e interactuarán con la API de GitHub y los Repositorios para probar métricas ya creadas. La página se divide en varias secciones:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Carga de Archivos YAML",
+    "route": "/docs/tfg",
+    "fragment": "carga-de-archivos-yaml",
+    "content": "En la parte superior de la página, hay una tabla que muestra todos los archivos YAML disponibles. Los usuarios pueden copiar el contenido del archivo, ver el archivo, editar el archivo, o eliminar el archivo."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "En la sección de ejecución, los usuarios pueden introducir el nombre del archivo YAML que quieren ejecutar. También pueden guardar el contenido actual del cuadro de texto (debe seguir el formato de ejemplo y las llamadas se ejecutarán secuencialmente), Los usuarios podrán seguir una serie de \"pasos\". Los \"pasos\" son acciones que se pueden realizar en el sistema. Estos pasos están predefinidos y realizan métodos HTTP (como 'GET', 'POST', 'PUT', 'DELETE') a las acciones correspondientes. Aquí están los posibles pasos:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "Métodos GET"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "github/getIssue: Este paso obtiene los problemas de un repositorio específico en GitHub.github/getOpenPR: Este paso obtiene las pull requests abiertas de un repositorio específico en GitHub.github/pullCurrentBranch: Este paso realiza un pull de la rama actual en un repositorio específico.github/listRepos: Este paso lista todos los repositorios.github/getBranches: Este paso obtiene todas las ramas de un repositorio específico.github/getRepoInfo: Este paso obtiene información sobre un repositorio específico y una rama específica."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "Métodos POST"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "github/mergeLastOpenPR: Este paso fusiona la última pull request abierta en un repositorio específico en GitHub.bluejay/compute/tpa: Este paso carga los datos de un archivo y luego realiza un cálculo sobre los datos.bluejay/compute/metric: Este paso carga los datos de un archivo y luego realiza un cálculo sobre los datos.bluejay/checkContain: Este paso (que está marcado como obsoleto) comprueba si un valor específico está presente en los datos obtenidos de una API.github/createIssue: Este paso crea un nuevo problema en un repositorio específico en GitHub.github/createPR: Este paso crea una nueva pull request en un repositorio específico en GitHub.github/cloneRepo: Este paso clona un repositorio específico.github/createBranch: Este paso crea una nueva rama en un repositorio específico.github/createFile: Este paso crea un nuevo archivo en un repositorio específico.github/createCommit: Este paso crea un nuevo commit en un repositorio específico.github/commitAllChanges: Este paso hace commit de todos los cambios en un repositorio específico.github/pushChanges: Este paso empuja todos los cambios en un repositorio específico."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "Métodos PUT"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "github/mergePR: Este paso fusiona una pull request específica en un repositorio específico en GitHub.github/changeBranch: Este paso cambia a una rama específica en un repositorio específico."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "Métodos DELETE"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "github/deleteRepo: Este paso elimina un repositorio específico.github/deleteBranch: Este paso elimina una rama específica de un repositorio.github/deleteFile: Este paso elimina un archivo específico de un repositorio."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "Métodos TEST"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejecución de Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "ejecución-de-pruebas",
+    "content": "bluejay/check: Este paso realiza una serie de comprobaciones sobre los datos obtenidos de una API. Comprueba si el valor de una clave específica cumple ciertas condiciones (como un valor mínimo esperado, un valor máximo esperado, o un valor exacto esperado).bluejay/findCheck: Este paso es similar a bluejay/check pero tiene un formato diferente que te permite comprobar más campos a la vez. Cada paso se ejecuta en base a los datos proporcionados en el cuadro de texto que se está procesando."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Visualización de Resultados",
+    "route": "/docs/tfg",
+    "fragment": "visualización-de-resultados",
+    "content": "Después de ejecutar el bloque de pruebas, los resultados se muestran en un área de texto de solo lectura. Si el script realizó un cálculo, los resultados de ese cálculo también se muestran en un área de texto de solo lectura."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Resultados de las Pruebas",
+    "route": "/docs/tfg",
+    "fragment": "resultados-de-las-pruebas",
+    "content": "En la columna derecha de la página, los usuarios pueden ver los resultados de las pruebas que se han ejecutado. Cada resultado de la prueba se muestra en su propia tarjeta, y los usuarios pueden eliminar los resultados de las pruebas individuales."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "actualTime",
+    "route": "/docs/tfg",
+    "fragment": "actualtime",
+    "content": "Para calcular la métrica con la hora actual, debes añadir actualTime: \"true\" al método \"bluejay/compute/metric\". Si, por otro lado, quieres que utilice la hora original de la métrica, puedes eliminar \"actualTime\" o establecerlo en \"false\"."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "value",
+    "route": "/docs/tfg",
+    "fragment": "value",
+    "content": "Si hay múltiples resultados, puedes usar la métrica \"value\" para comprobar sólo aquellas evidencias que tienen el campo \"value\" en el valor establecido."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "minExpectedValue",
+    "route": "/docs/tfg",
+    "fragment": "minexpectedvalue",
+    "content": "La prueba será exitosa si hay algún campo llamado como el campo clave, en este caso \"additions\" cuyo valor es numérico y es mayor que 5."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "maxExpectedValue",
+    "route": "/docs/tfg",
+    "fragment": "maxexpectedvalue",
+    "content": "La prueba será exitosa si hay algún campo llamado como el campo clave, en este caso \"additions\" cuyo valor es numérico y es menor que 12."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "expectedValue",
+    "route": "/docs/tfg",
+    "fragment": "expectedvalue",
+    "content": "La prueba será exitosa si hay algún campo llamado como el campo clave, en este caso \"additions\" cuyo valor es numérico o no y es exactamente igual al valor esperado."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La página de configuración proporciona una interfaz amigable para gestionar la configuración de la aplicación. Ofrece opciones para ver los contenedores Docker activos, actualizar la configuración de la aplicación, ver la documentación de Swagger y ver la documentación de la aplicación. La página se divide en varias secciones:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La sección Docker Active muestra una tabla de contenedores Docker activos. Cada fila de la tabla representa un contenedor Docker y proporciona información sobre el ID del contenedor, el nombre, la URL y el puerto."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La sección Github Token proporciona instrucciones sobre cómo obtener un token de Github. También incluye un botón para abrir un diálogo con ayuda adicional."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La sección Constants proporciona un formulario para actualizar la configuración de la aplicación. El formulario incluye campos para la URL base, el recolector predeterminado, la URL de los eventos del recolector, la URL de los acuerdos y la URL de los ámbitos. Hay un botón para enviar el formulario y actualizar la configuración."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La sección Swagger proporciona un enlace a la documentación de Swagger."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Página de configuración",
+    "route": "/docs/tfg",
+    "fragment": "página-de-configuración",
+    "content": "La sección de Documentación proporciona un visor PDF incrustado para ver la documentación de la aplicación. También hay un botón para abrir la documentación en una nueva pestaña."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Obtener token de github",
+    "route": "/docs/tfg",
+    "fragment": "obtener-token-de-github",
+    "content": "Esta es una guía paso a paso sobre cómo crear un token de acceso personal en GitHub:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Obtener token de github",
+    "route": "/docs/tfg",
+    "fragment": "obtener-token-de-github",
+    "content": "En la esquina superior derecha de cualquier página, haz clic en tu foto de perfil, luego haz clic en Configuración. En la barra lateral izquierda, haz clic en Configuración del desarrollador. En la barra lateral izquierda, haz clic en Tokens de acceso personal. Haz clic en Generar nuevo token. En el campo \"Nota\", dale a tu token un nombre descriptivo. Para darle a tu token una caducidad, selecciona Caducidad, luego elige una opción predeterminada o haz clic en Personalizado para ingresar una fecha. Selecciona los ámbitos que te gustaría otorgar a este token. Para usar tu token para acceder a repositorios desde la línea de comandos, selecciona repo. Un token sin ámbitos asignados solo puede acceder a información pública. Para obtener más información, consulta \"Ámbitos para aplicaciones OAuth\". Haz clic en Generar token. Opcionalmente, para copiar el nuevo token a tu portapapeles, haz clic en el icono de dos cuadrados superpuestos."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Obtener token de github",
+    "route": "/docs/tfg",
+    "fragment": "obtener-token-de-github",
+    "content": "Para obtener más información, visita la documentación oficial de GitHub."
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Documentación de la API de Swagger",
+    "route": "/docs/tfg",
+    "fragment": "documentación-de-la-api-de-swagger",
+    "content": "Esta API implementa Swagger para tener siempre todos los puntos finales de la API en un solo lugar junto con una pequeña documentación de la operación de cada punto final. Gracias a Swagger, puedes ver todos los puntos finales y probarlos en su interfaz gráfica que está disponible en: http://localhost:6012/api-docs/"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Ejemplos de uso",
+    "route": "/docs/tfg",
+    "fragment": "ejemplos-de-uso",
+    "content": "A continuación se muestran algunos ejemplos de cómo se ve la API a través de swagger donde puedes ejecutar directamente las llamadas:"
+  },
+  {
+    "breadcrumbs": [
+      "TFG"
+    ],
+    "pageType": "guide",
+    "title": "TFG",
+    "section": "Traducciones",
+    "route": "/docs/tfg",
+    "fragment": "traducciones",
+    "content": "Gracias a la biblioteca ngx-translate (github.com/ngx-translate/core). Por defecto, TP Tester estará en el idioma del navegador. Esta biblioteca también permite agregar traducciones de una manera sencilla ya que sería suficiente traducir el Json de un idioma a otro y no habría necesidad de modificar ningún otro tipo de archivo. Este es un fragmento de cómo funciona el .json del idioma:"
+  },
+  {
+    "breadcrumbs": [
+      "saber mas"
+    ],
+    "pageType": "guide",
+    "title": "saber mas",
+    "section": "saber mas",
+    "route": "/docs/saber-mas",
+    "fragment": "saber-mas",
+    "content": "It's time to write some awesome docs!"
+  }
+]
