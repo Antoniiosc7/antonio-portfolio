@@ -4,6 +4,7 @@ import {NgForOf, NgIf} from "@angular/common";
 import {MatDialog} from "@angular/material/dialog";
 import {PdfViewerPopupComponent} from "../../../components/pdf-viewer-popup/pdf-viewer-popup.component";
 import {TranslateModule} from "@ngx-translate/core";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-projectdetail',
@@ -20,10 +21,25 @@ export class ProjectDetailComponent implements OnInit {
   projectName: string | null = null;
 
   constructor(private route: ActivatedRoute,
-              private dialog: MatDialog) {}
+              private dialog: MatDialog,
+              private meta: Meta,
+              private title: Title,) {}
 
   ngOnInit(): void {
     this.projectName = this.route.snapshot.paramMap.get('nombreProyecto');
+    this.route.params.subscribe(params => {
+      this.projectName = params['nombreProyecto'];
+      this.title.setTitle(`Proyecto: ${this.projectName}`);
+      this.meta.addTags([
+        { name: 'description', content: `Detalles del proyecto ${this.projectName}` },
+        { property: 'og:title', content: `Proyecto: ${this.projectName}` },
+        { property: 'og:description', content: `Detalles del proyecto ${this.projectName}` },
+        { property: 'og:image', content: 'https://antoniosaborido.es/foto.png' },
+        { property: 'og:url', content: `https://antoniosaborido.es/proyectos/${this.projectName}` },
+        { property: 'og:locale', content: 'es_ES' },
+        { property: 'og:locale:alternate', content: 'en_US' }
+      ]);
+    });
   }
 
   openPdfViewer(pdfUrl: string, pdfName: string): void {
