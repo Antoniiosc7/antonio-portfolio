@@ -171,7 +171,7 @@
     <h3>Descripción General</h3>
     <p>El proyecto de certificaciones es una aplicación web desarrollada con Angular 18 en el frontend y Java Spring Tools en el backend. La aplicación está diseñada para ayudar a los usuarios a prepararse para diversas certificaciones mediante la provisión de documentación teórica y exámenes de prueba.</p>
 
-    <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw" alt="Certificaciones" class="cert-image centered-image">
+    <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw" alt="Certificaciones" class="cert-image centered-image" (click)="openImageModal('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw')">
     <h3>Funcionalidades Principales</h3>
     <ol>
       <li>
@@ -187,7 +187,7 @@
           <li>Proporciona información teórica detallada sobre las certificaciones disponibles.</li>
           <li>Los usuarios pueden estudiar el material teórico para prepararse para los exámenes.</li>
         </ul>
-        <img src="/assets/imagenes/certificaciones/imagen2.png" width="66" alt="Imagen de como se ve la documentación dentro de la página" class="centered-image">
+        <img src="/assets/imagenes/certificaciones/imagen2.png" width="66%" alt="Imagen de como se ve la documentación dentro de la página" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen2.png')">
       </li>
       <li>
         <strong>Sección de Exámenes</strong>
@@ -195,7 +195,7 @@
           <li>Permite a los usuarios realizar exámenes de prueba para las certificaciones.</li>
           <li>Al finalizar el examen, el sistema corrige automáticamente las respuestas.</li>
           <li>Proporciona explicaciones detalladas de todas las preguntas, tanto correctas como incorrectas.</li>
-          <img src="/assets/imagenes/certificaciones/imagen3.png" width="66%" alt="Vista de como se ve el examen al ser corregido" class="centered-image">
+          <img src="/assets/imagenes/certificaciones/imagen3.png" width="66%" alt="Vista de como se ve el examen al ser corregido" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen3.png')">
         </ul>
       </li>
     </ol>
@@ -220,7 +220,7 @@
       <li><strong>Certificaciones Disponibles</strong>: Las certificaciones que se pueden preparar se gestionan desde la base de datos, permitiendo agregar o modificar certificaciones sin necesidad de cambiar el frontend.</li>
       <li><strong>Exámenes Disponibles</strong>: Los exámenes se crean y gestionan en la base de datos de forma genérica, permitiendo que tanto Spring Boot como Angular los lean automáticamente sin necesidad de un nuevo despliegue.</li>
       <li><strong>Documentaciones Disponibles</strong>: La documentación teórica también se gestiona desde la base de datos, facilitando la actualización y adición de nuevos contenidos sin modificar el frontend.</li>
-      <img src="/assets/imagenes/certificaciones/imagen1.png" width="66%" alt="Vista de los menus que se cargan desde base de datos" class="centered-image">
+      <img src="/assets/imagenes/certificaciones/imagen1.png" width="66%" alt="Vista de los menus que se cargan desde base de datos" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen1.png')">
     </ul>
 
     <h3>Flujo de Trabajo</h3>
@@ -252,11 +252,13 @@
         <ul>
           <li>Los resultados de los exámenes se guardan en el perfil del usuario.</li>
           <li>Los usuarios pueden ver su historial de exámenes y su progreso a lo largo del tiempo.</li>
-          <img src="/assets/imagenes/certificaciones/imagen4.png" width="66%" alt="Vista del perfil" class="centered-image">
+          <img src="/assets/imagenes/certificaciones/imagen4.png" width="66%" alt="Vista del perfil" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen4.png')">
         </ul>
       </li>
     </ol>
 
     <p>Este proyecto proporciona una plataforma integral para la preparación de certificaciones, combinando teoría y práctica en un solo lugar.</p>
   </div>
+
+  <app-image-modal *ngIf="isImageModalOpen" [imageUrl]="selectedImageUrl" (close)="closeImageModal()"></app-image-modal>
 </body>

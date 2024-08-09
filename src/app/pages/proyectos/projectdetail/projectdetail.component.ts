@@ -1,10 +1,11 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {NgForOf, NgIf} from "@angular/common";
-import {MatDialog} from "@angular/material/dialog";
-import {PdfViewerPopupComponent} from "../../../components/pdf-viewer-popup/pdf-viewer-popup.component";
-import {TranslateModule} from "@ngx-translate/core";
-import {DomSanitizer, Meta, SafeUrl, Title} from "@angular/platform-browser";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { NgForOf, NgIf } from '@angular/common';
+import { MatDialog } from '@angular/material/dialog';
+import { PdfViewerPopupComponent } from '../../../components/pdf-viewer-popup/pdf-viewer-popup.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { DomSanitizer, Meta, Title } from '@angular/platform-browser';
+import {ImageModalComponent} from "../../../components/image-modal/image-modal.component";
 
 @Component({
   selector: 'app-projectdetail',
@@ -12,19 +13,24 @@ import {DomSanitizer, Meta, SafeUrl, Title} from "@angular/platform-browser";
   imports: [
     NgIf,
     TranslateModule,
-    NgForOf
+    NgForOf,
+    ImageModalComponent
   ],
   templateUrl: './projectdetail.component.html',
-  styleUrl: './projectdetail.component.css'
+  styleUrls: ['./projectdetail.component.css']
 })
 export class ProjectDetailComponent implements OnInit {
   projectName: string | null = null;
+  isImageModalOpen = false;
+  selectedImageUrl: string | null = null;
 
-  constructor(private route: ActivatedRoute,
-              private dialog: MatDialog,
-              private meta: Meta,
-              private sanitizer: DomSanitizer,
-              private title: Title,) {}
+  constructor(
+    private route: ActivatedRoute,
+    private dialog: MatDialog,
+    private meta: Meta,
+    private sanitizer: DomSanitizer,
+    private title: Title
+  ) {}
 
   ngOnInit(): void {
     this.projectName = this.route.snapshot.paramMap.get('nombreProyecto');
@@ -42,6 +48,7 @@ export class ProjectDetailComponent implements OnInit {
       ]);
     });
   }
+
   openProductionPage(): void {
     const url = this.sanitizer.bypassSecurityTrustResourceUrl('https://certs.antoniosaborido.es/');
     window.open('https://certs.antoniosaborido.es/', '_blank');
@@ -52,7 +59,6 @@ export class ProjectDetailComponent implements OnInit {
     if (isMobile) {
       window.open(pdfUrl, '_blank');
     } else {
-      // Si no es un dispositivo móvil, abrir el PDF en un pop-up
       this.dialog.open(PdfViewerPopupComponent, {
         width: '80%',
         height: '80%',
@@ -60,5 +66,15 @@ export class ProjectDetailComponent implements OnInit {
         data: { pdfSrc: pdfUrl, pdfName: pdfName }
       });
     }
+  }
+
+  openImageModal(imageUrl: string): void {
+    this.selectedImageUrl = imageUrl;
+    this.isImageModalOpen = true;
+  }
+
+  closeImageModal(): void {
+    this.isImageModalOpen = false;
+    this.selectedImageUrl = null;
   }
 }
