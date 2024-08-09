@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import { NgForOf, NgIf } from "@angular/common";
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,6 +21,12 @@ import { TranslateModule } from "@ngx-translate/core";
 })
 export class ProjectsComponent {
 
+  constructor(private router: Router) {}
+
+  scrollToTopAndNavigate(commands: any[]): void {
+    window.scrollTo(0, 0);
+    this.router.navigate(commands);
+  }
   openRepo(url: string): void {
     window.open(url, '_blank');
   }

@@ -11,10 +11,10 @@
           <p>{{ project.DESCRIPTION }}</p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button *ngIf="project.LINKS && !project.IS_TFG" class="blue-button" [routerLink]="['/proyectos', project.TITLE]">
+          <button mat-button *ngIf="project.LINKS && !project.IS_TFG" class="blue-button" (click)="scrollToTopAndNavigate(['/proyectos', project.TITLE])">
             Ver más
           </button>
-          <button mat-button *ngIf="project.LINKS && project.IS_TFG" class="blue-button" [routerLink]="['/proyectos', 'tfg']">
+          <button mat-button *ngIf="project.LINKS && project.IS_TFG" class="blue-button" (click)="scrollToTopAndNavigate(['/proyectos', 'tfg'])">
             Ver más
           </button>
           <button mat-button *ngIf="project.REPO_URL" (click)="openRepo(project.REPO_URL)">
