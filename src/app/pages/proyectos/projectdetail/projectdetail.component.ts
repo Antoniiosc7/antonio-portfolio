@@ -4,7 +4,7 @@ import {NgForOf, NgIf} from "@angular/common";
 import {MatDialog} from "@angular/material/dialog";
 import {PdfViewerPopupComponent} from "../../../components/pdf-viewer-popup/pdf-viewer-popup.component";
 import {TranslateModule} from "@ngx-translate/core";
-import {Meta, Title} from "@angular/platform-browser";
+import {DomSanitizer, Meta, SafeUrl, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-projectdetail',
@@ -23,6 +23,7 @@ export class ProjectDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private dialog: MatDialog,
               private meta: Meta,
+              private sanitizer: DomSanitizer,
               private title: Title,) {}
 
   ngOnInit(): void {
@@ -40,6 +41,10 @@ export class ProjectDetailComponent implements OnInit {
         { property: 'og:locale:alternate', content: 'en_US' }
       ]);
     });
+  }
+  openProductionPage(): void {
+    const url = this.sanitizer.bypassSecurityTrustResourceUrl('https://certs.antoniosaborido.es/');
+    window.open('https://certs.antoniosaborido.es/', '_blank');
   }
 
   openPdfViewer(pdfUrl: string, pdfName: string): void {

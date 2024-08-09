@@ -93,6 +93,7 @@
   },
   "PROJECTS": {
     "TITLE": "Proyectos",
+    "DEMO": "Demo",
     "LIST": [
       {
         "TITLE": "Jump Marius",
@@ -136,6 +137,13 @@
         "REPO_URL": "https://github.com/Antoniiosc7/tp-tester",
         "LINKS": true,
         "IS_TFG": true
+      },
+      {
+        "TITLE": "Certificaciones",
+        "DESCRIPTION": "He desarrollado una web que te permite estudiar y realizar examenes iguales que lo encontrarás en las certificaciones oficiales. Está realizada con Angular 18 en el front y Spring Boot para el backend.",
+        "LINKS": true,
+        "IS_TFG": false,
+        "DEMO_URL": "https://certs.antoniosaborido.es/"
       }
     ]
   },
