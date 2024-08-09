@@ -160,4 +160,103 @@
       <li *ngFor="let item of ('JUMP_MARIUS.CREDITS_ITEMS' | translate)"><a href="{{ item }}">{{ item }}</a></li>
     </ul>
   </div>
+  <div *ngIf="projectName === 'Certificaciones'">
+    <div class="button-container">
+      <button class="card social-icon btn-cert" (click)="openProductionPage()">
+        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i><span class="social-icon-text">Ver Página en Producción</span>
+      </button>
+    </div>
+    <h2>Proyecto de Certificaciones</h2>
+
+    <h3>Descripción General</h3>
+    <p>El proyecto de certificaciones es una aplicación web desarrollada con Angular 18 en el frontend y Java Spring Tools en el backend. La aplicación está diseñada para ayudar a los usuarios a prepararse para diversas certificaciones mediante la provisión de documentación teórica y exámenes de prueba.</p>
+
+    <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw" alt="Certificaciones" class="cert-image centered-image">
+    <h3>Funcionalidades Principales</h3>
+    <ol>
+      <li>
+        <strong>Registro y Autenticación de Usuarios</strong>
+        <ul>
+          <li>Los usuarios deben registrarse y autenticarse para acceder a las funcionalidades de la aplicación.</li>
+          <li>El sistema guarda los resultados de los exámenes en el perfil del usuario para permitir el seguimiento de su progreso.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Sección de Documentación</strong>
+        <ul>
+          <li>Proporciona información teórica detallada sobre las certificaciones disponibles.</li>
+          <li>Los usuarios pueden estudiar el material teórico para prepararse para los exámenes.</li>
+        </ul>
+        <img src="/assets/imagenes/certificaciones/imagen2.png" width="66" alt="Imagen de como se ve la documentación dentro de la página" class="centered-image">
+      </li>
+      <li>
+        <strong>Sección de Exámenes</strong>
+        <ul>
+          <li>Permite a los usuarios realizar exámenes de prueba para las certificaciones.</li>
+          <li>Al finalizar el examen, el sistema corrige automáticamente las respuestas.</li>
+          <li>Proporciona explicaciones detalladas de todas las preguntas, tanto correctas como incorrectas.</li>
+          <img src="/assets/imagenes/certificaciones/imagen3.png" width="66%" alt="Vista de como se ve el examen al ser corregido" class="centered-image">
+        </ul>
+      </li>
+    </ol>
+
+    <h3>Tecnologías Utilizadas</h3>
+    <ul>
+      <li><strong>Frontend</strong>: Angular 18
+        <ul>
+          <li>Framework de desarrollo frontend para crear interfaces de usuario dinámicas y responsivas.</li>
+        </ul>
+      </li>
+      <li><strong>Backend</strong>: Java Spring Tools
+        <ul>
+          <li>Framework de desarrollo backend para crear servicios RESTful y gestionar la lógica del servidor.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Gestión de Contenidos en Base de Datos</h3>
+    <p>Todo el contenido de la aplicación se gestiona desde la base de datos, lo que elimina la necesidad de modificar el frontend para actualizar las certificaciones, exámenes y documentaciones disponibles. Esto incluye:</p>
+    <ul>
+      <li><strong>Certificaciones Disponibles</strong>: Las certificaciones que se pueden preparar se gestionan desde la base de datos, permitiendo agregar o modificar certificaciones sin necesidad de cambiar el frontend.</li>
+      <li><strong>Exámenes Disponibles</strong>: Los exámenes se crean y gestionan en la base de datos de forma genérica, permitiendo que tanto Spring Boot como Angular los lean automáticamente sin necesidad de un nuevo despliegue.</li>
+      <li><strong>Documentaciones Disponibles</strong>: La documentación teórica también se gestiona desde la base de datos, facilitando la actualización y adición de nuevos contenidos sin modificar el frontend.</li>
+      <img src="/assets/imagenes/certificaciones/imagen1.png" width="66%" alt="Vista de los menus que se cargan desde base de datos" class="centered-image">
+    </ul>
+
+    <h3>Flujo de Trabajo</h3>
+    <ol>
+      <li>
+        <strong>Registro y Login</strong>
+        <ul>
+          <li>Los usuarios se registran proporcionando sus datos personales.</li>
+          <li>Los usuarios inician sesión para acceder a sus perfiles y funcionalidades de la aplicación.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Acceso a la Documentación</strong>
+        <ul>
+          <li>Los usuarios navegan a la sección de documentación para estudiar el material teórico.</li>
+          <li>La documentación está organizada por certificaciones y temas.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Realización de Exámenes</strong>
+        <ul>
+          <li>Los usuarios seleccionan una certificación y realizan un examen de prueba.</li>
+          <li>Al finalizar, el sistema corrige el examen y muestra los resultados.</li>
+          <li>Los usuarios pueden revisar las explicaciones de cada pregunta para entender sus errores.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Seguimiento del Progreso</strong>
+        <ul>
+          <li>Los resultados de los exámenes se guardan en el perfil del usuario.</li>
+          <li>Los usuarios pueden ver su historial de exámenes y su progreso a lo largo del tiempo.</li>
+          <img src="/assets/imagenes/certificaciones/imagen4.png" width="66%" alt="Vista del perfil" class="centered-image">
+        </ul>
+      </li>
+    </ol>
+
+    <p>Este proyecto proporciona una plataforma integral para la preparación de certificaciones, combinando teoría y práctica en un solo lugar.</p>
+  </div>
 </body>
