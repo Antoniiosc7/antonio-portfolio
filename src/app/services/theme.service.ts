@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { PlatformService } from './platform.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,14 +8,20 @@ import { BehaviorSubject } from 'rxjs';
 export class ThemeService {
   private isDarkTheme = new BehaviorSubject<boolean>(false);
 
-  constructor() {
+  constructor(private platformService: PlatformService) {
     this.loadInitialTheme();
   }
 
   toggleTheme() {
-    const newThemeIsDark = document.body.getAttribute('data-theme') !== 'dark';
-    document.body.setAttribute('data-theme', newThemeIsDark ? 'dark' : 'light');
-    this.isDarkTheme.next(newThemeIsDark);
+    if (this.platformService.isBrowser()) {
+      const newThemeIsDark = document.body.getAttribute('data-theme') !== 'dark';
+      document.body.setAttribute('data-theme', newThemeIsDark ? 'dark' : 'light');
+      this.isDarkTheme.next(newThemeIsDark);
+      localStorage.setItem('isDarkTheme', newThemeIsDark.toString());
+    } else {
+      const currentTheme = this.isDarkTheme.value;
+      this.isDarkTheme.next(!currentTheme);
+    }
   }
 
   getThemeStatus() {
@@ -22,7 +29,12 @@ export class ThemeService {
   }
 
   private loadInitialTheme() {
-    const isDark = document.body.getAttribute('data-theme') === 'dark';
-    this.isDarkTheme.next(isDark);
+    if (this.platformService.isBrowser()) {
+      const isDark = localStorage.getItem('isDarkTheme') === 'true';
+      this.isDarkTheme.next(isDark);
+      document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    } else {
+      this.isDarkTheme.next(false);
+    }
   }
 }
