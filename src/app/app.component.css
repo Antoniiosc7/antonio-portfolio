@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.cuerpo {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;

@@ -1,4 +1,4 @@
-<body>
+<div class="cuerpo">
   <div *ngIf="projectName === 'tfg' || projectName === '<strong>TRABAJO FIN DE GRADO</strong> - Modelado y Prueba de TPAs en el marco de DORA'">
 
     <h2>{{ 'TFG.TITLE' | translate }}
@@ -261,4 +261,4 @@
   </div>
 
   <app-image-modal *ngIf="isImageModalOpen" [imageUrl]="selectedImageUrl" (close)="closeImageModal()"></app-image-modal>
-</body>
+</div>
