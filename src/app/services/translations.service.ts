@@ -1,3 +1,4 @@
+// src/app/services/translation.service.ts
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { PlatformService } from './platform.service';
@@ -11,7 +12,7 @@ export class TranslationService {
   constructor(private translate: TranslateService, private platformService: PlatformService) {
     let savedLanguage = 'es';
     if (this.platformService.isBrowser()) {
-      savedLanguage = localStorage.getItem(this.LANGUAGE_KEY) || this.translate.getBrowserLang() || 'es';
+      savedLanguage = this.platformService.getSessionStorageItem(this.LANGUAGE_KEY) || this.translate.getBrowserLang() || 'es';
     } else {
       savedLanguage = this.translate.getBrowserLang() || 'es';
     }
@@ -22,7 +23,7 @@ export class TranslationService {
   changeLanguage(lang: string) {
     this.translate.use(lang);
     if (this.platformService.isBrowser()) {
-      localStorage.setItem(this.LANGUAGE_KEY, lang);
+      this.platformService.setSessionStorageItem(this.LANGUAGE_KEY, lang);
     }
   }
 

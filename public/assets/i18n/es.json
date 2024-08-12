@@ -50,13 +50,13 @@
   },
   "EXPERIENCE": {
     "TITLE": "Experiencia",
-    "TIMELINE": [
+    "TIMELINE":
       {
         "DATE": "Octubre 2023 - Actualidad",
         "TITLE": "Grupo Babel",
         "DESCRIPTION": "Desarrollador FullStack - Jornada completa en remoto"
       }
-    ]
+   
   },
   "COOKIES": {
     "FOOTER": "Política de cookies",
@@ -144,6 +144,14 @@
         "LINKS": true,
         "IS_TFG": false,
         "DEMO_URL": "https://certs.antoniosaborido.es/"
+      },
+      {
+        "TITLE": "Juego de Plataformas 2D en Angular",
+        "DESCRIPTION": " Desarrollo de un juego de plataformas en 2D donde el personaje avanza automáticamente, generando dinámicamente enemigos y obstáculos en posiciones aleatorias, utilizando Angular para la gestión de la lógica de movimiento y colisiones.",
+        "LINKS": true,
+        "IS_TFG": false,
+        "REPO_URL": "https://github.com/Antoniiosc7/angular-plataformas",
+        "DEMO_URL": "https://plataformas.antoniosaborido.es/"
       }
     ]
   },
@@ -291,6 +299,39 @@
       }
     },
     "RESUME": "Este proyecto proporciona una plataforma integral para la preparación de certificaciones, combinando teoría y práctica en un solo lugar."
+  },
+  "GAME": {
+    "TITLE": "2D Platformer Game",
+    "DESCRIPTION": "This project is a 2D platformer game developed using Angular. It is designed to keep the character centered on the screen while automatically moving to the right. As the character progresses, the environment is dynamically generated, with platforms, blocks, and enemies appearing in random positions, creating a constantly changing gameplay experience.",
+    "FEATURES": {
+      "CHARACTER_MOVEMENT": {
+        "TITLE": "Character Movement",
+        "DESCRIPTION": "The character automatically moves to the right, ensuring continuous game progression. If the player presses the right arrow key, the character's speed increases, allowing for faster advancement. Additionally, the player can jump to avoid obstacles or reach higher platforms."
+      },
+      "MAP_SCROLLING": {
+        "TITLE": "Map Scrolling",
+        "DESCRIPTION": "To keep the character always centered on the screen, the map scrolls as the character advances. This means that the environment, including platforms, blocks, and enemies, moves to the left, giving the impression that the character is running forward through an infinite world."
+      },
+      "DYNAMIC_GENERATION": {
+        "TITLE": "Dynamic Generation of Obstacles and Enemies",
+        "DESCRIPTION": "One of the key aspects of this game is the random generation of elements. Platforms, blocks, and enemies are generated in random positions as the map progresses. This system ensures that each game session is unique, offering a constant and renewed challenge."
+      },
+      "COLLISION_DETECTION": {
+        "TITLE": "Collision Detection",
+        "DESCRIPTION": "The game features a collision detection system that constantly checks if the character collides with platforms, blocks, or enemies. If a collision with an enemy is detected, additional logic can be implemented, such as losing a life or restarting the level."
+      },
+      "GRAVITY_PHYSICS": {
+        "TITLE": "Gravity and Game Physics",
+        "DESCRIPTION": "A gravity system has been implemented that affects the character, causing it to fall when not on a platform or block. The character can also jump, and gravity makes it return to the ground after reaching the highest point of the jump."
+      },
+      "USER_INTERACTIVITY": {
+        "TITLE": "User Interactivity",
+        "DESCRIPTION": "The user can control the character using the arrow keys. The right arrow key accelerates the movement, the left arrow key allows for backward movement, and the up arrow key executes a jump."
+      }
+    },
+    "TECHNICAL_IMPLEMENTATION": {
+      "TITLE": "Technical Implementation",
+      "DESCRIPTION": "The game is built entirely in Angular, using modular components to represent the character, enemies, platforms, and blocks. Keyboard event handling and movement logic are implemented using listeners and periodic update functions that keep the game state constantly changing. The collision system is based on comparing the character's coordinates with those of the objects in the map, and the automatic map scrolling is achieved by adjusting the relative positions of the objects in each iteration of the game loop."
+    }
   }
 }
-

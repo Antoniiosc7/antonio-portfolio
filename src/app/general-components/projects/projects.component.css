@@ -71,3 +71,12 @@ button[mat-button] a {
 mat-card-title{
   font-weight: bold;
 }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-item {
+  flex: 1;
+  margin: 0 5px;
+}

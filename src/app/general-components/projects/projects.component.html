@@ -10,18 +10,18 @@
         <mat-card-content>
           <p>{{ project.DESCRIPTION }}</p>
         </mat-card-content>
-        <mat-card-actions>
-          <button mat-button *ngIf="project.LINKS && !project.IS_TFG" class="blue-button" (click)="scrollToTopAndNavigate(['/proyectos', project.TITLE])">
+        <mat-card-actions class="button-container">
+          <button mat-button *ngIf="project.LINKS && !project.IS_TFG" class="blue-button button-item" (click)="scrollToTopAndNavigate(['/proyectos', project.TITLE])">
             Ver más
           </button>
-          <button mat-button *ngIf="project.LINKS && project.IS_TFG" class="blue-button" (click)="scrollToTopAndNavigate(['/proyectos', 'tfg'])">
+          <button mat-button *ngIf="project.LINKS && project.IS_TFG" class="blue-button button-item" (click)="scrollToTopAndNavigate(['/proyectos', 'tfg'])">
             Ver más
           </button>
-          <button mat-button *ngIf="project.REPO_URL" (click)="openRepo(project.REPO_URL)">
-            <i class="fab fa-github"></i> {{ 'TFG.REPOSITORY' | translate }}
-          </button>
-          <button mat-button *ngIf="project.DEMO_URL"  class="green-button" (click)="openRepo(project.DEMO_URL)">
+          <button mat-button *ngIf="project.DEMO_URL" class="green-button button-item" (click)="openRepo(project.DEMO_URL)">
             {{ 'PROJECTS.DEMO' | translate }}
+          </button>
+          <button mat-button *ngIf="project.REPO_URL" class="button-item" (click)="openRepo(project.REPO_URL)">
+            <i class="fab fa-github"></i> {{ 'TFG.REPOSITORY' | translate }}
           </button>
         </mat-card-actions>
       </mat-card>

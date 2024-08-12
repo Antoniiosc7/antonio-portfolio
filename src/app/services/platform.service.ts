@@ -1,3 +1,4 @@
+// src/app/services/platform.service.ts
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -9,5 +10,15 @@ export class PlatformService {
 
   isBrowser(): boolean {
     return isPlatformBrowser(this.platformId);
+  }
+
+  setSessionStorageItem(key: string, value: string): void {
+  }
+
+  getSessionStorageItem(key: string): string | null {
+    if (this.isBrowser()) {
+      return sessionStorage.getItem(key);
+    }
+    return null;
   }
 }
