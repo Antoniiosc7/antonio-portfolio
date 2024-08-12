@@ -232,10 +232,65 @@
     "COLLABORATORS": "Colaboradores:",
     "COLLABORATION_DESC": "Cualquier persona puede colaborar y abrir su pull request para contribuir al desarrollo de Jump Marius. ¡Tu ayuda es bienvenida!",
     "CREDITS": "Créditos:",
-    "CREDITS_ITEMS": [
-      "Introducción a Pygame y primeras funcionalidades del juego: https://twitter.com/DaFluffyPotato",
-      "Nuevos tilesets: https://www.kenney.nl"
-    ]
+    "CREDITS_ITEMS1": "Introducción a Pygame y primeras funcionalidades del juego: @DaFluffyPotato",
+    "CREDITS_ITEMS2": "Nuevos tilesets: www.kenney.nl"
+  },
+  "CERTIFICACIONES": {
+    "PRODUCCION": "Ver Página en Producción",
+    "TITULO": "Proyecto de Certificaciones",
+    "DESCRIPCION": "Descripción General",
+    "DESCRIPCION_TEXT":"El proyecto de certificaciones es una aplicación web desarrollada con Angular 18 en el frontend y Java Spring Tools en el backend. La aplicación está diseñada para ayudar a los usuarios a prepararse para diversas certificaciones mediante la provisión de documentación teórica y exámenes de prueba.",
+    "FUNCIONALIDADES": "Funcionalidades Principales",
+    "REGISTRO": "Registro y Autenticación de Usuarios",
+    "REGISTRO_TEXT": "Los usuarios deben registrarse y autenticarse para acceder a las funcionalidades de la aplicación.",
+    "REGISTRO_TEXT2": "El sistema guarda los resultados de los exámenes en el perfil del usuario para permitir el seguimiento de su progreso.",
+    "DOCUMENTACION": "Sección de Documentación",
+    "DOCUMENTACION_TEXT": "Proporciona información teórica detallada sobre las certificaciones disponibles.",
+    "DOCUMENTACION_TEXT2": "Los usuarios pueden estudiar el material teórico para prepararse para los exámenes.",
+    "EXAMENES": "Sección de Exámenes",
+    "EXAMENES_TEXT": "Permite a los usuarios realizar exámenes de prueba para las certificaciones.",
+    "EXAMENES_TEXT2": "Al finalizar el examen, el sistema corrige automáticamente las respuestas.",
+    "EXAMENES_TEXT3": "Proporciona explicaciones detalladas de todas las preguntas, tanto correctas como incorrectas.",
+    "TECNOLOGIAS": "Tecnologías Utilizadas",
+    "TECNOLOGIAS_TEXT": "Frontend",
+    "TECNOLOGIAS_TEXT2": "Angular 18",
+    "TECNOLOGIAS_TEXT3": "Framework de desarrollo frontend para crear interfaces de usuario dinámicas y responsivas.",
+    "TECNOLOGIAS_TEXT4": "Backend",
+    "TECNOLOGIAS_TEXT5": "Java Spring Tools",
+    "TECNOLOGIAS_TEXT6": "Framework de desarrollo backend para crear servicios RESTful y gestionar la lógica del servidor.",
+    "BBDD": "Gestión de Contenidos en Base de Datos",
+    "BBDD_TEXT": "Todo el contenido de la aplicación se gestiona desde la base de datos, lo que elimina la necesidad de modificar el frontend para actualizar las certificaciones, exámenes y documentaciones disponibles. Esto incluye:",
+    "BBDD_TEXT2": "Certificaciones Disponibles",
+    "BBDD_TEXT3": "Las certificaciones que se pueden preparar se gestionan desde la base de datos, permitiendo agregar o modificar certificaciones sin necesidad de cambiar el frontend.",
+    "BBDD_TEXT4": "Exámenes Disponibles",
+    "BBDD_TEXT5": "Los exámenes se crean y gestionan en la base de datos de forma genérica, permitiendo que tanto Spring Boot como Angular los lean automáticamente sin necesidad de un nuevo despliegue.",
+    "BBDD_TEXT6": "Documentaciones Disponibles",
+    "BBDD_TEXT7": "La documentación teórica también se gestiona desde la base de datos, facilitando la actualización y adición de nuevos contenidos sin modificar el frontend.",
+    "WORKFLOW": {
+      "TITULO": "Flujo de Trabajo",
+      "AUTH": {
+        "TITULO": "Registro y Login",
+        "1": "Los usuarios se registran proporcionando sus datos personales.",
+        "2": "Los usuarios inician sesión para acceder a sus perfiles y funcionalidades de la aplicación."
+      },
+      "DOCS": {
+        "TITULO": "Acceso a la Documentación",
+        "1": "Los usuarios navegan a la sección de documentación para estudiar el material teórico.",
+        "2": "La documentación está organizada por certificaciones y temas."
+      },
+      "EXAMS": {
+        "TITULO": "Realización de Exámenes",
+        "1": "Los usuarios seleccionan una certificación y realizan un examen de prueba.",
+        "2": "Al finalizar, el sistema corrige el examen y muestra los resultados.",
+        "3": "Los usuarios pueden revisar las explicaciones de cada pregunta para entender sus errores."
+      },
+      "PROGRESS": {
+        "TITULO": "Seguimiento del Progreso",
+        "1": "Los resultados de los exámenes se guardan en el perfil del usuario.",
+        "2": "Los usuarios pueden ver su historial de exámenes y su progreso a lo largo del tiempo."
+      }
+    },
+    "RESUME": "Este proyecto proporciona una plataforma integral para la preparación de certificaciones, combinando teoría y práctica en un solo lugar."
   }
 }
 
