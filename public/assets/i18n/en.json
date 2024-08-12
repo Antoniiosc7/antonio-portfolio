@@ -12,6 +12,7 @@
     "CURRENT_ROLE": "💼 Currently, I have a contract as a Full Stack Developer at Babel, where I apply my knowledge in technologies such as Angular CLI in the development of web applications both in the front end and back end with Spring Tools.",
     "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computer science constantly drive me to seek new opportunities and challenges."
   },
+
   "EDUCATION": {
     "TITLE": "Education",
     "TIMELINE": [
@@ -50,13 +51,13 @@
   },
   "EXPERIENCE": {
     "TITLE": "Experience",
-    "TIMELINE": [
+    "TIMELINE":
       {
         "DATE": "October 2023 - Present",
         "TITLE": "Grupo Babel",
         "DESCRIPTION": "FullStack Developer - Full-time remote"
       }
-    ]
+
   },
   "COOKIES": {
     "FOOTER": "Cookie Policy",
@@ -144,6 +145,14 @@
         "LINKS": true,
         "IS_TFG": false,
         "DEMO_URL": "https://certs.antoniosaborido.es/"
+      },
+      {
+        "TITLE": "2D Platformer Game in Angular",
+        "DESCRIPTION": "Development of a 2D platformer game where the character automatically advances, dynamically generating enemies and obstacles in random positions, using Angular for managing movement logic and collisions.",
+        "LINKS": true,
+        "IS_TFG": false,
+        "REPO_URL": "https://github.com/Antoniiosc7/angular-plataformas",
+        "DEMO_URL": "https://plataformas.antoniosaborido.es/"
       }
     ]
   },
@@ -292,6 +301,40 @@
       }
     },
     "RESUME": "This project provides a comprehensive platform for certification preparation, combining theory and practice in one place."
+  },
+  "GAME": {
+    "TITLE": "Juego de Plataformas 2D",
+    "DESCRIPTION": "Este proyecto es un juego de plataformas 2D desarrollado utilizando Angular. Está diseñado para mantener al personaje centrado en la pantalla mientras se mueve automáticamente hacia la derecha. A medida que el personaje avanza, el entorno se genera dinámicamente, con plataformas, bloques y enemigos que aparecen en posiciones aleatorias, creando una experiencia de juego en constante cambio.",
+    "FEATURES": {
+      "CHARACTER_MOVEMENT": {
+        "TITLE": "Movimiento del Personaje",
+        "DESCRIPTION": "El personaje se mueve automáticamente hacia la derecha, garantizando un progreso continuo del juego. Si el jugador presiona la tecla de flecha derecha, la velocidad del personaje aumenta, permitiendo un avance más rápido. Además, el jugador puede saltar para evitar obstáculos o alcanzar plataformas más altas."
+      },
+      "MAP_SCROLLING": {
+        "TITLE": "Desplazamiento del Mapa",
+        "DESCRIPTION": "Para mantener al personaje siempre centrado en la pantalla, el mapa se desplaza a medida que el personaje avanza. Esto significa que el entorno, incluidas las plataformas, bloques y enemigos, se mueve hacia la izquierda, dando la impresión de que el personaje está corriendo hacia adelante a través de un mundo infinito."
+      },
+      "DYNAMIC_GENERATION": {
+        "TITLE": "Generación Dinámica de Obstáculos y Enemigos",
+        "DESCRIPTION": "Uno de los aspectos clave de este juego es la generación aleatoria de elementos. Las plataformas, bloques y enemigos se generan en posiciones aleatorias a medida que el mapa avanza. Este sistema asegura que cada partida sea única, ofreciendo un desafío constante y renovado."
+      },
+      "COLLISION_DETECTION": {
+        "TITLE": "Detección de Colisiones",
+        "DESCRIPTION": "El juego cuenta con un sistema de detección de colisiones que verifica constantemente si el personaje choca con plataformas, bloques o enemigos. Si se detecta una colisión con un enemigo, se puede implementar lógica adicional, como la pérdida de una vida o el reinicio del nivel."
+      },
+      "GRAVITY_PHYSICS": {
+        "TITLE": "Gravedad y Física del Juego",
+        "DESCRIPTION": "Se ha implementado un sistema de gravedad que afecta al personaje, haciendo que caiga cuando no está sobre una plataforma o bloque. El personaje también puede saltar, y la gravedad hace que regrese al suelo tras alcanzar el punto más alto del salto."
+      },
+      "USER_INTERACTIVITY": {
+        "TITLE": "Interactividad del Usuario",
+        "DESCRIPTION": "El usuario puede controlar al personaje utilizando las teclas de flecha. La flecha derecha acelera el movimiento, la flecha izquierda permite retroceder, y la flecha arriba ejecuta un salto."
+      }
+    },
+    "TECHNICAL_IMPLEMENTATION": {
+      "TITLE": "Implementación Técnica",
+      "DESCRIPTION": "El juego está construido completamente en Angular, utilizando componentes modulares para representar al personaje, enemigos, plataformas y bloques. El manejo de eventos del teclado y la lógica de movimiento se implementan utilizando listeners y funciones de actualización periódica que mantienen el estado del juego en constante cambio. El sistema de colisiones se basa en la comparación de las coordenadas del personaje con las de los objetos en el mapa, y el desplazamiento automático del mapa se logra ajustando las posiciones relativas de los objetos en cada iteración del bucle del juego."
+    }
   }
 }
 

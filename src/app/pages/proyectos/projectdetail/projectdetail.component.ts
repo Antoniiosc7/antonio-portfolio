@@ -53,6 +53,10 @@ export class ProjectDetailComponent implements OnInit {
     const url = this.sanitizer.bypassSecurityTrustResourceUrl('https://certs.antoniosaborido.es/');
     window.open('https://certs.antoniosaborido.es/', '_blank');
   }
+  openProductionPage2(): void {
+    const url = this.sanitizer.bypassSecurityTrustResourceUrl('https://plataformas.antoniosaborido.es/');
+    window.open('https://plataformas.antoniosaborido.es/', '_blank');
+  }
 
   openPdfViewer(pdfUrl: string, pdfName: string): void {
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

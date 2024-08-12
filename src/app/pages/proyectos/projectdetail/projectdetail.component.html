@@ -161,7 +161,7 @@
       <li> {{ 'JUMP_MARIUS.CREDITS_ITEMS2' | translate }}</li>
     </ul>
   </div>
-  <div *ngIf="projectName === 'Certificaciones'">
+  <div *ngIf="projectName === 'Certificaciones' ||projectName=== 'Certifications'">
     <div class="button-container">
       <button class="card social-icon btn-cert" (click)="openProductionPage()">
         <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i><span class="social-icon-text">{{ 'CERTIFICACIONES.PRODUCCION' | translate }}</span>
@@ -260,6 +260,39 @@
 
     <p>{{ 'CERTIFICACIONES.RESUME' | translate }}</p>
   </div>
+  <div *ngIf="projectName === 'Juego de Plataformas 2D en Angular' || projectName ==='2D Platformer Game in Angular'">
+    <div class="button-container">
+      <button class="card social-icon btn-cert" (click)="openProductionPage2()">
+        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i><span class="social-icon-text">{{ 'CERTIFICACIONES.PRODUCCION' | translate }}</span>
+      </button>
+    </div>
+    <h2>{{ 'GAME.TITLE' | translate }}</h2>
+    <p>{{ 'GAME.DESCRIPTION' | translate }}</p>
 
+    <div style="text-align: center;">
+      <img src="https://plataformas.antoniosaborido.es/logo.jpeg" alt="Logo del Juego de Plataformas 2D" width="20%">
+    </div>
+
+    <h4>{{ 'GAME.FEATURES.CHARACTER_MOVEMENT.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.CHARACTER_MOVEMENT.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.FEATURES.MAP_SCROLLING.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.MAP_SCROLLING.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.FEATURES.DYNAMIC_GENERATION.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.DYNAMIC_GENERATION.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.FEATURES.COLLISION_DETECTION.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.COLLISION_DETECTION.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.FEATURES.GRAVITY_PHYSICS.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.GRAVITY_PHYSICS.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.FEATURES.USER_INTERACTIVITY.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.FEATURES.USER_INTERACTIVITY.DESCRIPTION' | translate }}</p>
+
+    <h4>{{ 'GAME.TECHNICAL_IMPLEMENTATION.TITLE' | translate }}</h4>
+    <p>{{ 'GAME.TECHNICAL_IMPLEMENTATION.DESCRIPTION' | translate }}</p>
+  </div>
   <app-image-modal *ngIf="isImageModalOpen" [imageUrl]="selectedImageUrl" (close)="closeImageModal()"></app-image-modal>
 </div>
