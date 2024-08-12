@@ -137,6 +137,13 @@
         "REPO_URL": "https://github.com/Antoniiosc7/tp-tester",
         "LINKS": true,
         "IS_TFG": true
+      },
+      {
+        "TITLE": "Certifications",
+        "DESCRIPTION": "I have developed a website that allows you to study and take exams identical to those found in official certifications. It is made with Angular 18 on the front end and Spring Boot for the backend.",
+        "LINKS": true,
+        "IS_TFG": false,
+        "DEMO_URL": "https://certs.antoniosaborido.es/"
       }
     ]
   },
@@ -226,10 +233,65 @@
     "COLLABORATORS": "Collaborators:",
     "COLLABORATION_DESC": "Anyone can collaborate and open their pull request to contribute to the development of Jump Marius. Your help is welcome!",
     "CREDITS": "Credits:",
-    "CREDITS_ITEMS": [
-      "Introduction to Pygame and initial game features: https://twitter.com/DaFluffyPotato",
-      "New tilesets: https://www.kenney.nl"
-    ]
+    "CREDITS_ITEMS1": "Introduction to Pygame and initial game features: @DaFluffyPotato",
+    "CREDITS_ITEMS2": "New tilesets: www.kenney.nl"
+  },
+  "CERTIFICACIONES": {
+    "PRODUCCION": "View Production Page",
+    "TITULO": "Certifications Project",
+    "DESCRIPCION": "General Description",
+    "DESCRIPCION_TEXT": "The certifications project is a web application developed with Angular 18 on the frontend and Java Spring Tools on the backend. The application is designed to help users prepare for various certifications by providing theoretical documentation and practice exams.",
+    "FUNCIONALIDADES": "Main Features",
+    "REGISTRO": "User Registration and Authentication",
+    "REGISTRO_TEXT": "Users must register and authenticate to access the application's features.",
+    "REGISTRO_TEXT2": "The system saves exam results in the user's profile to allow tracking of their progress.",
+    "DOCUMENTACION": "Documentation Section",
+    "DOCUMENTACION_TEXT": "Provides detailed theoretical information about the available certifications.",
+    "DOCUMENTACION_TEXT2": "Users can study the theoretical material to prepare for the exams.",
+    "EXAMENES": "Exams Section",
+    "EXAMENES_TEXT": "Allows users to take practice exams for the certifications.",
+    "EXAMENES_TEXT2": "At the end of the exam, the system automatically corrects the answers.",
+    "EXAMENES_TEXT3": "Provides detailed explanations of all questions, both correct and incorrect.",
+    "TECNOLOGIAS": "Technologies Used",
+    "TECNOLOGIAS_TEXT": "Frontend",
+    "TECNOLOGIAS_TEXT2": "Angular 18",
+    "TECNOLOGIAS_TEXT3": "Frontend development framework for creating dynamic and responsive user interfaces.",
+    "TECNOLOGIAS_TEXT4": "Backend",
+    "TECNOLOGIAS_TEXT5": "Java Spring Tools",
+    "TECNOLOGIAS_TEXT6": "Backend development framework for creating RESTful services and managing server logic.",
+    "BBDD": "Content Management in Database",
+    "BBDD_TEXT": "All application content is managed from the database, eliminating the need to modify the frontend to update available certifications, exams, and documentation. This includes:",
+    "BBDD_TEXT2": "Available Certifications",
+    "BBDD_TEXT3": "The certifications that can be prepared are managed from the database, allowing adding or modifying certifications without changing the frontend.",
+    "BBDD_TEXT4": "Available Exams",
+    "BBDD_TEXT5": "Exams are created and managed generically in the database, allowing both Spring Boot and Angular to read them automatically without a new deployment.",
+    "BBDD_TEXT6": "Available Documentation",
+    "BBDD_TEXT7": "The theoretical documentation is also managed from the database, facilitating the update and addition of new content without modifying the frontend.",
+    "WORKFLOW": {
+      "TITULO": "Workflow",
+      "AUTH": {
+        "TITULO": "Registration and Login",
+        "1": "Users register by providing their personal data.",
+        "2": "Users log in to access their profiles and application features."
+      },
+      "DOCS": {
+        "TITULO": "Access to Documentation",
+        "1": "Users navigate to the documentation section to study the theoretical material.",
+        "2": "The documentation is organized by certifications and topics."
+      },
+      "EXAMS": {
+        "TITULO": "Taking Exams",
+        "1": "Users select a certification and take a practice exam.",
+        "2": "At the end, the system corrects the exam and shows the results.",
+        "3": "Users can review the explanations of each question to understand their mistakes."
+      },
+      "PROGRESS": {
+        "TITULO": "Progress Tracking",
+        "1": "Exam results are saved in the user's profile.",
+        "2": "Users can see their exam history and progress over time."
+      }
+    },
+    "RESUME": "This project provides a comprehensive platform for certification preparation, combining theory and practice in one place."
   }
-
 }
+

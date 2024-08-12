@@ -157,107 +157,108 @@
 
     <h5>{{ 'JUMP_MARIUS.CREDITS' | translate }}</h5>
     <ul>
-      <li *ngFor="let item of ('JUMP_MARIUS.CREDITS_ITEMS' | translate)"><a href="{{ item }}">{{ item }}</a></li>
+      <li> {{ 'JUMP_MARIUS.CREDITS_ITEMS1' | translate }}</li>
+      <li> {{ 'JUMP_MARIUS.CREDITS_ITEMS2' | translate }}</li>
     </ul>
   </div>
   <div *ngIf="projectName === 'Certificaciones'">
     <div class="button-container">
       <button class="card social-icon btn-cert" (click)="openProductionPage()">
-        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i><span class="social-icon-text">Ver Página en Producción</span>
+        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i><span class="social-icon-text">{{ 'CERTIFICACIONES.PRODUCCION' | translate }}</span>
       </button>
     </div>
-    <h2>Proyecto de Certificaciones</h2>
+    <h2>{{ 'CERTIFICACIONES.TITULO' | translate }}</h2>
 
-    <h3>Descripción General</h3>
-    <p>El proyecto de certificaciones es una aplicación web desarrollada con Angular 18 en el frontend y Java Spring Tools en el backend. La aplicación está diseñada para ayudar a los usuarios a prepararse para diversas certificaciones mediante la provisión de documentación teórica y exámenes de prueba.</p>
+    <h3>{{ 'CERTIFICACIONES.DESCRIPCION' | translate }} </h3>
+    <p> {{ 'CERTIFICACIONES.DESCRIPCION_TEXT' | translate }} </p>
 
     <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw" alt="Certificaciones" class="cert-image centered-image" (click)="openImageModal('https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw')">
-    <h3>Funcionalidades Principales</h3>
+    <h3>{{ 'CERTIFICACIONES.FUNCIONALIDADES' | translate }}</h3>
     <ol>
       <li>
-        <strong>Registro y Autenticación de Usuarios</strong>
+        <strong>{{ 'CERTIFICACIONES.REGISTRO' | translate }}</strong>
         <ul>
-          <li>Los usuarios deben registrarse y autenticarse para acceder a las funcionalidades de la aplicación.</li>
-          <li>El sistema guarda los resultados de los exámenes en el perfil del usuario para permitir el seguimiento de su progreso.</li>
+          <li>{{ 'CERTIFICACIONES.REGISTRO_TEXT' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.REGISTRO_TEXT2' | translate }}</li>
         </ul>
       </li>
       <li>
-        <strong>Sección de Documentación</strong>
+        <strong>{{ 'CERTIFICACIONES.DOCUMENTACION' | translate }}</strong>
         <ul>
-          <li>Proporciona información teórica detallada sobre las certificaciones disponibles.</li>
-          <li>Los usuarios pueden estudiar el material teórico para prepararse para los exámenes.</li>
+          <li>{{ 'CERTIFICACIONES.DOCUMENTACION_TEXT' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.DOCUMENTACION_TEXT2' | translate }}</li>
         </ul>
         <img src="/assets/imagenes/certificaciones/imagen2.png" width="66%" alt="Imagen de como se ve la documentación dentro de la página" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen2.png')">
       </li>
       <li>
-        <strong>Sección de Exámenes</strong>
+        <strong>{{ 'CERTIFICACIONES.EXAMENES' | translate }}</strong>
         <ul>
-          <li>Permite a los usuarios realizar exámenes de prueba para las certificaciones.</li>
-          <li>Al finalizar el examen, el sistema corrige automáticamente las respuestas.</li>
-          <li>Proporciona explicaciones detalladas de todas las preguntas, tanto correctas como incorrectas.</li>
+          <li>{{ 'CERTIFICACIONES.EXAMENES_TEXT' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.EXAMENES_TEXT2' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.EXAMENES_TEXT3' | translate }}</li>
           <img src="/assets/imagenes/certificaciones/imagen3.png" width="66%" alt="Vista de como se ve el examen al ser corregido" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen3.png')">
         </ul>
       </li>
     </ol>
 
-    <h3>Tecnologías Utilizadas</h3>
+    <h3>{{ 'CERTIFICACIONES.TECNOLOGIAS' | translate }}</h3>
     <ul>
-      <li><strong>Frontend</strong>: Angular 18
+      <li><strong>{{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT' | translate }}</strong>: {{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT2' | translate }}
         <ul>
-          <li>Framework de desarrollo frontend para crear interfaces de usuario dinámicas y responsivas.</li>
+          <li>{{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT3' | translate }}</li>
         </ul>
       </li>
-      <li><strong>Backend</strong>: Java Spring Tools
+      <li><strong>{{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT4' | translate }}</strong>: {{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT5' | translate }}
         <ul>
-          <li>Framework de desarrollo backend para crear servicios RESTful y gestionar la lógica del servidor.</li>
+          <li>{{ 'CERTIFICACIONES.TECNOLOGIAS_TEXT6' | translate }}</li>
         </ul>
       </li>
     </ul>
 
-    <h3>Gestión de Contenidos en Base de Datos</h3>
-    <p>Todo el contenido de la aplicación se gestiona desde la base de datos, lo que elimina la necesidad de modificar el frontend para actualizar las certificaciones, exámenes y documentaciones disponibles. Esto incluye:</p>
+    <h3>{{ 'CERTIFICACIONES.BBDD' | translate }}</h3>
+    <p></p>
     <ul>
-      <li><strong>Certificaciones Disponibles</strong>: Las certificaciones que se pueden preparar se gestionan desde la base de datos, permitiendo agregar o modificar certificaciones sin necesidad de cambiar el frontend.</li>
-      <li><strong>Exámenes Disponibles</strong>: Los exámenes se crean y gestionan en la base de datos de forma genérica, permitiendo que tanto Spring Boot como Angular los lean automáticamente sin necesidad de un nuevo despliegue.</li>
-      <li><strong>Documentaciones Disponibles</strong>: La documentación teórica también se gestiona desde la base de datos, facilitando la actualización y adición de nuevos contenidos sin modificar el frontend.</li>
+      <li><strong>{{ 'CERTIFICACIONES.BBDD_TEXT2' | translate }}</strong>: {{ 'CERTIFICACIONES.BBDD_TEXT3' | translate }}</li>
+      <li><strong>{{ 'CERTIFICACIONES.BBDD_TEXT4' | translate }}</strong>: {{ 'CERTIFICACIONES.BBDD_TEXT5' | translate }}</li>
+      <li><strong>{{ 'CERTIFICACIONES.BBDD_TEXT6' | translate }}</strong>: {{ 'CERTIFICACIONES.BBDD_TEXT7' | translate }}</li>
       <img src="/assets/imagenes/certificaciones/imagen1.png" width="66%" alt="Vista de los menus que se cargan desde base de datos" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen1.png')">
     </ul>
 
-    <h3>Flujo de Trabajo</h3>
+    <h3>{{ 'CERTIFICACIONES.WORKFLOW.TITULO' | translate }}</h3>
     <ol>
       <li>
-        <strong>Registro y Login</strong>
+        <strong>{{ 'CERTIFICACIONES.WORKFLOW.AUTH.TITULO' | translate }}</strong>
         <ul>
-          <li>Los usuarios se registran proporcionando sus datos personales.</li>
-          <li>Los usuarios inician sesión para acceder a sus perfiles y funcionalidades de la aplicación.</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.AUTH.1' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.AUTH.2' | translate }}</li>
         </ul>
       </li>
       <li>
-        <strong>Acceso a la Documentación</strong>
+        <strong>{{ 'CERTIFICACIONES.WORKFLOW.DOCS.TITULO' | translate }}</strong>
         <ul>
-          <li>Los usuarios navegan a la sección de documentación para estudiar el material teórico.</li>
-          <li>La documentación está organizada por certificaciones y temas.</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.DOCS.1' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.DOCS.2' | translate }}</li>
         </ul>
       </li>
       <li>
-        <strong>Realización de Exámenes</strong>
+        <strong>{{ 'CERTIFICACIONES.WORKFLOW.EXAMS.TITULO' | translate }}</strong>
         <ul>
-          <li>Los usuarios seleccionan una certificación y realizan un examen de prueba.</li>
-          <li>Al finalizar, el sistema corrige el examen y muestra los resultados.</li>
-          <li>Los usuarios pueden revisar las explicaciones de cada pregunta para entender sus errores.</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.EXAMS.1' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.EXAMS.2' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.EXAMS.3' | translate }}</li>
         </ul>
       </li>
       <li>
-        <strong>Seguimiento del Progreso</strong>
+        <strong>{{ 'CERTIFICACIONES.WORKFLOW.PROGRESS.TITULO' | translate }}</strong>
         <ul>
-          <li>Los resultados de los exámenes se guardan en el perfil del usuario.</li>
-          <li>Los usuarios pueden ver su historial de exámenes y su progreso a lo largo del tiempo.</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.PROGRESS.1' | translate }}</li>
+          <li>{{ 'CERTIFICACIONES.WORKFLOW.PROGRESS.2' | translate }}</li>
           <img src="/assets/imagenes/certificaciones/imagen4.png" width="66%" alt="Vista del perfil" class="centered-image" (click)="openImageModal('/assets/imagenes/certificaciones/imagen4.png')">
         </ul>
       </li>
     </ol>
 
-    <p>Este proyecto proporciona una plataforma integral para la preparación de certificaciones, combinando teoría y práctica en un solo lugar.</p>
+    <p>{{ 'CERTIFICACIONES.RESUME' | translate }}</p>
   </div>
 
   <app-image-modal *ngIf="isImageModalOpen" [imageUrl]="selectedImageUrl" (close)="closeImageModal()"></app-image-modal>

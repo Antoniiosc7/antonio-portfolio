@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:ssr": "ng build && ng run portfolio-antonio:server",
     "postbuild": "node generate-sitemap.js",
     "serve:ssr:portfolio-antonio": "node dist/portfolio-antonio/server/server.mjs"
   },
