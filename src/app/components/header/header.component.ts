@@ -30,7 +30,11 @@ export class HeaderComponent {
     this.isDarkTheme = !this.isDarkTheme;
   }
 
-  openPdfViewer(pdfUrl: string, pdfName: string): void {
+  openPdfViewer(): void {
+    const currentLang = this.translationService.currentLang;
+    const pdfUrl = currentLang === 'es' ? 'cvs/resumeES.pdf' : 'cvs/resumeEN.pdf';
+    const pdfName = currentLang === 'es' ? 'resumeES.pdf' : 'resumeEN.pdf';
+
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     if (isMobile) {
       window.open(pdfUrl, '_blank');
