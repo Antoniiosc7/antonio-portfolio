@@ -47,20 +47,20 @@ button[mat-button] a {
   font-weight: bold;
 }
 
-
 .blue-button {
   background-color: #007bff;
   margin-right: 20%;
-  color: white!important;
+  color: white !important;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
 }
+
 .green-button {
   background-color: #0aae57;
-  color: white!important;
+  color: white !important;
   border: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -68,9 +68,11 @@ button[mat-button] a {
   font-size: 16px;
   margin-left: auto;
 }
-mat-card-title{
+
+.mat-card-title {
   font-weight: bold;
 }
+
 .button-container {
   display: flex;
   justify-content: space-between;

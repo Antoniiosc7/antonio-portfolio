@@ -17,6 +17,20 @@
     "TIMELINE": [
       {
         "DATE": "2024",
+        "TITLE": "Curso Devops",
+        "DESCRIPTION": "Curso Devops Foundation 15 horas",
+        "pdfUrl": "assets/pdfs/CursoDevops.pdf",
+        "pdfName": "Curso Devops"
+      },
+      {
+        "DATE": "2024",
+        "TITLE": "Curso Java SE 17 Developer",
+        "DESCRIPTION": "Curso Java para la cetificación Java SE 17 Developer 30 horas",
+        "pdfUrl": "assets/pdfs/cursoJava.pdf",
+        "pdfName": "Curso Java"
+      },
+      {
+        "DATE": "2024",
         "TITLE": "Certificado de Fundamentos ITIL",
         "DESCRIPTION": "Certificado de Fundamentos ITIL en Gestión de Servicios de TI por PeopleCert y Axelos",
         "pdfUrl": "assets/pdfs/itil.pdf",
@@ -53,8 +67,8 @@
     "TIMELINE":
       {
         "DATE": "Octubre 2023 - Actualidad",
-        "TITLE": "Grupo Babel",
-        "DESCRIPTION": "Desarrollador FullStack - Jornada completa en remoto"
+        "TITLE": "Babel Group",
+        "DESCRIPTION": "Software Engineer FullStack - Jornada completa en remoto"
       }
 
   },

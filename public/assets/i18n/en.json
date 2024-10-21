@@ -18,6 +18,20 @@
     "TIMELINE": [
       {
         "DATE": "2024",
+        "TITLE": "Devops Course",
+        "DESCRIPTION": "Devops Foundation Course 15 hours",
+        "pdfUrl": "assets/pdfs/CursoDevops.pdf",
+        "pdfName": "Devops Course"
+      },
+      {
+        "DATE": "2024",
+        "TITLE": "Java SE 17 Developer Course",
+        "DESCRIPTION": "Java Course for Java SE 17 Developer certification 30 hours",
+        "pdfUrl": "assets/pdfs/cursoJava.pdf",
+        "pdfName": "Java Course"
+      },
+      {
+        "DATE": "2024",
         "TITLE": "ITIL Foundation Certificate",
         "DESCRIPTION": "ITIL Foundation Certificate in IT Service Management by PeopleCert and Axelos",
         "pdfUrl": "assets/pdfs/itil.pdf",
