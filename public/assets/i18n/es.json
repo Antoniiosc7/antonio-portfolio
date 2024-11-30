@@ -17,10 +17,10 @@
     "TIMELINE": [
       {
         "DATE": "2024",
-        "TITLE": "Curso Devops",
-        "DESCRIPTION": "Curso Devops Foundation 15 horas",
-        "pdfUrl": "assets/pdfs/CursoDevops.pdf",
-        "pdfName": "Curso Devops"
+        "TITLE": "Certificación Scrum Master",
+        "DESCRIPTION": "Certificado ScrumMaster® (CSM®) de Scrum Manager",
+        "pdfUrl": "assets/pdfs/cert_scrum_master.pdf",
+        "pdfName": "Certificación Scrum Master"
       },
       {
         "DATE": "2024",
@@ -31,7 +31,7 @@
       },
       {
         "DATE": "2024",
-        "TITLE": "Certificado de Fundamentos ITIL",
+        "TITLE": "Certificación Fundamentos ITIL",
         "DESCRIPTION": "Certificado de Fundamentos ITIL en Gestión de Servicios de TI por PeopleCert y Axelos",
         "pdfUrl": "assets/pdfs/itil.pdf",
         "pdfName": "Certificado ITIL"
