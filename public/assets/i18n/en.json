@@ -5,17 +5,62 @@
   "HEADER": {
     "SUBTITLE": "Software Engineer and Full Stack Developer"
   },
+  "SECCIONES": {
+    "TITLEBLOG": "Blogs",
+    "TITLEPROYECTOS": "Projects",
+    "VOLVER": "Back",
+    "FILTERS": {
+      "SEARCH": "Search blogs...",
+      "SEARCH2": "Search projects...",
+      "ORDENAR1": "Sort by visits",
+      "ORDENAR2": "Sort by date",
+      "ORDENAR3": "Reset filters",
+      "ANTERIOR": "Previous",
+      "SIGUIENTE": "Next",
+      "VISITAS": "Visits",
+      "FECHA": "Date"
+    },
+    "PAGINAS": {
+      "TITLE": "My pages",
+      "ETIQUETAS": "Pages with a large number of wine labels from Jerez wineries.",
+      "SKILLJUMP": "An exciting platform game based on skills and reflexes. It is made with Angular 19 and PixieJS.",
+      "TFG": "TFG"
+    }
+  },
   "ABOUT": {
     "TITLE": "About Me",
-    "INTRO": "👋 Hello! I'm Antonio Saborido Campos, I'm 23 years old and I'm passionate about Computer Science. I recently started my professional career as a Full Stack Developer at Babel.",
-    "EDUCATION": "🎓 My academic background in Computer Engineering from the University of Seville has provided me with a solid foundation in problem-solving, programming, and project management. During my studies, I also had the opportunity to learn technologies such as Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS, and Haskell, among others.",
-    "CURRENT_ROLE": "💼 Currently, I have a contract as a Full Stack Developer at Babel, where I apply my knowledge in technologies such as Angular CLI in the development of web applications both in the front end and back end with Spring Tools.",
-    "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computer science constantly drive me to seek new opportunities and challenges."
-  },
+    "INTRO": "👋 Hello! I'm Antonio Saborido Campos, a 23-year-old computer enthusiast.",
+    "EDUCATION": "🎓 My education in Computer Engineering has provided me with a solid foundation in problem-solving, programming, and project management. During my studies, I have learned technologies such as Python, Node, Java, JavaScript, Docker or Haskell.",
+    "CURRENT_ROLE": "💼 Currently, I work as a Full Stack Developer at Babel, using Angular CLI for web application development both on the frontend and backend with Spring Tools.",
+    "MOTIVATION": "💪 My determination and enthusiasm for learning and growing in the field of computer science drive me to constantly seek new opportunities and challenges."  },
 
   "EDUCATION": {
     "TITLE": "Education",
     "TIMELINE": [
+      {
+        "DATE": "2019 - 2024",
+        "TITLE": "Computer Engineering",
+        "DESCRIPTION": "University of Seville - Degree in Computer Engineering - Computer Technologies in the field of information systems."
+      },
+      {
+        "DATE": "2023",
+        "TITLE": "C1 English Level Certificate",
+        "DESCRIPTION": "C1 English level certificate by the British Council.",
+        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
+        "pdfName": "C1 English Certificate"
+      }
+    ]
+  },
+  "CERTIFICADOS": {
+    "TITLE": "Courses and Certifications",
+    "TIMELINE": [
+      {
+        "DATE": "2024",
+        "TITLE": "DevOps Certificate",
+        "DESCRIPTION": "Devops Foundation Certification by Devops Instute",
+        "pdfUrl": "assets/pdfs/devops.pdf",
+        "pdfName": "Devops Certificate"
+      },
       {
         "DATE": "2024",
         "TITLE": "Scrum Master Certified",
@@ -43,23 +88,6 @@
         "DESCRIPTION": "Course on SQL and PL/SQL programming language concepts. Writing SQL commands, developing stored PL/SQL procedures, functions, packages, and database triggers.",
         "pdfUrl": "assets/pdfs/oracle.pdf",
         "pdfName": "Oracle Certificate"
-      },
-      {
-        "DATE": "2019 - 2024",
-        "TITLE": "Computer Engineering",
-        "DESCRIPTION": "University of Seville - Degree in Computer Engineering - Computer Technologies in the field of information systems."
-      },
-      {
-        "DATE": "2023",
-        "TITLE": "C1 English Level Certificate",
-        "DESCRIPTION": "C1 English level certificate by the British Council.",
-        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
-        "pdfName": "C1 English Certificate"
-      },
-      {
-        "DATE": "2017 - 2019",
-        "TITLE": "Scientific-Technological Baccalaureate",
-        "DESCRIPTION": "IES Sofía de Jerez de la Frontera."
       }
     ]
   },
@@ -69,7 +97,8 @@
       {
         "DATE": "October 2023 - Present",
         "TITLE": "Grupo Babel",
-        "DESCRIPTION": "FullStack Developer - Full-time remote"
+        "DESCRIPTION": "FullStack Developer - Full-time remote",
+        "DESCRIPCION1": "I have participated in projects aimed at the public sector, where I have been involved in the development of web applications using Angular for the frontend. Additionally, I have worked with Oracle databases for data management and storage, and I have used Java with Spring Tools for backend development."
       }
 
   },

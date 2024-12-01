@@ -1,24 +1,110 @@
-<div class="seccion">
+<div class="seccion p-8 bg-light mx-auto max-w-7xl px-4">
 
-<!--
-<section id="info">
-  <app-info></app-info>
-</section>
--->
-<section id="about">
-  <app-about></app-about>
-</section>
+  <!-- Sección Acerca de -->
+  <section id="about" class="mb-16">
+    <h2 class="section-title text-3xl font-bold mb-4 bg-blue-700 text-white p-4 rounded-lg shadow-lg">{{ 'ABOUT.TITLE' | translate }}</h2>
 
-<section id="education">
-  <app-education></app-education>
-</section>
+    <div class="about-section bg-white p-6 rounded-lg shadow-md">
+      <p class="mb-4 text-lg">{{ 'ABOUT.INTRO' | translate }}</p>
+      <p class="mb-4 text-lg">{{ 'ABOUT.EDUCATION' | translate }}</p>
+      <p class="mb-4 text-lg">{{ 'ABOUT.CURRENT_ROLE' | translate }}</p>
+      <p class="text-lg">{{ 'ABOUT.MOTIVATION' | translate }}</p>
+    </div>
+  </section>
 
-<section id="experience">
-  <app-experience></app-experience>
-</section>
+  <!-- Sección Experiencia -->
+  <section id="experience" class="mb-16">
+    <h2 class="section-title text-3xl font-bold mb-4 bg-blue-700 text-white p-4 rounded-lg shadow-lg">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
+    <div class="timeline bg-white p-6 rounded-lg shadow-md">
+      <ul>
+        <li class="timeline-item mb-8">
+          <div class="timeline-date text-blue-500 font-semibold mb-2">{{ 'EXPERIENCE.TIMELINE.DATE' | translate }}</div>
+          <div class="timeline-content bg-light p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold mb-2">{{ 'EXPERIENCE.TIMELINE.TITLE' | translate }}</h3>
+            <p class="text-lg">{{ 'EXPERIENCE.TIMELINE.DESCRIPTION' | translate }}</p>
+            <br>
+            <p class="text-lg text-justify">{{ 'EXPERIENCE.TIMELINE.DESCRIPCION1' | translate }}</p>          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<section id="projects">
-  <app-projects></app-projects>
-</section>
+  <!-- Sección Educación -->
+  <section id="education" class="mb-16">
+    <h2 class="section-title text-3xl font-bold mb-4 bg-blue-700 text-white p-4 rounded-lg shadow-lg">{{ 'EDUCATION.TITLE' | translate }}</h2>
+    <div class="timeline bg-white p-6 rounded-lg shadow-md">
+      <ul>
+        <li *ngFor="let item of ('EDUCATION.TIMELINE' | translate)" class="timeline-item mb-8">
+          <div class="timeline-date text-blue-500 font-semibold mb-2">{{ item.DATE }}</div>
+          <div class="timeline-content bg-light p-6 rounded-lg shadow-md flex justify-between items-center">
+            <div class="content-text w-full">
+              <h3 class="text-xl font-bold mb-2">{{ item.TITLE }}</h3>
+              <p class="text-lg">{{ item.DESCRIPTION }}</p>
+            </div>
+            <button *ngIf="item.pdfUrl" class="open-pdf-button text-blue-500 mt-4 md:mt-0 flex-shrink-0" (click)="openPdfViewer(item.pdfUrl, item.pdfName)">
+              <i class="fas fa-external-link-alt"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección Cursos -->
+  <section id="education" class="mb-16">
+    <h2 class="section-title text-3xl font-bold mb-4 bg-blue-700 text-white p-4 rounded-lg shadow-lg">{{ 'CERTIFICADOS.TITLE' | translate }}</h2>
+    <div class="timeline bg-white p-6 rounded-lg shadow-md">
+      <ul>
+        <li *ngFor="let item of ('CERTIFICADOS.TIMELINE' | translate)" class="timeline-item mb-8">
+          <div class="timeline-date text-blue-500 font-semibold mb-2">{{ item.DATE }}</div>
+          <div class="timeline-content bg-light p-6 rounded-lg shadow-md flex justify-between items-center">
+            <div class="content-text w-full">
+              <h3 class="text-xl font-bold mb-2">{{ item.TITLE }}</h3>
+              <p class="text-lg">{{ item.DESCRIPTION }}</p>
+            </div>
+            <button *ngIf="item.pdfUrl" class="open-pdf-button text-blue-500 mt-4 md:mt-0 flex-shrink-0" (click)="openPdfViewer(item.pdfUrl, item.pdfName)">
+              <i class="fas fa-external-link-alt"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección Blog -->
+  <app-blog></app-blog>
+
+  <app-proyecto></app-proyecto>
+
+  <!-- Sección Mis Páginas -->
+  <section id="my-pages" class="mb-16">
+    <h2 class="section-title text-3xl font-bold mb-8 bg-blue-700 text-white p-4 rounded-lg shadow-lg">{{ 'SECCIONES.PAGINAS.TITLE' | translate }}</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Página 1 -->
+      <div class="page-item relative transform transition-transform hover:scale-105">
+        <a href="https://saboridoetiquetas.es" target="_blank" class="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg relative overflow-hidden">
+          <img src="https://saboridoetiquetas.es/assets/logo.png" alt="Logo 1" class="w-24 h-24 mx-auto rounded-full border-4 border-blue-500 mb-4">
+          <p class="text-center text-xl font-semibold text-gray-800">Saborido Etiquetas</p>
+          <!-- Descripción oculta -->
+          <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <p class="text-center text-white p-4">{{ 'SECCIONES.PAGINAS.ETIQUETAS' | translate }}</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Página 2 -->
+      <div class="page-item relative transform transition-transform hover:scale-105">
+        <a href="https://skilljump.antoniosaborido.es/" target="_blank" class="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg relative overflow-hidden">
+          <img src="https://skilljump.antoniosaborido.es/favicon.ico" alt="Logo 2" class="w-24 h-24 mx-auto rounded-full border-4 border-blue-500 mb-4">
+          <p class="text-center text-xl font-semibold text-gray-800">Skill Jump</p>
+          <!-- Descripción oculta -->
+          <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+            <p class="text-center text-white p-4">{{ 'SECCIONES.PAGINAS.SKILLJUMP' | translate }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
 </div>

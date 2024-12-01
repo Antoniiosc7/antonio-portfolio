@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {ThemeService} from "../../services/theme.service";
 import {RouterLink} from "@angular/router";
 import {TranslationService} from "../../services/translations.service";
-import {NgIf} from "@angular/common";
 import {TranslateModule} from "@ngx-translate/core";
 import {PdfViewerPopupComponent} from "../pdf-viewer-popup/pdf-viewer-popup.component";
 import {MatDialog} from "@angular/material/dialog";
@@ -10,7 +9,7 @@ import {MatDialog} from "@angular/material/dialog";
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, NgIf, TranslateModule],
+  imports: [RouterLink, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
@@ -19,12 +18,15 @@ export class HeaderComponent {
   constructor(private themeService: ThemeService,
               private translationService: TranslationService,
               private dialog: MatDialog) {}
+  // Cambiar el idioma entre español e inglés
   switchLanguage(lang: string) {
     this.translationService.changeLanguage(lang);
-    this.themeService.getThemeStatus().subscribe(isDark => this.isDarkTheme = isDark);
-
   }
 
+  // Obtener el idioma actual para la vista
+  get currentLanguage() {
+    return this.translationService.currentLang;
+  }
   toggleTheme(): void {
     this.themeService.toggleTheme();
     this.isDarkTheme = !this.isDarkTheme;

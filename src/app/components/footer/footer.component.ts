@@ -8,8 +8,6 @@ import {TranslateModule} from "@ngx-translate/core";
   selector: 'app-footer',
   standalone: true,
   imports: [
-    NgIf,
-    RouterLink,
     TranslateModule
   ],
   templateUrl: './footer.component.html',

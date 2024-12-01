@@ -5,16 +5,61 @@
   "HEADER": {
     "SUBTITLE": "Ingeniero de Software y Desarrollador Full Stack"
   },
+  "SECCIONES": {
+    "TITLEBLOG": "Blogs",
+    "TITLEPROYECTOS": "Proyectos",
+    "VOLVER": "Volver",
+    "FILTERS": {
+      "SEARCH": "Buscar blogs...",
+      "SEARCH2": "Buscar proyectos...",
+      "ORDENAR1": "Ordenar por visitas",
+      "ORDENAR2": "Ordenar por fecha",
+      "ORDENAR3": "Resetear filtros",
+      "ANTERIOR": "Anterior",
+      "SIGUIENTE": "Siguiente",
+      "VISITAS": "Visitas",
+      "FECHA": "Fecha"
+    },
+    "PAGINAS": {
+      "TITLE": "Mis páginas",
+      "ETIQUETAS": "Páginas con gran cantidad de etiquetas de vinos de las bodegas Jerezanas.",
+      "SKILLJUMP": "Un emocionante juego de plataformas basado en habilidades y reflejos. Está realizado mediente Angular 19 y PixieJS.",
+      "TFG": "TFG"
+    }
+  },
   "ABOUT": {
     "TITLE": "Sobre mí",
-    "INTRO": "👋 ¡Hola! Soy Antonio Saborido Campos, tengo 23 años y me considero un apasionado de la Informática, recientemente he comenzado mi carrera profesional como Desarrollador Full Stack en Babel.",
-    "EDUCATION": "🎓 Mi formación académica en Ingeniería Informática en la Universidad de Sevilla me ha proporcionado una base sólida en la resolución de problemas, la programación y la gestión de proyectos. También durante mi formación he tenido la oportunidad de aprender tecnologías como Python, Node, PowerBI, Java, JavaScript, HTML, Docker, CSS y Haskell entre otras.",
-    "CURRENT_ROLE": "💼 Actualmente, tengo un contrato como Desarrollador Full Stack en Babel, donde aplico mis conocimientos en tecnologías como Angular CLI en el desarrollo de aplicaciones web tanto en el front end como en back end con Spring Tools.",
-    "MOTIVATION": "💪 Mi determinación y entusiasmo por aprender y crecer en el campo de la informática me impulsan constantemente a buscar nuevas oportunidades y desafíos."
-  },
+    "INTRO": "👋 ¡Hola! Soy Antonio Saborido Campos, un apasionado de la informática con 23 años.",
+    "EDUCATION": "🎓 Mi formación en Ingeniería Informática me ha proporcionado una base sólida en resolución de problemas, programación y gestión de proyectos. Durante mi formación, he aprendido tecnologías como Python, Node, Java, JavaScript, Docker o Haskell.",
+    "CURRENT_ROLE": "💼 Actualmente, trabajo como Ingeniero Full Stack en Babel, utilizando Angular CLI para el desarrollo de aplicaciones web tanto en el front end como en el back end con Spring Tools.",
+    "MOTIVATION": "💪 Mi determinación y entusiasmo por aprender y crecer en el campo de la informática me impulsan a buscar constantemente nuevas oportunidades y desafíos."  },
   "EDUCATION": {
     "TITLE": "Educación",
     "TIMELINE": [
+      {
+        "DATE": "2019 - 2024",
+        "TITLE": "Ingeniería Informática",
+        "DESCRIPTION": "Universidad de Sevilla - Grado en Ingeniería Informática - Tecnologías Informáticas en la rama de sistemas de información."
+      },
+      {
+        "DATE": "2023",
+        "TITLE": "Certificado de Nivel de Inglés C1",
+        "DESCRIPTION": "Certificado de nivel C1 de inglés por el British Council.",
+        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
+        "pdfName": "Certificado Inglés C1"
+      }
+    ]
+  },
+  "CERTIFICADOS": {
+    "TITLE": "Cerificados y cursos",
+    "TIMELINE": [
+      {
+        "DATE": "2024",
+        "TITLE": "Certificación DevOps",
+        "DESCRIPTION": "Certificado Devops Foundation por Devops Instute",
+        "pdfUrl": "assets/pdfs/devops.pdf",
+        "pdfName": "Certificación Devops"
+      },
       {
         "DATE": "2024",
         "TITLE": "Certificación Scrum Master",
@@ -42,23 +87,6 @@
         "DESCRIPTION": "Curso de conceptos de lenguaje de programación SQL y PL/SQL. Escritura comandos SQL, desarrollo procedimientos PL/SQL almacenados, funciones, paquetes y disparadores de base de datos.",
         "pdfUrl": "assets/pdfs/oracle.pdf",
         "pdfName": "Certificado Oracle"
-      },
-      {
-        "DATE": "2019 - 2024",
-        "TITLE": "Ingeniería Informática",
-        "DESCRIPTION": "Universidad de Sevilla - Grado en Ingeniería Informática - Tecnologías Informáticas en la rama de sistemas de información."
-      },
-      {
-        "DATE": "2023",
-        "TITLE": "Certificado de Nivel de Inglés C1",
-        "DESCRIPTION": "Certificado de nivel C1 de inglés por el British Council.",
-        "pdfUrl": "assets/pdfs/ingles-c1.pdf",
-        "pdfName": "Certificado Inglés C1"
-      },
-      {
-        "DATE": "2017 - 2019",
-        "TITLE": "Bachillerato Científico-Tecnológico",
-        "DESCRIPTION": "IES Sofía de Jerez de la Frontera."
       }
     ]
   },
@@ -68,8 +96,8 @@
       {
         "DATE": "Octubre 2023 - Actualidad",
         "TITLE": "Babel Group",
-        "DESCRIPTION": "Software Engineer FullStack - Jornada completa en remoto"
-      }
+        "DESCRIPTION": "Software Engineer FullStack - Jornada completa en remoto",
+        "DESCRIPCION1": "He participado en proyectos destinados al sector público, donde he participado en el desarrollo de aplicaciones web utilizando Angular para el frontend. Además, he trabajado con bases de datos Oracle para la gestión y almacenamiento de datos, y he empleado Java con Spring Tools para el desarrollo del backend."      }
 
   },
   "COOKIES": {
