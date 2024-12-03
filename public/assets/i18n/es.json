@@ -24,7 +24,10 @@
       "TITLE": "Mis páginas",
       "ETIQUETAS": "Páginas con gran cantidad de etiquetas de vinos de las bodegas Jerezanas.",
       "SKILLJUMP": "Un emocionante juego de plataformas basado en habilidades y reflejos. Está realizado mediente Angular 19 y PixieJS.",
-      "TFG": "TFG"
+      "TFG": "TFG",
+      "CERTIFICACIONES": "Certificaciones",
+      "CERTIFICACIONESDESC": "Página para poder practicar examenes de certificaciones oficiales.",
+      "TFGPROJECT": "Mi TFG puesto en producción por el grupo de desarrollo de la universidad de Sevilla.",
     }
   },
   "ABOUT": {

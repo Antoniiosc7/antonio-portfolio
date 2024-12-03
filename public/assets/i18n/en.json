@@ -24,7 +24,10 @@
       "TITLE": "My pages",
       "ETIQUETAS": "Pages with a large number of wine labels from Jerez wineries.",
       "SKILLJUMP": "An exciting platform game based on skills and reflexes. It is made with Angular 19 and PixieJS.",
-      "TFG": "TFG"
+      "TFG": "TFG",
+      "CERTIFICACIONES": "Certificates Page",
+      "CERTIFICACIONESDESC": "Page to practice for official certificates exams.",
+      "TFGPROJECT": "My TFG deployed by the development group of the University of Seville."
     }
   },
   "ABOUT": {
