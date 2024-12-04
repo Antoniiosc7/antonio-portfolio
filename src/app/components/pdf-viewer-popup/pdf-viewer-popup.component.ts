@@ -18,7 +18,6 @@ export class PdfViewerPopupComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, private dialogRef: MatDialogRef<PdfViewerPopupComponent>) {
     this.pdfSrc = data.pdfSrc;
     this.pdfName = data.pdfName;
-    console.log(this.pdfSrc, this.pdfName);
   }
 
   closeDialog(): void {

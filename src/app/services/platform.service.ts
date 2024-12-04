@@ -19,7 +19,6 @@ export class PlatformService {
   // Guardar un elemento en el session storage
   setSessionStorageItem(key: string, value: string): void {
     if (this.isBrowser()) {
-      console.log(`Guardando en sessionStorage: ${key} = ${value}`); // Log para verificar
       sessionStorage.setItem(key, value);
       if (key === 'app_language') {
         this.languageSubject.next(value);
@@ -30,7 +29,6 @@ export class PlatformService {
   getSessionStorageItem(key: string): string | null {
     if (this.isBrowser()) {
       const value = sessionStorage.getItem(key);
-      console.log(`Leyendo de sessionStorage: ${key} = ${value}`); // Log para verificar
       return value;
     }
     return null;

@@ -90,3 +90,22 @@ footer {
 /* Para aplicar la fuente de manera global */
 
 
+
+::ng-deep .blog-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+::ng-deep .blog-content ul ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+::ng-deep .blog-content ul ul ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+::ng-deep .blog-content li {
+  margin-bottom: 10px;
+}

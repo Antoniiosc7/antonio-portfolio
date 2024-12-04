@@ -34,6 +34,7 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
     private location: Location,
     private datePipe: DatePipe,
     private titleService: Title,
+    private metaService: Meta,
     private renderer: Renderer2,
     private dialog: MatDialog,
     private platformService: PlatformService,
@@ -61,7 +62,14 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
       this.blog = data;
       const date = new Date(this.blog.createdAt); // Ensure the date is a valid Date object
       this.formattedDate = this.datePipe.transform(date, 'd \'de\' MMMM, y', 'es-ES');
+
+      // Check and replace title
+      if (this.blog.title.includes('TRABAJO FIN DE GRADO')) {
+        this.blog.title = this.blog.title.replace('TRABAJO FIN DE GRADO', 'TFG');
+      }
+
       this.titleService.setTitle(this.blog.title); // Set the page title to the blog title
+      this.metaService.updateTag({ name: 'description', content: this.blog.description }); // Set the meta description
       this.addStructuredData();
       this.isLoading = false; // Set loading to false when data is loaded
       this.scrollToComponent(); // Scroll to the component

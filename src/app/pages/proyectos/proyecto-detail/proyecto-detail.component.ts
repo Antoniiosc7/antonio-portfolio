@@ -2,22 +2,22 @@ import {Component, ElementRef, LOCALE_ID, OnDestroy, OnInit, Renderer2, ViewChil
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../../services/api.service';
 import {Subscription} from "rxjs";
-import {DatePipe, Location, NgIf} from "@angular/common";
-import {Title} from "@angular/platform-browser";
-import {PlatformService} from "../../../services/platform.service";
-import {MatButton} from "@angular/material/button";
-import {TranslateModule} from "@ngx-translate/core";
+import {DatePipe, Location, NgIf} from '@angular/common';
+import {Title} from '@angular/platform-browser';
+import {PlatformService} from '../../../services/platform.service';
+import {MatButton} from '@angular/material/button';
+import {TranslateModule} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-proyecto-detail',
   templateUrl: './proyecto-detail.component.html',
   standalone: true,
   providers: [{ provide: LOCALE_ID, useValue: 'es' }, DatePipe],
-    imports: [
-        NgIf,
-        MatButton,
-        TranslateModule
-    ],
+  imports: [
+    NgIf,
+    MatButton,
+    TranslateModule
+  ],
   styleUrls: ['./proyecto-detail.component.css']
 })
 export class ProyectoDetailComponent implements OnInit, OnDestroy {
@@ -49,6 +49,7 @@ export class ProyectoDetailComponent implements OnInit, OnDestroy {
       });
     }
   }
+
   loadBlogs(blogId: any) {
     const lang = this.platformService.getSessionStorageItem('app_language') || 'es'; // Get language from localStorage or default to 'es'
 
@@ -57,6 +58,7 @@ export class ProyectoDetailComponent implements OnInit, OnDestroy {
       const date = new Date(this.blog.createdAt); // Ensure the date is a valid Date object
       this.formattedDate = this.datePipe.transform(date, 'd \'de\' MMMM, y', 'es-ES');
       this.titleService.setTitle(this.blog.title); // Set the page title to the blog title
+      this.addCanonicalTag(`https://antoniosaborido.es/project/${this.blog.codBlog}`);
       this.addStructuredData();
       this.isLoading = false; // Set loading to false when data is loaded
       this.scrollToComponent(); // Scroll to the component
@@ -75,6 +77,13 @@ export class ProyectoDetailComponent implements OnInit, OnDestroy {
 
   scrollToComponent() {
     this.blogDetailContainer.nativeElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+
+  addCanonicalTag(url: string) {
+    const link: HTMLLinkElement = this.renderer.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    link.setAttribute('href', url);
+    this.renderer.appendChild(document.head, link);
   }
 
   addStructuredData() {

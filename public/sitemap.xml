@@ -3,25 +3,25 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 ">
   <url>
     <loc>https://antoniosaborido.es/</loc>
-    <lastmod>2024-12-3</lastmod>
+    <lastmod>2024-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://antoniosaborido.es/blog/tfg</loc>
-    <lastmod>2024-12-3</lastmod>
+    <lastmod>2024-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://antoniosaborido.es/project/jump-marius</loc>
-    <lastmod>2024-12-3</lastmod>
+    <lastmod>2024-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://antoniosaborido.es/project/certificaciones</loc>
-    <lastmod>2024-12-3</lastmod>
+    <lastmod>2024-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
