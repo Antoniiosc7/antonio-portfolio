@@ -70,6 +70,7 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
 
       this.titleService.setTitle(this.blog.title); // Set the page title to the blog title
       this.metaService.updateTag({ name: 'description', content: this.blog.description }); // Set the meta description
+      this.addCanonicalTag(`https://antoniosaborido.es/blog/${this.blog.codBlog}`);
       this.addStructuredData();
       this.isLoading = false; // Set loading to false when data is loaded
       this.scrollToComponent(); // Scroll to the component
@@ -84,6 +85,13 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
 
   scrollToComponent() {
     this.blogDetailContainer.nativeElement.scrollIntoView({ behavior: 'auto', block: 'start' });
+  }
+
+  addCanonicalTag(url: string) {
+    const link: HTMLLinkElement = this.renderer.createElement('link');
+    link.setAttribute('rel', 'canonical');
+    link.setAttribute('href', url);
+    this.renderer.appendChild(document.head, link);
   }
 
   addStructuredData() {
